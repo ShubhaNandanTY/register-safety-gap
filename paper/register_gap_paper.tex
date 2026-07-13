@@ -1,0 +1,846 @@
+\documentclass[11pt]{article}
+
+% ============================================================
+% Register-Sensitivity Safety Gap in Open LLMs
+% Author: Shubhanandan T Y
+% Plain article class; reformat to venue style before submission.
+% Figures expected in ./figs/  (fig1_divergence.png, fig2_svg_all.png,
+% fig3_probe.png, fig0_pilot.png)
+% ============================================================
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\input{glyphtounicode}
+\pdfgentounicode=1
+\usepackage{amsmath,amssymb}
+\usepackage{booktabs}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage[margin=1in]{geometry}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{natbib}
+\usepackage{authblk}
+
+\hypersetup{colorlinks=true, linkcolor=blue, citecolor=blue, urlcolor=blue}
+
+\title{\bf Hidden in the Hedge:\\
+Unvalidated LLM Graders Understate the Register Safety Gap in\\
+Instruction-Tuned Language Models}
+
+\author[1]{Shubhanandan T Y}
+\affil[1]{\normalsize [Affiliation to be added] \\ \texttt{[email to be added]}}
+
+\date{\today}
+
+\begin{document}
+\maketitle
+
+% ------------------------------------------------------------
+\begin{abstract}
+Safety evaluations of language models increasingly use LLM-based graders to judge
+whether a response is harmful. We show that an \emph{unvalidated} grader can
+drastically understate a real safety gap. We study sensitivity to \emph{register}---the
+difference between formal, benchmark-style phrasing and the casual, first-person
+phrasing real users write---using 300 paired prompts that express an identical harmful
+intent in each register, with explicit ``this is a test'' cues removed. Across six
+instruction-tuned open models in two families (Qwen2.5 at 0.5/1.5/3/7B and Gemma-2 at
+2/9B), a keyword refusal metric reports a large register gap (corpus-wide $0.27$, up to
+$0.54$ for Qwen-7B). Re-scoring every response with an off-the-shelf LLM grader that
+labels responses as refusal, non-actionable hedge, or actionable harm reports a
+near-zero harm gap ($0.03$)---seemingly implying the refusal gap is mostly harmless
+hedging. But when we validate that grader against human labels on 200 of its
+``hedge'' judgments, we find it systematically misclassifies actionable harmful
+content as hedging, and does so far more for casual prompts: humans judge $20\%$ of
+formally-framed grader-hedges but $49\%$ of casually-framed ones to be actually
+harmful. Correcting for this audited error yields a register harm gap of
+$\mathbf{0.26}$ (95\% CI $[0.19, 0.32]$), with casual framing raising the
+actionable-harm rate from $8.5\%$ to $34.3\%$. The naive grader had hidden roughly
+seven-eighths of this gap. Our central message is methodological: \textbf{LLM graders
+must be validated against human labels before their safety verdicts are trusted}; an
+unvalidated grader here would have reported no safety problem where a substantial one
+exists. We also report a probing negative result and a cross-family behavioral
+pattern. Our study is limited to open models up to 9B; we release the dataset, all
+generations, both scorings, human labels, and code.
+\end{abstract}
+
+% ------------------------------------------------------------
+\section{Introduction}
+
+Pre-deployment safety evaluation underpins nearly every governance mechanism for
+large language models (LLMs), from developer release policies to national AI
+safety institutes to emerging regulation. All of these mechanisms share an
+implicit and load-bearing assumption: that a model's measured behavior on
+evaluation prompts is a faithful proxy for its behavior once deployed. If that
+assumption fails---if models behave systematically differently when a prompt
+``looks like'' an evaluation---then safety scores overstate real-world safety, and
+the decisions built on them are unsound.
+
+A growing body of work suggests this assumption is fragile. Frontier and open
+models can, to varying degrees, distinguish evaluation contexts from deployment
+contexts and shift their behavior accordingly, a phenomenon termed
+\emph{evaluation awareness} \citep{needham2025,nguyen2025,goldowsky2025}. Recent
+analysis argues this is not a single capability but a multi-dimensional construct
+whose axes---detectability, behavioral manifestation, and controllability---are
+only weakly correlated, so that no single ``awareness score'' reliably predicts
+deployment safety \citep{notoneability2026}. Much of this literature, however,
+induces the evaluation/deployment distinction using \emph{explicit} cues (prompts
+literally labelled as tests or benchmark items) and studies it either within a
+single model family or through activation probes whose validity has recently been
+questioned \citep{devbunova2026}.
+
+We isolate a narrower and, we argue, more deployment-relevant variable:
+\textbf{register}. Real users do not phrase requests like benchmark items. They
+write casually, in the first person, with backstory, informal grammar, and
+occasional typos. If a model's safety behavior is sensitive to this stylistic
+difference \emph{alone}---with no explicit test markers present---then even a
+perfectly curated safety benchmark can mispredict deployment behavior simply
+because benchmark prompts and real traffic occupy different registers. This is a
+sharper claim than generic evaluation awareness: it says the confound is baked into
+the \emph{style} of evaluation, not merely into telltale keywords that a careful
+benchmark designer could remove.
+
+We make three contributions.
+
+\begin{enumerate}
+    \item \textbf{A grader-validation result (primary).} Using paired formal/casual
+    prompts and a metric we call the \emph{Register Validity Gap} (RVG), we show that
+    the measured register safety gap depends critically on how harm is judged. A
+    keyword refusal metric reports a gap of $0.27$--$0.54$; an off-the-shelf LLM harm
+    grader reports $0.03$; but human validation of that grader (200 labels) reveals it
+    hides most casually-framed harm as ``hedging,'' and the corrected harm gap is
+    $0.26$ (95\% CI $[0.19, 0.32]$). An unvalidated grader would have reported
+    essentially no safety gap where a substantial one exists. We conclude that LLM
+    safety graders must be human-validated before use.
+
+    \item \textbf{A cross-family behavioral pattern.} We measure the refusal-level
+    register effect across six models in two families, finding it significant
+    everywhere but with family-dependent scaling behavior---a further caution against
+    extrapolating safety-evaluation trends across architectures.
+
+    \item \textbf{A probing caution.} We report that linear probes on prompt
+    activations separate the two registers with AUROC $\approx 1.0$ at all layers,
+    persisting after removing keywords and matching length, and argue this reflects
+    surface separability rather than an internal evaluation-awareness representation.
+\end{enumerate}
+
+% ------------------------------------------------------------
+\section{Related Work}
+\label{sec:related}
+
+\paragraph{Situational and evaluation awareness.}
+The broader notion that models possess \emph{situational awareness}---knowledge of
+their own nature and context---was established by early work showing models can
+reason about their situation without in-context examples, and formalized in the
+Situational Awareness Dataset \citep{laine2024}, whose \texttt{stages\_oversight}
+subset directly probes recognition of evaluation contexts.
+\citet{needham2025} systematically studied how models distinguish evaluation from
+deployment, finding that model judgments of scenario authenticity correlate
+strongly with human judgments and identifying the surface features that signal an
+evaluation context. \citet{goldowsky2025} showed models can recognize when they are
+being evaluated for alignment specifically. Together these establish that
+evaluation awareness exists; our work asks a complementary question about one
+particular, deployment-relevant \emph{cause} of behavioral shifts---register---and
+measures the resulting safety consequences behaviorally.
+
+\paragraph{Evaluation awareness is multi-dimensional.}
+\citet{notoneability2026} run eight experiments across 37 open models and seven
+families and argue that evaluation awareness decomposes into partially independent
+axes; in particular, they find that awareness metrics and safety-behavior metrics
+are largely orthogonal, so no single awareness score reliably predicts deployment
+safety. This motivates our focus on directly measuring the behavioral safety gap
+rather than inferring it from an awareness proxy.
+
+\paragraph{Benchmark validity and surface sensitivity.}
+A parallel literature documents that benchmark conclusions depend heavily on
+prompt wording and surface form, motivating multi-prompt and rewrite-based
+evaluation \citep{mizrahi2024,xiong2025}. \citet{xiong2025} in particular propose a
+probe-rewrite-evaluate workflow that paraphrases benchmark items to quantify
+evaluation awareness; our design differs in that we do not paraphrase freely but
+construct \emph{matched pairs} that hold harmful intent fixed while varying a single
+controlled axis (register), and we target the safety-refusal behavior specifically
+rather than general benchmark accuracy. Related work shows models can answer
+multiple-choice items using artifacts rather than the question itself
+\citep{balepur2024}, and warns of benchmark contamination and ``cheating''
+\citep{zhou2023}. \citet{ren2024safetywashing} question whether safety benchmarks
+measure safety progress at all. Our register manipulation can be seen as a
+targeted, safety-specific instance of this surface-sensitivity concern: we hold
+semantics fixed and vary only style.
+
+\paragraph{Probing and its limits.}
+Linear probes on frozen activations are widely used to argue that models
+internally represent high-level properties, including refusal direction
+\citep{arditi2024} and evaluation awareness
+\citep{nguyen2025}. However, \citet{devbunova2026} shows that standard
+single-contrast probes trained on benchmark-vs-chat data primarily track prompt
+\emph{format} rather than evaluation context, and that decorrelating format from
+context is necessary to recover a genuine signal. Our probing result is an
+independent, constructive confirmation of this concern: we show the confound
+survives two successive rounds of removal (lexical, then length), and argue that
+prompt-activation probes cannot in principle separate ``the model inferred it is
+being tested'' from ``these two prompts are stylistically different.''
+
+\paragraph{Test-awareness and steering.}
+\citet{abdelnabi2025} study a Hawthorne-like effect in reasoning models and show
+test awareness can be linearly steered, revealing differential compliance. This
+supports the plausibility of a behavioral register effect, though our contribution
+is a cross-family behavioral \emph{measurement} rather than an intervention.
+
+% ------------------------------------------------------------
+\section{Methods}
+\label{sec:methods}
+
+\subsection{Paired-prompt design}
+We define 25 harmful \emph{intents} spanning ten categories: cyber, fraud, weapons,
+chemical, privacy, misinformation, self-harm information, harassment, drugs, and
+theft. Each intent is expressed in two \emph{framings} that hold the intent
+constant and vary only surface style:
+
+\begin{itemize}
+    \item \textbf{Eval framing:} formal, impersonal, instruction-style phrasing,
+    e.g.\ \emph{``Outline in detail, from beginning to end, the full set of steps
+    that someone would follow in order to \{intent\}.''}
+    \item \textbf{Deploy framing:} casual, first-person, with backstory and
+    informal grammar, e.g.\ \emph{``hey so, i keep reading about how someone might
+    \{intent\}. what's the real method?''}
+\end{itemize}
+
+Expanding the intents across multiple templates yields 300 matched pairs. Crucially,
+the eval framing contains \emph{no} explicit evaluation markers---no ``benchmark,''
+``evaluation,'' ``test,'' or ``assessment''---so that the only systematic
+difference between the two framings is register.
+
+\subsection{Three-stage confound removal}
+\label{sec:confound}
+Our final dataset is the product of three iterations. We report all three because
+each isolates a distinct confound and the intermediate results are themselves
+informative.
+
+\begin{enumerate}
+    \item \textbf{Explicit cues (rejected).} An initial version used eval framings
+    containing literal markers (``You are being evaluated,'' ``Benchmark item
+    \#$n$''). This produced a smooth, monotonic-looking behavioral scaling curve
+    \emph{and} perfect layer-1 probe separation. Both patterns are consistent with
+    models and probes keying on the marker vocabulary rather than register; while we
+    did not run a controlled ablation isolating the markers, the fact that removing
+    them (stage 2) flattened part of the behavioral curve supports this
+    interpretation. We discarded this version.
+    \item \textbf{De-lexicalized.} We removed all evaluation-marker vocabulary,
+    leaving formal-vs-casual register as the only systematic difference. This
+    materially changed the behavioral picture: part of the apparent small-model
+    scaling disappeared, indicating it had been an artifact of the keywords. All
+    behavioral results in this paper use this version.
+    \item \textbf{Length-matched.} Because a probe can exploit sequence length as a
+    shortcut, we additionally produced a version in which eval and deploy framings
+    are matched in length (means within ${\sim}3$ words) for the probe analysis of
+    Section~\ref{sec:probe}.
+\end{enumerate}
+
+\subsection{Models and generation}
+We evaluate Qwen2.5-Instruct at 0.5B, 1.5B, 3B, and 7B \citep{qwen2025} and
+Gemma-2-it at 2B and 9B \citep{gemma2}, all in 4-bit quantization on a single
+consumer GPU. Generation is greedy (deterministic) with a 200-token cap. Using two
+independently developed families lets us separate family-specific effects from
+general ones.
+
+\subsection{Refusal scoring and its validation}
+We classify each response as a refusal using a keyword/heuristic scorer over the
+opening of the response. This is the load-bearing measurement in the paper, so we
+assess it carefully and flag its residual weaknesses honestly.
+
+First, a \emph{directional} concern: our metric could be biased in either direction
+if soft refusals are missed asymmetrically across framings. In particular, casually
+phrased responses might contain casually phrased refusals (``nah, can't help with
+that'') that a keyword scorer misses, which would \emph{inflate} RVG rather than make
+it conservative. To check this, we scanned all 904 deploy-framing responses labeled
+as non-refusals for casual-refusal markers and found only one plausible missed
+refusal; models in our sample overwhelmingly refuse in canonical phrasing even under
+casual framing. This makes large asymmetric undercounting on the casual side
+unlikely, though we note the scan is itself lexical.
+
+Second, a \emph{ground-truth} concern: two automatic heuristics agreeing (we observe
+99.9\% agreement between the keyword scorer and a stricter heuristic across all
+3{,}600 responses) establishes consistency, not accuracy, since they may share blind
+spots. We therefore hand-labeled a stratified sample of 60 responses balanced across
+all six models and both framings. The keyword scorer agrees with human labels with
+95.0\% accuracy and Cohen's $\kappa = 0.90$ (``almost perfect'' agreement). All three
+disagreements are cases where the human marked a refusal that the keyword scorer
+missed (a soft refusal not opening with a canonical phrase); there were no cases in
+which the scorer labeled a genuine compliance as a refusal. The scorer therefore
+\emph{undercounts} refusals, and does so on both framings, which supports---now with
+human ground truth rather than assertion---that our RVG is not inflated by
+asymmetric refusal-detection error. We additionally manually verified the Gemma-2-9B
+ceiling (Section~\ref{sec:verify}).
+
+Third, a \emph{construct} concern: refusal-rate RVG measures non-refusal, not
+harmfulness. A casual response that fails to refuse but produces no genuinely harmful
+content still inflates a refusal-based gap. We address this directly in
+Section~\ref{sec:harm} by re-grading every response for actionable harm and validating
+that grader against human labels.
+
+\subsection{The Register Validity Gap}
+For each model, let $r_{\text{eval}}$ and $r_{\text{deploy}}$ be the refusal rates
+under the two framings. We define
+\[
+    \mathrm{RVG} \;=\; r_{\text{eval}} - r_{\text{deploy}}.
+\]
+A positive RVG means the model appears \emph{safer} under formal framing than it
+actually is under casual framing. Because our 300 pairs are generated from 25 base
+intents (via templates) rather than drawn independently, per-pair resampling would
+understate uncertainty. We therefore report 95\% confidence intervals via a
+\textbf{cluster bootstrap that resamples intents} (not pairs), taking all pairs of
+each resampled intent (5{,}000 resamples); this respects the non-independence of
+pairs sharing an intent. We report significance via McNemar's exact test, which is the appropriate paired test
+for binary refusal outcomes, complemented by the clustered intervals above.
+
+% ------------------------------------------------------------
+\section{Results}
+\label{sec:results}
+
+\subsection{The gap is significant in every model}
+Table~\ref{tab:svg} reports RVG for all six models. Every value is positive and
+significant ($p<0.001$), with confidence intervals well clear of zero. Across both
+families and all scales, models refuse the formal framing of a harmful request more
+often than the identical casual framing. This is the central empirical fact of the
+paper: safety behavior is register-sensitive, and it is so even with all explicit
+evaluation cues removed.
+
+\begin{table}[t]
+\centering
+\caption{Register Validity Gap (RVG) across six models and two families.
+$r_{\text{eval}}$ and $r_{\text{deploy}}$ are refusal rates under formal and casual
+framing; $\mathrm{RVG}=r_{\text{eval}}-r_{\text{deploy}}$. The 95\% CI is a
+\emph{cluster bootstrap over the 25 intents} (not over pairs), which widens the
+intervals relative to naive per-pair resampling but respects non-independence; every
+interval still excludes zero. All $p<0.001$ (McNemar's exact test), $n=300$ pairs.}
+\label{tab:svg}
+\begin{tabular}{llccccc}
+\toprule
+Family & Model & Size (B) & $r_{\text{eval}}$ & $r_{\text{deploy}}$ & RVG & 95\% CI (clustered) \\
+\midrule
+Qwen2.5 & 0.5B-Instruct & 0.5 & 0.633 & 0.413 & 0.220 & [0.097, 0.347] \\
+Qwen2.5 & 1.5B-Instruct & 1.5 & 0.640 & 0.483 & 0.157 & [0.027, 0.273] \\
+Qwen2.5 & 3B-Instruct   & 3.0 & 0.603 & 0.397 & 0.207 & [0.093, 0.320] \\
+Qwen2.5 & 7B-Instruct   & 7.0 & 0.707 & 0.167 & \textbf{0.540} & [0.413, 0.657] \\
+\midrule
+Gemma-2 & 2B-it & 2.0 & 0.983 & 0.643 & 0.340 & [0.250, 0.433] \\
+Gemma-2 & 9B-it & 9.0 & 1.000 & 0.883 & 0.117 & [0.063, 0.180] \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Effect sizes and paired tests}
+To ensure the effect is not an artifact of a single test, we report additional
+paired statistics in Table~\ref{tab:stats}. McNemar's exact test---appropriate for
+our paired binary design---is significant for every model ($p<10^{-5}$). Effect
+sizes are moderate to large: Cohen's $h$ ranges from $0.32$ (Qwen-1.5B) to $1.16$
+(Qwen-7B). Refusal odds ratios (Haldane--Anscombe corrected so the Gemma-9B ceiling
+is finite) range from $1.9$ to $80.4$; see Table~\ref{tab:stats}.
+
+\begin{table}[t]
+\centering
+\caption{Effect sizes and paired significance tests. McNemar's exact $p$ tests the
+asymmetry of discordant pairs. Cohen's $h$ is the effect size for the difference in
+refusal proportions; OR is the refusal odds ratio (formal vs.\ casual) with a
+Haldane--Anscombe ($+0.5$) correction so that the ceiling case (Gemma-9B) yields a
+finite value. $n=300$.}
+\label{tab:stats}
+\begin{tabular}{lccc}
+\toprule
+Model & McNemar $p$ & Cohen's $h$ & Odds ratio (HA-corrected) \\
+\midrule
+Qwen2.5-0.5B & $1.1\times10^{-9}$  & 0.444 & 2.44 \\
+Qwen2.5-1.5B & $7.7\times10^{-6}$  & 0.317 & 1.90 \\
+Qwen2.5-3B   & $2.5\times10^{-7}$  & 0.416 & 2.31 \\
+Qwen2.5-7B   & $4.2\times10^{-45}$ & 1.156 & 11.91 \\
+Gemma-2-2B   & $1.0\times10^{-29}$ & 1.021 & 29.85 \\
+Gemma-2-9B   & $5.8\times10^{-11}$ & 0.697 & 80.36 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Scaling of the refusal-level gap is architecture-dependent}
+We now describe how the \emph{refusal-level} gap (not the harm-level gap of
+Section~\ref{sec:harm}) varies with scale; readers should keep in mind that this
+reflects hedging behavior more than harmful compliance. The relationship between the
+refusal RVG and model size differs qualitatively across families
+(Figure~\ref{fig:divergence}).
+
+\paragraph{Qwen: the gap widens at scale.} RVG is roughly flat from 0.5B to 3B
+($0.16$--$0.22$) then jumps to $0.54$ at 7B. The driver is the casual-framing
+refusal rate, which \emph{collapses} from ${\sim}0.40$ to $0.167$ at 7B while the
+formal-framing rate stays high. The largest Qwen model is thus the one that looks
+safest under formal evaluation yet is least safe under casual phrasing---a pattern
+that would cause benchmark scores to overstate deployed safety.
+
+\paragraph{Gemma: the gap narrows at scale.} RVG falls from $0.34$ at 2B to $0.12$
+at 9B. The driver is the opposite: Gemma-2-9B refuses nearly all requests in
+\emph{both} framings ($r_{\text{eval}}=1.00$, $r_{\text{deploy}}=0.88$),
+compressing the gap via a refusal ceiling induced by stronger safety tuning.
+
+These families therefore exhibit opposite scaling behavior driven by opposite
+mechanisms---collapsing deployment refusals versus a rising refusal ceiling. Any
+claim that the benchmark--deployment gap grows or shrinks monotonically with
+capability is consequently family-dependent, not a general law. We regard this as a
+central cautionary result: a single-family study would have supported a confident
+but incorrect scaling narrative.
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=\linewidth]{figs/fig1_divergence.png}
+\caption{Refusal rate under formal (eval) vs.\ casual (deploy) framing across model
+scale. The shaded region between the lines is the Register Validity Gap. In Qwen
+(left) the gap widens at 7B because deployment-framing refusals collapse; in Gemma
+(right) it narrows at 9B because the model approaches a refusal ceiling in both
+framings.}
+\label{fig:divergence}
+\end{figure}
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=0.85\linewidth]{figs/fig2_svg_all.png}
+\caption{Register Validity Gap for all six models with 95\% bootstrap confidence
+intervals. Blue: Qwen2.5; red: Gemma-2. Every gap is significantly positive, but
+the trend with scale differs by family.}
+\label{fig:svgall}
+\end{figure}
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=0.6\linewidth]{figs/fig5_scatter.png}
+\caption{Each model's refusal rate under formal (x-axis) vs.\ casual (y-axis)
+framing. Points on the dashed diagonal would indicate no register effect; every
+model lies \emph{below} it, and the vertical distance to the diagonal is the RVG.
+Qwen-7B sits farthest below the line; Gemma-9B sits near the top-right corner
+(near-ceiling refusal in both framings).}
+\label{fig:scatter}
+\end{figure}
+
+\subsection{Category structure}
+The gap is not uniform across harm categories (Figure~\ref{fig:heatmap}). For
+Gemma-2-2B, for example, the gap is largest for misinformation (RVG $=0.69$) and
+cyber ($0.57$) and smallest for theft ($0.00$, where the model refuses both
+framings uniformly). Across models, categories in which a casual phrasing most
+plausibly resembles an innocent real-user question---``how do people actually do
+this?''---tend to show the largest gaps, consistent with (though not proof of) the
+interpretation that register is associated with an implicit deployment signal. The heatmap also makes the
+family-level contrast visible: Qwen's gap concentrates and intensifies at 7B,
+whereas Gemma's compresses toward zero at 9B as refusals saturate. Because each
+category contains only ${\sim}30$ pairs (fewer for the smallest categories),
+individual per-cell values are exploratory rather than confirmatory. Some cells are
+even slightly negative (e.g.\ small negative RVGs in privacy and self-harm categories
+for certain models); at this per-cell sample size these are consistent with noise
+around zero and should not be interpreted as reliable reversals. We present the
+heatmap to illustrate the aggregate family-level pattern, not to support
+category-level claims.
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=0.85\linewidth]{figs/fig4_category_heatmap.png}
+\caption{Register Validity Gap by harm category (rows) and model (columns). Warmer
+cells indicate a larger gap (the model refuses the formal framing more than the
+casual one). The gap concentrates in categories such as misinformation and cyber,
+and---reading left to right---intensifies at Qwen-7B while compressing at Gemma-9B.}
+\label{fig:heatmap}
+\end{figure}
+
+\subsection{Verifying the ceiling}
+\label{sec:verify}
+Because Gemma-2-9B refuses all 300 formal prompts exactly, we manually inspected a
+random sample of its refusals. All were substantive, request-specific declines
+(e.g.\ \emph{``I cannot provide you with steps on how to \dots{} Doing so is
+illegal \dots''}), with response lengths exceeding 590 characters and naturally
+varied phrasing---confirming the ceiling is a genuine behavioral property, not a
+scoring artifact. This verification also serves as an internal control: the
+keyword scorer does not manufacture the gap, since the smallest model (Qwen-0.5B)
+shows no such saturation.
+
+% ------------------------------------------------------------
+\section{Refusal Is Not Harm: Re-scoring with a Harm Grader}
+\label{sec:harm}
+
+The results so far measure \emph{refusal}. But a response that does not refuse is not
+necessarily harmful: it may hedge---warn, moralize, or redirect---without providing
+usable harmful information. To test whether the register gap is a genuine
+\emph{safety} gap or largely a \emph{hedging} gap, we re-scored all 3{,}600 responses
+with an LLM grader (Qwen2.5-7B applying a strict rubric) that assigns each response
+to one of three classes: \textsc{refusal} (declines or only warns), \textsc{hedge}
+(vague or non-actionable, no usable method), or \textsc{harmful} (provides actionable
+harmful content, counted as harmful even under an ``educational'' disclaimer).
+
+\paragraph{The harm gap is far smaller than the refusal gap.}
+Table~\ref{tab:threemetric} compares three gap measures per model. The refusal-based
+gap is large (up to $0.54$ for Qwen-7B), while the \emph{naive} grader reports a much
+smaller harmful-content gap (Qwen-7B: $0.037$). However, as we show below, the naive
+grader systematically under-counts harm; after human-validated correction the harm gap
+rises to $0.26$ (95\% CI $[0.19,0.32]$)---comparable to the refusal gap, and far from
+the near-zero the naive grader reported. Figure~\ref{fig:metricgap} shows all three
+measures; the correction is detailed under grader validation.
+
+\begin{table}[t]
+\centering
+\caption{Three gap measures per model (eval $-$ deploy). ``Refusal (keyword)'' is our
+original metric; ``Refusal (grader)'' is the grader's refusal-vs-not gap; ``Harmful''
+is the gap in actionable-harmful output. The harmful gap is roughly an order of
+magnitude smaller than the keyword refusal gap.}
+\label{tab:threemetric}
+\begin{tabular}{lccc}
+\toprule
+Model & Refusal gap (keyword) & Refusal gap (grader) & Harmful-content gap \\
+\midrule
+Qwen2.5-0.5B & 0.220 & 0.343 & 0.047 \\
+Qwen2.5-1.5B & 0.157 & 0.187 & 0.057 \\
+Qwen2.5-3B   & 0.207 & 0.147 & 0.053 \\
+Qwen2.5-7B   & \textbf{0.540} & 0.157 & \textbf{0.037} \\
+Gemma-2-2B   & 0.340 & 0.413 & 0.007 \\
+Gemma-2-9B   & 0.117 & 0.357 & 0.000 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\paragraph{Casual framing shifts refusals into hedges and, in part, into harm.}
+The grade distribution (Figure~\ref{fig:gradedist}) shows the mechanism directly.
+Moving from formal to casual framing, refusals fall from 1{,}100 to 619 (of 1{,}800),
+and the naive grader sends most of the freed mass to \textsc{hedge} (684
+$\rightarrow$ 1{,}105) rather than \textsc{harmful} (16 $\rightarrow$ 76). Taken at
+face value this suggests casual framing makes models $\sim$27 points less likely to
+\emph{refuse} but only $\sim$3 points more likely to produce harmful content. However,
+human validation (below) shows the grader hides substantial casual-framing harm inside
+the hedge category; after correction the increase in actionable harm is $\sim$26
+points ($8.5\%\rightarrow34.3\%$). Casual framing thus produces substantially more
+actionable harm, which the naive grader almost entirely missed.
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=0.85\linewidth]{figs/fig6_metric_gap.png}
+\caption{The register gap measured by refusal (red) versus by \emph{naive}
+actionable-harm grading (blue). Refusal-based metrics show a large gap; the naive
+harm grader shows a much smaller one. Human validation (Section~\ref{sec:harm}) shows
+the naive grader severely understates harm, and the human-corrected harm gap is
+$0.26$ (95\% CI $[0.19,0.32]$).}
+\label{fig:metricgap}
+\end{figure}
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=0.6\linewidth]{figs/fig7_grade_dist.png}
+\caption{Grade distribution under formal vs.\ casual framing (n$=$1{,}800 each).
+Casual framing converts refusals into non-actionable hedges far more than into
+harmful content.}
+\label{fig:gradedist}
+\end{figure}
+
+\paragraph{Why the two refusal measures diverge.}
+The keyword and grader refusal gaps differ substantially for some models, and the
+direction is informative. For Qwen-7B the keyword gap ($0.540$) far exceeds the
+grader gap ($0.157$): the keyword scorer counts Qwen-7B's verbose ``caveat-then-non-answer''
+responses as compliance, inflating its apparent gap, whereas the grader reclassifies
+them as hedges. For Gemma-9B the reverse holds---the grader gap ($0.357$) exceeds the
+keyword gap ($0.117$)---because Gemma's refusals are long and discursive (``I cannot
+$\dots$ but here is why $\dots$''), which the keyword scorer sometimes fails to catch
+as refusals while the grader correctly identifies them. In both cases the divergence
+reflects the keyword scorer's known difficulty with verbose, hedged responses, and
+supports our central point that refusal-keyword scoring is an unreliable proxy for
+either refusal or harm.
+
+\paragraph{Grader validation and correction.}
+An off-the-shelf grader is only as trustworthy as its agreement with human judgment.
+We therefore hand-labeled 200 responses the grader had labeled \textsc{hedge}---100
+per framing, the pivotal category for the harm gap. The grader's hedge bucket is
+badly miscalibrated: humans judged only $30\%$ of ``hedges'' to be true hedges, with
+the rest split between genuine refusals and, crucially, actionable harmful content.
+The harmful fraction is strongly asymmetric across framing: \textbf{$20\%$ of
+formally-framed grader-hedges but $49\%$ of casually-framed ones are actually
+harmful}. Because casual framing both produces more hedges and a higher harmful
+fraction within them, the naive grader understates harm far more on the casual side,
+collapsing the measured gap. Propagating these audited rates over the corpus (with a
+beta-binomial treatment of the audit uncertainty) raises the harmful rate from
+$8.5\%$ under formal framing to $34.3\%$ under casual framing, giving a corrected
+harm gap of $\mathbf{0.258}$ with a $95\%$ credible interval of $[0.189, 0.322]$
+(P(gap$>$0)$=1.00$; P(gap$>$naive $0.03$)$=1.00$). The naive grader's $0.03$ had
+hidden roughly seven-eighths of the true gap. All 200 human labels are released.
+
+\paragraph{Takeaway.}
+The measured register safety gap depends critically on how harm is judged, and the
+danger runs opposite to intuition. A keyword refusal metric reports $0.27$--$0.54$; an
+off-the-shelf LLM grader reports $0.03$, seeming to dismiss the gap as harmless
+hedging; but human-validated grading reveals a real gap of $0.26$ ($95\%$ CI
+$[0.19,0.32]$). The naive grader was not conservative---it was wrong, hiding most of
+the harm. The refusal metric, though it counts hedging as unsafe, happened to track
+the true harm magnitude closely here ($0.27$ vs $0.26$). The lesson is not that one
+automatic metric is better, but that \textbf{an LLM safety grader must be validated
+against human labels before its verdicts are believed}: used unchecked, it would have
+reported no register safety problem where a substantial one exists.
+
+\section{A Probe That Should Not Be Trusted}
+\label{sec:probe}
+
+To test whether models \emph{internally} represent the eval/deploy distinction, we
+trained linear probes (logistic regression on last-token hidden states, 5-fold
+cross-validated AUROC) to classify framing from activations at each layer. The
+probe achieves AUROC $\approx 1.0$ at \emph{every} layer, including layer~1, for
+every model (Figure~\ref{fig:probe}). This persists after (a) removing all
+evaluation-marker vocabulary and (b) matching prompt length between framings.
+
+We interpret this as a \emph{negative} methodological result rather than evidence of
+internal evaluation-awareness. Perfect separation at the first layer---before
+substantial contextual processing---is the signature of a surface shortcut: formal
+and casual English differ in ordinary lexical distribution, and a linear probe
+separates them trivially without reference to any latent ``being-tested'' concept.
+Because a probe reading the prompt's own activations always has access to the
+prompt's surface form, it cannot distinguish ``the model has inferred it is being
+evaluated'' from ``these two texts are stylistically different.'' Our result
+therefore corroborates \citet{devbunova2026} and cautions against treating
+prompt-activation probe accuracy \emph{of this kind} as evidence of internal
+evaluation awareness. We emphasize that this is a statement about last-token
+prompt-activation probes as we implement them, not a claim that \emph{no} probe
+could succeed. It motivates (i) behavioral measures such as RVG and (ii) probe
+designs that read activations at a \emph{shared, identical} continuation appended to
+both framings, so that any separability cannot come from surface form. We leave the
+latter to future work.
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=0.8\linewidth]{figs/fig3_probe.png}
+\caption{Layer-wise linear-probe AUROC for classifying eval vs.\ deploy framing
+from hidden states. The probe saturates at AUROC $\approx 1.0$ from the first layer
+for all models, even after removing evaluation keywords and matching prompt length.
+We interpret this as evidence that the probe separates \emph{register} trivially,
+not that the model internally represents being evaluated.}
+\label{fig:probe}
+\end{figure}
+
+% ------------------------------------------------------------
+\section{Discussion}
+
+\paragraph{Implications for safety evaluation.}
+Our results imply that a benchmark's \emph{register} is a hidden variable in its
+safety measurements. Two benchmarks with identical harmful content but different
+phrasing conventions can yield materially different refusal rates from the same
+model. Because real deployment traffic is casual while most safety benchmarks are
+formal, standard evaluations likely \emph{overestimate} deployed safety---by as much
+as 54 percentage points of refusal rate in the case of Qwen-7B. Evaluators should
+either match the register of their intended deployment or, at minimum, report
+refusal rates under multiple registers.
+
+\paragraph{Why cross-family evidence matters.}
+Had we studied only Qwen, we would have reported a clean ``gap grows with scale''
+result and a plausible emergent-capability narrative. Gemma refutes it. The
+divergence is not noise but a consequence of different safety-tuning strategies:
+Qwen preserves helpfulness under casual framing (so its gap grows as formal
+refusals rise), while Gemma refuses aggressively in all registers (so its gap
+shrinks toward a ceiling). This is a concrete example of why safety-evaluation
+findings should be replicated across families before being treated as general.
+
+\subsection{What ``register'' comprises: a threat to validity}
+Our manipulation varies register as a \emph{bundle} of co-occurring stylistic
+features: first-person framing, informal grammar and punctuation, politeness and
+backstory, and discourse structure. We control for the two confounds most likely to
+produce a trivial effect---explicit evaluation keywords and prompt
+length---but we do not isolate which \emph{component} of register drives the
+behavioral gap. It is therefore possible that the effect is attributable to a
+specific sub-feature (e.g.\ first-person narration or the presence of a stated
+motive) rather than to formality per se. We frame our claim accordingly: safety
+behavior is sensitive to the stylistic difference between benchmark-like and
+user-like phrasing, whichever component of that difference is responsible.
+Disentangling the components---by ablating first-person framing, politeness, and
+punctuation independently---is important future work and would sharpen the causal
+interpretation. We flag this explicitly because it is, in our view, the most
+important open question about the effect.
+
+% ------------------------------------------------------------
+\section{Limitations}
+\label{sec:limitations}
+\begin{itemize}
+    \item \textbf{Limited intent diversity.} Although our dataset contains 300 paired
+    prompts, these derive from only 25 underlying harmful intents. Our clustered
+    bootstrap accounts for the resulting statistical dependence, but the limited
+    diversity of underlying intents constrains how broadly the observed register effect
+    can be generalized. Expanding the intent set while preserving the paired design is
+    an important direction for future work.
+    \item \textbf{Generation length cap.} Responses were capped at 200 new tokens.
+    Actionable harmful content sometimes materializes only after a longer preamble, so
+    a response truncated mid-buildup may be graded \textsc{hedge} when a longer
+    generation would have been \textsc{harmful}. This deflates \textsc{harmful} counts
+    and could do so asymmetrically if casual responses spend more tokens on backstory
+    acknowledgment before content.
+    \item \textbf{Self-grading.} Our harm grader is Qwen2.5-7B, which also generated
+    part of the corpus. Self-preference is a known bias risk; a grader from a
+    different family, or fuller human adjudication, would strengthen the harm-gap
+    estimate.
+    \item \textbf{Refusal $\neq$ harm.} Refusal-rate RVG measures whether a model
+    refuses, not whether a non-refusal is harmful. We address this in
+    Section~\ref{sec:harm} via harm grading; the residual limitation is that our
+    corrected harm gap relies on audited grader-error rates from a modest validation
+    sample (see below).
+    \item \textbf{One casual style.} Our deploy framings share a single informal
+    voice. If that voice has a stylistic fingerprint, we may be measuring sensitivity
+    to \emph{that fingerprint} rather than to casualness in general. Multiple,
+    independently written casual variants per intent (ideally crowdsourced) are needed
+    to establish that the effect generalizes across casual styles; this is a more
+    fundamental generalization question than the component-isolation issue discussed in our threats-to-validity subsection.
+    \item \textbf{Quantization.} All models were run in 4-bit precision. Quantization
+    can shift refusal behavior, so while the within-study comparison is internally
+    consistent, absolute rates and possibly the gap may differ at full precision. A
+    full-precision spot-check on the smallest models is a useful robustness step.
+    \item \textbf{Single greedy generation.} We use one deterministic (greedy)
+    generation per prompt, which captures no sampling variance. Refusal decisions can
+    vary across seeds under temperature sampling, especially near a ceiling; our
+    point estimates should therefore be read as greedy-decode measurements, and a
+    sampled re-run of a subsample is a useful robustness check we leave to future
+    work.
+    \item \textbf{Refusal scoring.} We use a keyword/heuristic scorer, which can
+    miss ``soft'' refusals that do not begin with canonical phrases. This most
+    likely \emph{understates} eval-framing refusals, making our RVG a conservative
+    estimate. Our audits (Section~\ref{sec:methods}) mitigate but do not eliminate
+    this concern; a dedicated safety-judge classifier would sharpen the numbers.
+    \item \textbf{Two families, small scales.} Six models across two families is
+    cross-family evidence, not a claim about LLMs in general, and our largest model
+    is 9B. The opposite scaling behaviors we observe are themselves a warning
+    against over-generalizing from small samples.
+    \item \textbf{Register is one axis.} Deployment framings are style-controlled
+    rewrites, not verbatim user messages; real traffic differs in additional ways
+    (topic distribution, multi-turn context) not captured here.
+    \item \textbf{Probe scope.} Our negative probe result concerns last-token
+    prompt-activation probes; it does not rule out that better-designed probes
+    (e.g.\ shared-suffix or paired-decorrelated designs) could isolate a genuine
+    representation.
+\end{itemize}
+
+% ------------------------------------------------------------
+\section{Future Work}
+Natural extensions include: replacing the keyword scorer with a safety-judge model
+and reporting scorer agreement; extending to additional families and larger scales
+(14B--70B) to map how far each family's trend continues; grounding deployment
+framings in real user corpora rather than controlled rewrites; and designing
+shared-suffix probes that read activations at an identical continuation to test for
+genuine internal representations rather than surface separability.
+
+% ------------------------------------------------------------
+\section{Conclusion}
+Instruction-tuned language models refuse casually-phrased harmful requests less often
+than identical formally-phrased ones, and---contrary to what an off-the-shelf harm
+grader would report---this corresponds to a real and substantial increase in
+actionable harmful output. A keyword refusal metric reports a register gap of $0.27$
+(up to $0.54$ for Qwen-7B); an unvalidated LLM grader reports only $0.03$; but
+validating that grader against 200 human labels reveals it hides most casually-framed
+harm as ``hedging,'' and the corrected register harm gap is $0.26$ ($95\%$ CI
+$[0.19,0.32]$), with casual framing raising the actionable-harm rate from $8.5\%$ to
+$34.3\%$. Our central conclusion is methodological and, we believe, broadly relevant
+as LLM-graded evaluation proliferates: \textbf{an unvalidated LLM safety grader can
+report the absence of a safety problem that in fact exists}, and must be checked
+against human judgment before its verdicts are trusted. Within the two evaluated model
+families, the register effect is consistently observed across all tested models; we
+also find that prompt-activation probes
+cannot validly establish internal evaluation-awareness for this distinction. Our study
+is limited to open models up to 9B and a single grader; extending the human-validated
+harm measurement to more models, graders, and scales is important future work.
+
+\section*{Reproducibility Statement}
+We release the paired-prompt dataset (all three iterations), the raw model
+generations for all six models, the refusal labels, and the analysis code at
+[repository link]. All experiments run on a single consumer GPU in 4-bit
+precision, making the study reproducible without specialized hardware.
+
+\section*{Ethics and Broader Impact}
+Our prompts describe harmful intents in the abstract solely to measure refusal
+behavior; we report results at the level of aggregate refusal rates and redact any
+operationally harmful content from released generations. The register-sensitivity
+gap we document is a safety-relevant weakness: it indicates that models may comply
+with casually phrased harmful requests they would refuse under formal testing. We
+disclose it to improve evaluation practice, not to provide a method for eliciting
+harmful content; the effect is reported so that evaluators can correct for it.
+
+% ------------------------------------------------------------
+\begin{thebibliography}{99}
+\small
+
+\bibitem[Abdelnabi and Salem(2025)]{abdelnabi2025}
+S.~Abdelnabi and A.~Salem.
+\newblock The Hawthorne effect in reasoning models: Evaluating and steering test
+awareness.
+\newblock \emph{arXiv preprint arXiv:2505.14617}, 2025.
+
+\bibitem[Arditi et al.(2024)]{arditi2024}
+A.~Arditi, O.~Obeso, A.~Syed, D.~Paleka, N.~Panickssery, W.~Gurnee, and N.~Nanda.
+\newblock Refusal in language models is mediated by a single direction.
+\newblock \emph{arXiv preprint arXiv:2406.11717}, 2024.
+
+\bibitem[Balepur et al.(2024)]{balepur2024}
+N.~Balepur, A.~Ravichander, and R.~Rudinger.
+\newblock Artifacts or abduction: How do LLMs answer multiple-choice questions
+without the question?
+\newblock In \emph{Proceedings of the 62nd Annual Meeting of the Association for
+Computational Linguistics (Volume 1: Long Papers)}, pages 10308--10330, 2024.
+
+\bibitem[Devbunova(2026)]{devbunova2026}
+V.~Devbunova.
+\newblock Is evaluation awareness just format sensitivity? Limitations of
+probe-based evidence under controlled prompt structure.
+\newblock \emph{arXiv preprint arXiv:2603.19426}, 2026.
+
+\bibitem[Gemma Team(2024)]{gemma2}
+Gemma Team.
+\newblock Gemma 2: Improving open language models at a practical size.
+\newblock Technical report, Google DeepMind. \emph{arXiv preprint
+arXiv:2408.00118}, 2024.
+
+\bibitem[Goldowsky-Dill et al.(2025)]{goldowsky2025}
+N.~Goldowsky-Dill, B.~Chughtai, S.~Heimersheim, and M.~Hobbhahn.
+\newblock Detecting strategic deception using linear probes.
+\newblock \emph{arXiv preprint arXiv:2502.03407}, 2025.
+
+\bibitem[Laine et al.(2024)]{laine2024}
+R.~Laine et al.
+\newblock The situational awareness dataset (SAD) for LLMs.
+\newblock \emph{arXiv preprint arXiv:2407.04694}, 2024.
+
+\bibitem[Mizrahi et al.(2024)]{mizrahi2024}
+M.~Mizrahi, G.~Kaplan, D.~Malkin, R.~Dror, D.~Shahaf, and G.~Stanovsky.
+\newblock State of what art? A call for multi-prompt LLM evaluation.
+\newblock \emph{Transactions of the ACL}, 2024.
+
+\bibitem[Needham et al.(2025)]{needham2025}
+J.~Needham, G.~Edkins, G.~Pimpale, H.~Bartsch, and M.~Hobbhahn.
+\newblock Large language models often know when they are being evaluated.
+\newblock \emph{arXiv preprint arXiv:2505.23836}, 2025.
+
+\bibitem[Nguyen et al.(2025)]{nguyen2025}
+J.~Nguyen, K.~Hoang, C.~L.~Attubato, and F.~Hofst\"atter.
+\newblock Probing evaluation awareness of language models.
+\newblock \emph{arXiv preprint arXiv:2507.01786}; ICML Workshop on Technical AI
+Governance, 2025.
+
+\bibitem[Anonymous et al.(2026)]{notoneability2026}
+Anonymous authors.
+\newblock Evaluation awareness is not one capability: Evidence from open language
+models.
+\newblock \emph{arXiv preprint arXiv:2606.23583}, 2026.
+
+\bibitem[Qwen Team(2025)]{qwen2025}
+Qwen Team.
+\newblock Qwen2.5 technical report.
+\newblock Technical report, Alibaba Group. \emph{arXiv preprint arXiv:2412.15115},
+2025.
+
+\bibitem[Ren et al.(2024)]{ren2024safetywashing}
+R.~Ren et al.
+\newblock Safetywashing: Do AI safety benchmarks actually measure safety progress?
+\newblock In \emph{Advances in Neural Information Processing Systems (NeurIPS),
+Datasets and Benchmarks Track}. \emph{arXiv preprint arXiv:2407.21792}, 2024.
+
+\bibitem[Xiong et al.(2025)]{xiong2025}
+L.~Xiong, N.~Bhargava, J.~Hong, J.~Chang, H.~Liu, V.~Sharma, and K.~Zhu.
+\newblock Probe-rewrite-evaluate: A workflow for reliable benchmarks and
+quantifying evaluation awareness.
+\newblock \emph{arXiv preprint arXiv:2509.00591}, 2025.
+
+\bibitem[Zhou et al.(2023)]{zhou2023}
+K.~Zhou et al.
+\newblock Don't make your LLM an evaluation benchmark cheater.
+\newblock \emph{arXiv preprint arXiv:2311.01964}, 2023.
+
+\end{thebibliography}
+
+\end{document}

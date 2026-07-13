@@ -1,0 +1,9 @@
+pandas>=1.5
+numpy>=1.23
+scipy>=1.9
+scikit-learn>=1.2
+# for re-running the grader (scripts/03_harm_grader.py):
+# transformers>=4.44
+# accelerate
+# bitsandbytes
+# torch
