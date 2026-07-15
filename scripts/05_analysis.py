@@ -1,13 +1,4 @@
-"""
-05_analysis.py
-Reproduces the paper's headline numbers from the released data:
-  - Refusal-based Register Validity Gap (RVG) per model, with clustered-bootstrap CIs
-  - Naive vs. human-corrected harm gap
-  - Grader-validation agreement
 
-Run:  python scripts/05_analysis.py
-Needs: pandas, numpy, scipy, scikit-learn  (see requirements.txt)
-"""
 import pandas as pd
 import numpy as np
 from scipy import stats
