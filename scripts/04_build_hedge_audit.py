@@ -1,6 +1,4 @@
-# Build a LARGE hedge-focused audit sample to pin down the corrected harm gap.
-# No GPU. Attach judge_v2_rescored.csv.
-# Oversamples the HEDGE category (the pivotal one), split evenly by framing.
+
 import pandas as pd, glob, numpy as np
 c = glob.glob("/kaggle/input/**/judge_v2_rescored.csv", recursive=True) + glob.glob("judge_v2_rescored.csv")
 df = pd.read_csv(c[0])
