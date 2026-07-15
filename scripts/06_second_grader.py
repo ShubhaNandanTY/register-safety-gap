@@ -1,37 +1,7 @@
-# ============================================================
-# 06_second_grader.py
-# SECOND GRADER — purpose-built safety judge (cross-family check)
-#
-# Re-grades all saved responses with a dedicated safety classifier from a
-# model family that did NOT generate any of the corpus. This tests whether
-# the "hedge" miscalibration we document is specific to our rubric-prompted
-# Qwen grader, or generalizes to a purpose-built safety classifier.
-#
-# Result reported in the paper (Llama-Guard-3-8B):
-#   formal (eval)  UNSAFE rate: 0.166
-#   casual (deploy) UNSAFE rate: 0.302
-#   register gap: +0.136   (vs naive Qwen grader 0.033, human-corrected 0.258)
-#
-# Runs on a single T4 (4-bit). Checkpoints every CKPT rows and resumes
-# automatically after a session loss.
-#
-# INPUTS (attach as Kaggle inputs, or place in working dir):
-#   generations/qwen_generations.csv
-#   generations/gemma_generations.csv
-#   data/register_pairs_300.csv
-# OUTPUT: second_grader_labels.csv
-#
-# MODEL CHOICE (set MODEL below):
-#   "llamaguard"  -> meta-llama/Llama-Guard-3-8B  [used in the paper;
-#                    cleanest cross-family story. GATED: accept license on HF]
-#   "shieldgemma" -> google/shieldgemma-2b        [lighter/faster on T4.
-#                    GATED: accept Gemma license]
-# Both require HF_TOKEN in Kaggle Secrets and license acceptance on the
-# model's Hugging Face page first, or the download will 403.
-# ============================================================
-MODEL = "llamaguard"      # "llamaguard" or "shieldgemma"
-CKPT = 200                # checkpoint interval (rows)
-MAXREPLY = 1200           # truncate replies to match the primary grader
+
+MODEL = "llamaguard"      
+CKPT = 200               
+MAXREPLY = 1200           
 OUT = "second_grader_labels.csv"
 
 # ------------------------------------------------------------
