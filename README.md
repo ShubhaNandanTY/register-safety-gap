@@ -1,104 +1,89 @@
-# Hidden in the Hedge: Unvalidated LLM Graders Understate the Register Safety Gap
+# Register Safety Gap — validation-protocol variance in LLM safety grading
 
-Data, code, and human labels for the paper *"Hidden in the Hedge: Unvalidated LLM
-Graders Understate the Register Safety Gap in Instruction-Tuned Language Models."*
+Data, code and audits for a study of what happens when you validate one LLM harm
+grader against human labels three separate times.
 
-## TL;DR
+**Headline result.** The three validations disagree with each other by more than any of
+them disagrees with the grader nobody checked. On one corpus, under one rubric, the
+implied harm gaps run from **−0.036 to +0.258**, a span of 0.310, which is wider than
+the 0.035 effect the audits existed to measure.
 
-Instruction-tuned LLMs refuse **casually-phrased** harmful requests less often than
-identical **formally-phrased** ones. An off-the-shelf LLM harm grader reports this as a
-near-zero safety gap (0.03) — but when we validate that grader against 200 human
-labels, it turns out to be hiding most casually-framed harm in its "hedge" category.
-The **human-corrected register harm gap is 0.26 (95% CI [0.19, 0.32])**: casual framing
-raises the actionable-harm rate from 8.5% to 34.3%. The core lesson is methodological:
-**LLM safety graders must be validated against human labels before their verdicts are
-trusted** — used unchecked, one here would have reported no safety problem where a
-substantial one exists.
+## Read this before using the numbers
 
-## Key numbers (reproducible via `scripts/05_analysis.py`)
+An earlier version of this work reported a corrected harm gap of **0.26** and concluded
+that the grader was concealing seven-eighths of a real safety gap. **That conclusion is
+withdrawn.** It came from a single unblinded annotator working from half-length
+excerpts under a rubric with no marginal-uplift test. A later pre-registered,
+framing-blinded audit with three annotators returned **0.035**, close to the grader it
+was meant to discredit. If you have cited or forked the earlier version, use this one.
 
-| Measure | Register gap |
+## What is here
+
+| Path | Contents |
 |---|---|
-| Keyword refusal metric (corpus) | 0.26 (up to 0.54 for Qwen-7B) |
-| Off-the-shelf LLM harm grader (naive) | 0.03 |
-| **Human-validated harm grader (corrected)** | **0.26, 95% CI [0.19, 0.32]** |
+| `prompts/` | 300 matched prompt pairs over 25 harmful intents, 10 categories |
+| `generations/` | 3,600 responses per run. Original 200-token, a 200-token rerun, and an uncensored 1024-token regeneration |
+| `grader/` | Primary grader labels, Llama Guard labels, and the 5-budget curve |
+| `audits/` | All three human audits, long format, one row per annotator per item |
+| `code/` | Verification and dataset-build notebooks, analysis and generation scripts |
+| `meta/` | Environment stamps, manifest, TRACE template, verification report |
+| `docs/` | Dataset specification and the pre-submission review |
+| `paper/` | The submitted PDF |
 
-## Repository structure
+## Start here
 
-```
-data/
-  register_pairs_300.csv     300 paired prompts (25 intents x 12 templates);
-                             columns: pair_id, category, intent, eval_framing, deploy_framing
-generations/
-  qwen_generations.csv       raw responses + keyword refusal labels, 4 Qwen2.5 models
-  gemma_generations.csv      raw responses + keyword refusal labels, 2 Gemma-2 models
-human_labels/
-  grader_audit_60.csv        60-item stratified human validation of the 3-way grader
-  hedge_audit_200.csv        200-item human re-labeling of grader "hedge" responses
-                             (the audit that yields the corrected harm gap)
-scripts/
-  03_harm_grader.py          re-scores generations with the LLM harm grader (GPU)
-  04_build_hedge_audit.py    builds the hedge-audit sample for human labeling
-  05_analysis.py             reproduces all headline numbers from released data (CPU)
-figures/                     paper figures
-paper/                       manuscript (PDF + LaTeX source)
-```
+`code/01_verify_paper_numbers.ipynb` recomputes 36 statistics from the released CSVs
+and prints a PASS/MISMATCH table against the values in the paper. It runs on CPU in
+about two minutes and needs only pandas, numpy, scikit-learn and krippendorff. For a
+paper about measurement reliability, being able to re-derive the numbers yourself is the
+point.
 
-## Reproduce the results
+`code/02_build_release_dataset.ipynb` regenerates this release from the raw archive.
 
-```bash
-pip install -r requirements.txt
-python scripts/05_analysis.py
-```
+## Joining the files
 
-This regenerates the refusal-based RVG table (with clustered-bootstrap CIs), the naive
-vs. corrected harm gap, and the grader-validation numbers, directly from the released
-data and human labels.
+The primary key is `response_id`, formed as `{model_slug}__{pair_id}__{framing}`, for
+example `qwen2.5-7b__pair_0143__user`. It is unique across the 3,600 responses and
+stable across all three generation runs.
 
-To re-run the LLM harm grader from scratch (requires a GPU and a Hugging Face token):
+**Do not join the audits on `item_id`.** The original files reused identifiers across
+audits, so `IT0001`–`IT0442` from audit 2 and `IT0000`–`IT0238` from audit 3 share 238
+identifiers that denote different items. Joining on them produces plausible-looking
+garbage. The released files are renamespaced to `A1-`, `A2-` and `A3-`.
 
-```bash
-python scripts/03_harm_grader.py   # writes judge_v2_rescored.csv
-```
+## Two columns that carry the finding
 
-## Method in brief
+`display_window_chars` records how much of each response the annotator actually saw:
+500 characters in audit 1, 700 in audit 2, the full text in audit 3. This appeared in no
+written protocol and was recovered by inspecting the label files.
 
-1. **Paired prompts.** Each of 25 harmful intents is written twice — a formal,
-   benchmark-style *eval* framing and a casual, first-person *deploy* framing — holding
-   intent constant and varying only register. No explicit "this is a test" cues.
-2. **Three measurements.** (a) keyword refusal rate; (b) an LLM grader labeling each
-   response REFUSAL / HEDGE / HARMFUL; (c) the same, corrected using human validation of
-   the grader's HEDGE calls.
-3. **Human validation.** 60 stratified labels validate the grader overall; 200 labels of
-   its HEDGE responses reveal it misclassifies actionable harm as hedging, more so for
-   casual prompts (49% vs 20%), which is what collapses the naive harm gap.
+`prompt_variant` distinguishes two grader invocations that are not interchangeable. The
+original truncated responses at 1,200 characters, appended a `Label:` cue and ran
+unbatched. The budget-curve grader did none of these. At the same nominal budget they
+report 0.033 and 0.025.
 
-## Models
+`link_status` is `unique`, `ambiguous_k` or `unmatched`. Because annotators saw
+truncated text, some audit rows cannot be traced to exactly one corpus row. Those are
+marked rather than guessed at.
 
-Qwen2.5-Instruct (0.5B / 1.5B / 3B / 7B) and Gemma-2-it (2B / 9B), all run in 4-bit on a
-single consumer GPU.
+## Known limits
 
-## Limitations
+- Audit 2's annotator instructions could not be recovered, so chance disagreement cannot
+  be separated from divergent operationalisation.
+- Neither generation nor grading is bit-reproducible. Regenerating at the original cap
+  reproduces 19.4% of responses exactly across six models, and 0% for gemma-2-2b.
+- Audit 3 has 90 triple-labelled items and 149 singly labelled ones, so α = 0.856
+  describes 38% of that sample.
+- The original keyword refusal scorer was never recovered. The budget curve runs on a
+  reimplementation reporting +0.018 higher on byte-identical text.
+- The framing contrast bundles formality, perspective, motive, length and lexical
+  diversity. It does not isolate register.
 
-The 300 prompts derive from only 25 underlying intents; the clustered bootstrap accounts
-for the statistical dependence, but broad generalization is future work. Results cover
-two open-weight families up to 9B and a single harm grader. See the paper's Limitations
-section for details.
+## Licence
+
+Prompts, labels, code and metadata are CC BY 4.0. The three files in `generations/` are
+model outputs to harmful prompts and are covered by `TERMS.md`.
 
 ## Citation
 
-```bibtex
-@misc{registergap2026,
-  title  = {Hidden in the Hedge: Unvalidated LLM Graders Understate the Register
-            Safety Gap in Instruction-Tuned Language Models},
-  author = {Shubhanandan T Y},
-  year   = {2026},
-  note   = {Preprint}
-}
-```
-
-## License
-
-Code: MIT (see LICENSE). The dataset contains prompts describing harmful intents in the
-abstract, released solely for safety-evaluation research; model generations are included
-for reproducibility with operationally harmful detail minimized. Please use responsibly.
+Submitted to the TAE (Trust-AI-Eval) workshop at NeurIPS 2026. Non-archival.

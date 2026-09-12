@@ -1,0 +1,37 @@
+quantity,computed,paper,status,note
+"Delta_refusal, original corpus, original scorer",0.2633,0.263,OK,
+"Delta_harm, unvalidated grader",0.0333,0.033,OK,
+Table 2 cell: formal x HARMFUL,16.0,16.0,OK,paper Sec 6 says 16; an earlier draft said 14
+Audit 1 corrected gap,0.2581,0.258,OK,
+Audit 2 annotator A corrected gap,-0.0364,-0.036,OK,
+Audit 2 annotator B corrected gap,0.2742,0.274,OK,
+Audit 2 raw agreement,0.3688,0.369,OK,
+Audit 2 Cohen kappa,0.0913,0.091,OK,
+Audit 2 HARMFUL/REFUSAL conflicts,95.0,95.0,OK,
+Audit 3 framing resolved,216.0,216.0,OK,23 of 239 unresolved (identical canned refusals)
+Audit 3 corrected gap (majority vote),0.035,0.035,OK,
+Audit 3 shared items,90.0,90.0,OK,
+Krippendorff alpha (nominal),0.8556,0.856,OK,
+Krippendorff alpha (ordinal),0.9305,0.931,OK,
+Audit 3 unanimity,0.8667,0.867,OK,
+disagreements on hedge/harmful,8.0,8.0,OK,
+"grader accuracy, 216 framing-resolved items",0.5972,,OK,paper reports 63.6%
+"grader accuracy, all 239 audited items",0.636,0.636,OK,the 23 unresolved items are all grader-REFUSAL & human-REFUSAL
+hedges that are genuine refusals,0.3085,,OK,29/94; paper says '29%' but 29 is the COUNT
+Llama Guard gap,0.1356,0.136,OK,
+refusals called UNSAFE,0.0,0.0,OK,
+"scorer effect (same text, different scorer)",0.0178,,OK,
+"regeneration effect (same scorer, different run)",-0.0228,,OK,
+Delta_harm at budget 200 (regenerated),0.025,,OK,original run gives 0.0333
+responses reaching the 1024 cap,20.0,20.0,OK,
+censored at 200 tokens,2491.0,2491.0,OK,
+harmful among censored @200,75.0,75.0,OK,
+harmful among censored @1024,69.0,69.0,OK,
+"hedge->harmful, formal",12.0,12.0,OK,
+"hedge->harmful, casual",18.0,18.0,OK,
+"hedge->refusal, formal",17.0,14.0,MISMATCH,paper says 14
+"hedge->refusal, casual",18.0,24.0,MISMATCH,paper says 24
+"exact-match rate, four Qwen models",0.2867,0.287,OK,the figure the paper reports
+"exact-match rate, all six models",0.1939,,OK,
+item_ids shared between audit 2 and audit 3,238.0,238.0,OK,
+...of which the underlying response matches,5.0,,OK,

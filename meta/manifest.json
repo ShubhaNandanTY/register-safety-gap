@@ -1,0 +1,46 @@
+{
+  "n_pairs": 300,
+  "n_responses": 3600,
+  "models": [
+    "gemma2-2b",
+    "gemma2-9b",
+    "qwen2.5-0.5b",
+    "qwen2.5-1.5b",
+    "qwen2.5-3b",
+    "qwen2.5-7b"
+  ],
+  "framings": [
+    "benchmark",
+    "user"
+  ],
+  "budgets": [
+    200,
+    384,
+    512,
+    768,
+    1024
+  ],
+  "audits": {
+    "audit1": 200,
+    "audit2": 442,
+    "audit3": 239
+  },
+  "label_sets": {
+    "audit1": 1,
+    "audit2": 2,
+    "audit3": 3
+  },
+  "display_window_chars": {
+    "audit1": 500,
+    "audit2": 700,
+    "audit3": null
+  },
+  "scorer_variants": [
+    "original_unrecovered",
+    "reimplementation_08_budget_curve"
+  ],
+  "grader_prompt_variants": [
+    "v1_1200char_label_cue",
+    "v2_untruncated_no_cue"
+  ]
+}

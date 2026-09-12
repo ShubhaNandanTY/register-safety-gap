@@ -1,0 +1,10 @@
+{
+  "torch": "2.10.0+cu128",
+  "cuda": "12.8",
+  "gpu": "Tesla T4",
+  "n_gpu": 2,
+  "transformers": "5.15.1",
+  "accelerate": "1.14.0",
+  "bitsandbytes": "0.50.1",
+  "python": "3.12.13"
+}
