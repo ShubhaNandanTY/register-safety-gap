@@ -84,6 +84,5 @@ marked rather than guessed at.
 Prompts, labels, code and metadata are CC BY 4.0. The three files in `generations/` are
 model outputs to harmful prompts and are covered by `TERMS.md`.
 
-## Citation
 
-Submitted to the TAE (Trust-AI-Eval) workshop at NeurIPS 2026. Non-archival.
+
