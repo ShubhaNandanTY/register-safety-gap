@@ -1,0 +1,87 @@
+
+[1] Same statistic, two bootstrap units (problem = 300 clusters, template = 25 clusters)
+  bias Qwen3-Omni-30B   +11.49  problem CI (8.62, 14.54)  template CI (4.2, 19.01)
+  bias Qwen2.5-7B        -6.07  problem CI (-10.14, -1.93)  template CI (-15.34, 3.41)
+  bias Qwen2.5-3B        -6.27  problem CI (-9.34, -3.07)  template CI (-12.54, 0.33)
+  bias Gemma-2-9B       -10.20  problem CI (-13.27, -7.6)  template CI (-17.53, -4.2)
+  casual-formal agreement, pooled +3.16  problem CI (1.16, 5.2)  template CI (0.73, 5.95)
+
+[2] Judge bias (points) under different definitions of the truth
+                strict  lenient  finished only  tol 0.1%  tol 0.25%  tol 0.5%  tol 1%  tol 2%  tol 5%
+Gemma-2-2B         0.5     -1.1            0.5       2.2        2.1       1.5     0.5    -0.1    -2.1
+Gemma-2-9B       -10.2    -12.1          -10.2       7.2        3.4      -1.8   -10.1   -17.2   -23.7
+Qwen2.5-0.5B      -0.7     -2.7           -0.9      -0.1       -0.1      -0.3    -0.7    -1.2    -2.6
+Qwen2.5-1.5B      -1.5     -3.7           -3.8       8.6        6.4       3.5    -1.2    -7.8   -13.5
+Qwen2.5-3B        -6.3     -9.9          -10.0      25.2       15.5       4.5    -5.6   -14.5   -21.7
+Qwen2.5-7B        -6.1     -9.7           -9.5      44.7       23.5       6.3    -6.0   -11.9   -13.4
+Qwen3-Omni-30B    11.5      6.2           -2.0      37.0       15.8      12.7    11.5    11.2    10.9
+  judge-pass / code-fail responses: 537 | of these, correct value appears somewhere (lenient): 137 | truncated: 318
+
+[3] Judge pass rate by distance from the key (shows the tolerance the judge really applies)
+                 size   mean
+bin                         
+[0.0, 0.0005)     775  0.994
+[0.0005, 0.001)   515  0.955
+[0.001, 0.002)    680  0.906
+[0.002, 0.005)    795  0.650
+[0.005, 0.01)     569  0.392
+[0.01, 0.02)      449  0.207
+[0.02, 0.05)      368  0.071
+[0.05, 0.2)       617  0.045
+[0.2, inf)       5717  0.069
+
+[4] Per-model error rates (sens = right answers passed, spec = wrong answers failed)
+                     n    true   judge    bias   agree   sens   spec  kappa     FP     FN
+Gemma-2-2B      1500.0   1.933   2.467   0.533  96.933  0.345  0.982  0.288   27.0   19.0
+Gemma-2-9B      1500.0  21.533  11.333 -10.200  87.133  0.464  0.983  0.540   20.0  173.0
+Qwen2.5-0.5B    1500.0   0.733   0.000  -0.733  99.267  0.000  1.000  0.000    0.0   11.0
+Qwen2.5-1.5B    1500.0  11.200   9.667  -1.533  90.733  0.518  0.956  0.504   58.0   81.0
+Qwen2.5-3B      1499.0  38.292  32.021  -6.271  81.187  0.672  0.898  0.589   94.0  188.0
+Qwen2.5-7B      1498.0  72.497  66.422  -6.075  77.904  0.806  0.709  0.481  120.0  211.0
+Qwen3-Omni-30B  1497.0  77.555  89.045  11.490  82.365  0.960  0.351  0.381  218.0   46.0
+
+    judge label x code verdict
+code_correct                     0     1
+judge_label                             
+CORRECT                        344  2370
+PARTIAL                       2095   713
+RIGHT_ANSWER_WRONG_REASONING   193   253
+WRONG                         4510    16
+
+[5] Is the framing effect in the judge's error rates, or only in the mix of right/wrong answers?
+                 true   agree   sens   spec
+bench          52.794  80.567  0.777  0.837
+placebo        53.044  80.651  0.792  0.822
+formal_motive  52.877  81.318  0.789  0.841
+casual         52.460  83.403  0.825  0.844
+casual_motive  51.085  84.808  0.835  0.862
+    truncated share by framing: {'bench': 0.154, 'casual': 0.131, 'casual_motive': 0.159, 'formal_motive': 0.178, 'placebo': 0.168}
+    register (casual - formal) +3.16 | motive +1.08 | placebo - bench +0.08
+
+[6] Calibrate the judge on model A (rows), then correct model B's judge score (columns).
+    corrected = (judge rate + spec - 1) / (sens + spec - 1). Last rows: truth and raw judge.
+                Qwen3-Omni-30B  Qwen2.5-7B  Qwen2.5-3B  Gemma-2-9B
+Qwen3-Omni-30B            77.6         4.9      -105.5      -171.9
+Qwen2.5-7B               116.5        72.5         5.6       -34.6
+Qwen2.5-3B               138.2        98.6        38.3         2.1
+Gemma-2-9B               195.2       144.7        67.8        21.5
+truth                     77.6        72.5        38.3        21.5
+raw judge                 89.0        66.4        32.0        11.3
+
+[7] What a validation study of 100 items would report, by where the items come from
+  all responses          agreement median  88.0  95% range [ 81.0,  94.0]  passes a 85% bar in  85.4% of studies  kappa on all = 0.72
+  only Gemma-2-2B        agreement median  97.0  95% range [ 93.0, 100.0]  passes a 85% bar in 100.0% of studies  kappa on all = 0.29
+  only Gemma-2-9B        agreement median  87.0  95% range [ 80.0,  94.0]  passes a 85% bar in  79.6% of studies  kappa on all = 0.54
+  only Qwen2.5-0.5B      agreement median  99.0  95% range [ 97.0, 100.0]  passes a 85% bar in 100.0% of studies  kappa on all = 0.00
+  only Qwen2.5-1.5B      agreement median  91.0  95% range [ 85.0,  96.0]  passes a 85% bar in  98.0% of studies  kappa on all = 0.50
+  only Qwen2.5-3B        agreement median  81.0  95% range [ 74.0,  88.0]  passes a 85% bar in  19.8% of studies  kappa on all = 0.59
+  only Qwen2.5-7B        agreement median  78.0  95% range [ 70.0,  86.0]  passes a 85% bar in   4.8% of studies  kappa on all = 0.48
+  only Qwen3-Omni-30B    agreement median  82.0  95% range [ 74.0,  89.0]  passes a 85% bar in  28.6% of studies  kappa on all = 0.38
+  only bench             agreement median  87.0  95% range [ 80.0,  93.0]  passes a 85% bar in  78.5% of studies  kappa on all = 0.69
+  only casual            agreement median  89.0  95% range [ 82.0,  95.0]  passes a 85% bar in  91.9% of studies  kappa on all = 0.74
+  only casual_motive     agreement median  90.0  95% range [ 83.0,  95.0]  passes a 85% bar in  94.7% of studies  kappa on all = 0.75
+  only formal_motive     agreement median  87.0  95% range [ 80.0,  93.0]  passes a 85% bar in  78.0% of studies  kappa on all = 0.70
+  only placebo           agreement median  87.0  95% range [ 80.0,  93.0]  passes a 85% bar in  78.3% of studies  kappa on all = 0.70
+
+[8] Does the judge keep the model order? (bootstrap over templates)
+  full order identical in 60.5% of resamples

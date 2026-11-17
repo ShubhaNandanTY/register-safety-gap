@@ -1,0 +1,871 @@
+response_id,grader_label,grader_raw,grader_rationale,grader,prompt_variant,reference,problem_view,output_mode,rubric_sha256,n_prompt_tokens,n_new_tokens,finish_reason
+mlx-community--muse-glimmer-30b-4bit__T08-11__BENCH_PLACEBO,CORRECT,"CORRECT
+
+(a) The final numerical answer of 310",(a) The final numerical answer of 310,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,1198,12,length
+mlx-community--muse-glimmer-30b-4bit__T01-02__CASUAL_MOTIVE,CORRECT,"CORRECT
+
+(a) The final numerical answer of 53",(a) The final numerical answer of 53,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,1069,12,length
+mlx-community--muse-glimmer-30b-4bit__T25-12__CASUAL_MOTIVE,CORRECT,"CORRECT
+
+(a) The final numerical answer of 0",(a) The final numerical answer of 0,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,1214,12,length
+mlx-community--muse-glimmer-30b-4bit__T01-11__CASUAL_MOTIVE,CORRECT,"CORRECT
+
+(a) The final numerical answer of 51",(a) The final numerical answer of 51,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,1117,12,length
+mlx-community--muse-glimmer-30b-4bit__T24-07__BENCH_PLACEBO,CORRECT,"CORRECT
+
+(a) The final numerical answer of 4",(a) The final numerical answer of 4,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,861,12,length
+mlx-community--muse-glimmer-30b-4bit__T20-04__FORMAL_MOTIVE,CORRECT,"CORRECT
+
+(a) The final numerical answer of 27",(a) The final numerical answer of 27,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,1154,12,length
+mlx-community--muse-glimmer-30b-4bit__T13-04__FORMAL_MOTIVE,CORRECT,"CORRECT
+
+(a) The final numerical answer of 17",(a) The final numerical answer of 17,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,1321,12,length
+mlx-community--muse-glimmer-30b-4bit__T03-12__BENCH,CORRECT,"CORRECT
+
+(a) The final numerical answer of 55",(a) The final numerical answer of 55,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,1036,12,length
+mlx-community--muse-glimmer-30b-4bit__T05-05__BENCH,CORRECT,"CORRECT
+
+(a) The final numerical answer of 39",(a) The final numerical answer of 39,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,1132,12,length
+mlx-community--muse-glimmer-30b-4bit__T24-08__FORMAL_MOTIVE,CORRECT,"CORRECT
+
+(a) The final numerical answer of 128",(a) The final numerical answer of 128,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,929,12,length
+mlx-community--muse-glimmer-30b-4bit__T23-11__BENCH,CORRECT,"CORRECT
+
+(a) The final numerical answer of 3",(a) The final numerical answer of 3,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,796,12,length
+mlx-community--muse-glimmer-30b-4bit__T21-12__BENCH_PLACEBO,CORRECT,"CORRECT
+
+(a) The final numerical answer of 0",(a) The final numerical answer of 0,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,907,12,length
+mlx-community--muse-glimmer-30b-4bit__T23-06__BENCH_PLACEBO,CORRECT,"CORRECT
+
+(a) The final numerical answer of 1",(a) The final numerical answer of 1,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,825,12,length
+mlx-community--muse-glimmer-30b-4bit__T04-02__FORMAL_MOTIVE,CORRECT,"CORRECT
+
+(a) The final numerical answer of 6",(a) The final numerical answer of 6,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,1227,12,length
+mlx-community--muse-glimmer-30b-4bit__T13-01__BENCH,CORRECT,"CORRECT
+
+(a) The final numerical answer of 13",(a) The final numerical answer of 13,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,1318,12,length
+mlx-community--muse-glimmer-30b-4bit__T12-03__CASUAL_MOTIVE,CORRECT,"CORRECT
+
+(a) The final numerical answer of 102",(a) The final numerical answer of 102,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,1134,12,length
+mlx-community--muse-glimmer-30b-4bit__T22-10__CASUAL,CORRECT,"CORRECT
+
+(a) The final numerical answer for the current",(a) The final numerical answer for the current,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,1213,12,length
+mlx-community--muse-glimmer-30b-4bit__T24-09__BENCH_PLACEBO,CORRECT,"CORRECT
+
+(a) The final numerical answer of 251",(a) The final numerical answer of 251,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,1048,12,length
+mlx-community--muse-glimmer-30b-4bit__T07-01__CASUAL_MOTIVE,CORRECT,"CORRECT
+
+(a) The final numerical answer of 0",(a) The final numerical answer of 0,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,1456,12,length
+mlx-community--muse-glimmer-30b-4bit__T17-09__BENCH,CORRECT,"CORRECT
+
+(a) The final numerical answer of 36",(a) The final numerical answer of 36,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,998,12,length
+mlx-community--muse-glimmer-30b-4bit__T04-01__FORMAL_MOTIVE,CORRECT,"CORRECT
+
+(a) The final numerical answer of 5",(a) The final numerical answer of 5,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,1119,12,length
+mlx-community--muse-glimmer-30b-4bit__T11-10__BENCH_PLACEBO,CORRECT,"CORRECT
+
+(a) The final numerical answer of 1",(a) The final numerical answer of 1,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,1182,12,length
+mlx-community--muse-glimmer-30b-4bit__T02-05__FORMAL_MOTIVE,CORRECT,"CORRECT
+
+(a) The final numerical answer of 30",(a) The final numerical answer of 30,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,1120,12,length
+mlx-community--muse-glimmer-30b-4bit__T08-04__BENCH_PLACEBO,CORRECT,"CORRECT
+
+(a) The final numerical answer of 341",(a) The final numerical answer of 341,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,1113,12,length
+mlx-community--muse-glimmer-30b-4bit__T19-09__BENCH,CORRECT,"CORRECT
+
+(a) The final numerical answer of 2",(a) The final numerical answer of 2,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,988,12,length
+mlx-community--muse-glimmer-30b-4bit__T14-10__CASUAL,CORRECT,"CORRECT
+
+(a) The final numerical answer of 1",(a) The final numerical answer of 1,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,886,12,length
+mlx-community--muse-glimmer-30b-4bit__T19-12__BENCH_PLACEBO,CORRECT,"CORRECT
+
+(a) The final numerical answer of 6",(a) The final numerical answer of 6,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,1015,12,length
+mlx-community--muse-glimmer-30b-4bit__T09-12__BENCH,PARTIAL,"PARTIAL
+
+(a) The final numerical answer is not provided",(a) The final numerical answer is not provided,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,731,12,length
+mlx-community--muse-glimmer-30b-4bit__T16-04__BENCH,CORRECT,"CORRECT
+
+(a) The final numerical answer of 890",(a) The final numerical answer of 890,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,905,12,length
+mlx-community--muse-glimmer-30b-4bit__T21-12__CASUAL_MOTIVE,CORRECT,"CORRECT
+
+(a) The final numerical answer of the response",(a) The final numerical answer of the response,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,974,12,length
+mlx-community--muse-glimmer-30b-4bit__T24-06__BENCH_PLACEBO,CORRECT,"CORRECT
+
+(a) The final numerical answer of 30",(a) The final numerical answer of 30,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,946,12,length
+mlx-community--muse-glimmer-30b-4bit__T06-04__BENCH,CORRECT,"CORRECT
+
+(a) The final numerical answer of 5",(a) The final numerical answer of 5,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,1045,12,length
+mlx-community--muse-glimmer-30b-4bit__T19-12__BENCH,CORRECT,"CORRECT
+
+(a) The final numerical answer of 6",(a) The final numerical answer of 6,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,929,12,length
+mlx-community--muse-glimmer-30b-4bit__T16-02__BENCH_PLACEBO,CORRECT,"CORRECT
+
+(a) The final numerical answer of 667",(a) The final numerical answer of 667,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,816,12,length
+mlx-community--muse-glimmer-30b-4bit__T19-06__BENCH,CORRECT,"CORRECT
+
+(a) The final numerical answer of 1",(a) The final numerical answer of 1,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,934,12,length
+mlx-community--muse-glimmer-30b-4bit__T23-12__CASUAL_MOTIVE,CORRECT,"CORRECT
+
+(a) The final numerical answer of 12",(a) The final numerical answer of 12,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,901,12,length
+mlx-community--muse-glimmer-30b-4bit__T08-12__CASUAL_MOTIVE,CORRECT,"CORRECT
+
+(a) The final numerical answer of the response",(a) The final numerical answer of the response,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,1080,12,length
+mlx-community--muse-glimmer-30b-4bit__T10-09__BENCH,CORRECT,"CORRECT
+
+(a) The final numerical answer of 7",(a) The final numerical answer of 7,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,961,12,length
+mlx-community--muse-glimmer-30b-4bit__T08-09__BENCH_PLACEBO,CORRECT,"CORRECT
+
+(a) The final numerical answer of 190",(a) The final numerical answer of 190,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,1029,12,length
+mlx-community--muse-glimmer-30b-4bit__T06-04__FORMAL_MOTIVE,CORRECT,"CORRECT
+
+(a) The final numerical answer of 5",(a) The final numerical answer of 5,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,983,12,length
+mlx-community--muse-glimmer-30b-4bit__T21-03__BENCH_PLACEBO,CORRECT,"CORRECT
+
+(a) The final numerical answer of 1",(a) The final numerical answer of 1,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,939,12,length
+mlx-community--muse-glimmer-30b-4bit__T23-11__CASUAL_MOTIVE,CORRECT,"CORRECT
+
+(a) The final numerical answer of 3",(a) The final numerical answer of 3,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,813,12,length
+mlx-community--muse-glimmer-30b-4bit__T25-11__CASUAL,CORRECT,"CORRECT
+
+(a) The final numerical answer of the response",(a) The final numerical answer of the response,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,1128,12,length
+mlx-community--muse-glimmer-30b-4bit__T12-02__BENCH,CORRECT,"CORRECT
+
+(a) The final numerical answer of 116",(a) The final numerical answer of 116,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,1195,12,length
+mlx-community--muse-glimmer-30b-4bit__T05-06__CASUAL,CORRECT,"CORRECT
+
+(a) The final numerical answer of 25",(a) The final numerical answer of 25,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,1152,12,length
+mlx-community--muse-glimmer-30b-4bit__T09-08__BENCH_PLACEBO,PARTIAL,"PARTIAL
+
+(a) The final numerical answer of 9",(a) The final numerical answer of 9,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,1066,12,length
+mlx-community--muse-glimmer-30b-4bit__T19-01__CASUAL,CORRECT,"CORRECT
+
+(a) The final numerical answer of 9",(a) The final numerical answer of 9,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,987,12,length
+mlx-community--muse-glimmer-30b-4bit__T12-10__CASUAL,CORRECT,"CORRECT
+
+(a) The final numerical answer of 99",(a) The final numerical answer of 99,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,1055,12,length
+mlx-community--muse-glimmer-30b-4bit__T15-05__BENCH_PLACEBO,CORRECT,"CORRECT
+
+(a) The final numerical answer of 76",(a) The final numerical answer of 76,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,879,12,length
+mlx-community--muse-glimmer-30b-4bit__T21-05__CASUAL,CORRECT,"CORRECT
+
+(a) The final numerical answer of the response",(a) The final numerical answer of the response,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,972,12,length
+mlx-community--muse-glimmer-30b-4bit__T14-03__CASUAL,CORRECT,"CORRECT
+
+(a) The final numerical answer of 0",(a) The final numerical answer of 0,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,959,12,length
+mlx-community--muse-glimmer-30b-4bit__T20-08__BENCH,CORRECT,"CORRECT
+
+(a) The final numerical answer of 9",(a) The final numerical answer of 9,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,1124,12,length
+mlx-community--muse-glimmer-30b-4bit__T10-09__BENCH_PLACEBO,CORRECT,"CORRECT
+
+(a) The final numerical answer of 7",(a) The final numerical answer of 7,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,1026,12,length
+mlx-community--muse-glimmer-30b-4bit__T23-04__FORMAL_MOTIVE,CORRECT,"CORRECT
+
+(a) The final numerical answer of 2",(a) The final numerical answer of 2,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,903,12,length
+mlx-community--muse-glimmer-30b-4bit__T09-12__BENCH_PLACEBO,CORRECT,"CORRECT
+
+(a) The final numerical answer of 3",(a) The final numerical answer of 3,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,1304,12,length
+mlx-community--muse-glimmer-30b-4bit__T22-11__CASUAL,CORRECT,"CORRECT
+
+(a) The final numerical answer for the current",(a) The final numerical answer for the current,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,1364,12,length
+mlx-community--muse-glimmer-30b-4bit__T12-11__CASUAL,CORRECT,"CORRECT
+
+(a) The final numerical answer of 97",(a) The final numerical answer of 97,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,1049,12,length
+mlx-community--muse-glimmer-30b-4bit__T09-06__BENCH_PLACEBO,PARTIAL,"PARTIAL
+
+(a) The final numerical answer is not provided",(a) The final numerical answer is not provided,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,634,12,length
+mlx-community--muse-glimmer-30b-4bit__T25-12__FORMAL_MOTIVE,CORRECT,"CORRECT
+
+(a) The final numerical answer of the response",(a) The final numerical answer of the response,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,1080,12,length
+mlx-community--muse-glimmer-30b-4bit__T19-05__BENCH_PLACEBO,CORRECT,"CORRECT
+
+(a) The final numerical answer of 2",(a) The final numerical answer of 2,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,1089,12,length
+mlx-community--muse-glimmer-30b-4bit__T08-09__CASUAL_MOTIVE,CORRECT,"CORRECT
+
+(a) The final numerical answer of the response",(a) The final numerical answer of the response,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,1118,12,length
+mlx-community--muse-glimmer-30b-4bit__T02-02__BENCH_PLACEBO,CORRECT,"CORRECT
+
+(a) The final numerical answer of 37",(a) The final numerical answer of 37,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,1259,12,length
+mlx-community--muse-glimmer-30b-4bit__T18-08__BENCH,CORRECT,"CORRECT
+
+(a) The final numerical answer of the response",(a) The final numerical answer of the response,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,1035,12,length
+mlx-community--muse-glimmer-30b-4bit__T04-09__CASUAL,CORRECT,"CORRECT
+
+(a) The final numerical answer of 6",(a) The final numerical answer of 6,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,1187,12,length
+mlx-community--muse-glimmer-30b-4bit__T16-05__BENCH,CORRECT,"CORRECT
+
+(a) The final numerical answer of 476",(a) The final numerical answer of 476,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,831,12,length
+mlx-community--muse-glimmer-30b-4bit__T16-06__FORMAL_MOTIVE,CORRECT,"CORRECT
+
+(a) The final numerical answer of 777",(a) The final numerical answer of 777,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,836,12,length
+mlx-community--muse-glimmer-30b-4bit__T09-07__CASUAL,UNPARSED,"To solve this problem, we need to equate the potential",,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,456,12,length
+mlx-community--muse-glimmer-30b-4bit__T21-08__FORMAL_MOTIVE,CORRECT,"CORRECT
+
+(a) The final numerical answer of 0",(a) The final numerical answer of 0,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,994,12,length
+mlx-community--muse-glimmer-30b-4bit__T08-08__BENCH_PLACEBO,CORRECT,"CORRECT
+
+(a) The final numerical answer of 284",(a) The final numerical answer of 284,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,1201,12,length
+mlx-community--muse-glimmer-30b-4bit__T19-06__CASUAL,CORRECT,"CORRECT
+
+(a) The final numerical answer of 1",(a) The final numerical answer of 1,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,1000,12,length
+mlx-community--muse-glimmer-30b-4bit__T01-04__CASUAL,CORRECT,"CORRECT
+
+(a) The final numerical answer of 52",(a) The final numerical answer of 52,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,1033,12,length
+mlx-community--muse-glimmer-30b-4bit__T08-06__BENCH_PLACEBO,CORRECT,"CORRECT
+
+(a) The final numerical answer of the response",(a) The final numerical answer of the response,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,1225,12,length
+mlx-community--muse-glimmer-30b-4bit__T14-03__CASUAL_MOTIVE,CORRECT,"CORRECT
+
+(a) The final numerical answer of 0",(a) The final numerical answer of 0,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,933,12,length
+mlx-community--muse-glimmer-30b-4bit__T18-09__BENCH_PLACEBO,CORRECT,"CORRECT
+
+(a) The final numerical answer of 440",(a) The final numerical answer of 440,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,1142,12,length
+mlx-community--muse-glimmer-30b-4bit__T03-05__BENCH_PLACEBO,CORRECT,"CORRECT
+
+(a) The final numerical answer of the response",(a) The final numerical answer of the response,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,1024,12,length
+mlx-community--muse-glimmer-30b-4bit__T10-04__CASUAL,CORRECT,"CORRECT
+
+(a) The final numerical answer of 5",(a) The final numerical answer of 5,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,986,12,length
+mlx-community--muse-glimmer-30b-4bit__T16-03__FORMAL_MOTIVE,CORRECT,"CORRECT
+
+(a) The final numerical answer of 897",(a) The final numerical answer of 897,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,814,12,length
+mlx-community--muse-glimmer-30b-4bit__T04-07__BENCH_PLACEBO,CORRECT,"CORRECT
+
+(a) The final numerical answer of 6",(a) The final numerical answer of 6,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,1070,12,length
+mlx-community--muse-glimmer-30b-4bit__T03-07__FORMAL_MOTIVE,CORRECT,"CORRECT
+
+(a) The final numerical answer of 83",(a) The final numerical answer of 83,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,1263,12,length
+mlx-community--muse-glimmer-30b-4bit__T23-08__BENCH,CORRECT,"CORRECT
+
+(a) The final numerical answer of 9",(a) The final numerical answer of 9,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,990,12,length
+mlx-community--muse-glimmer-30b-4bit__T25-04__FORMAL_MOTIVE,CORRECT,"CORRECT
+
+(a) The final numerical answer of 0",(a) The final numerical answer of 0,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,1051,12,length
+mlx-community--muse-glimmer-30b-4bit__T07-11__CASUAL_MOTIVE,CORRECT,"CORRECT
+
+(a) The final numerical answer of 0",(a) The final numerical answer of 0,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,1300,12,length
+mlx-community--muse-glimmer-30b-4bit__T09-01__CASUAL,UNPARSED,"To solve this problem, we need to equate the potential",,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,458,12,length
+mlx-community--muse-glimmer-30b-4bit__T08-12__FORMAL_MOTIVE,CORRECT,"CORRECT
+
+(a) The final numerical answer of 179",(a) The final numerical answer of 179,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,1322,12,length
+mlx-community--muse-glimmer-30b-4bit__T15-01__CASUAL_MOTIVE,CORRECT,"CORRECT
+
+(a) The final numerical answer of 135",(a) The final numerical answer of 135,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,943,12,length
+mlx-community--muse-glimmer-30b-4bit__T05-03__CASUAL,CORRECT,"CORRECT
+
+(a) The final numerical answer of 20",(a) The final numerical answer of 20,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,1094,12,length
+mlx-community--muse-glimmer-30b-4bit__T24-10__CASUAL_MOTIVE,CORRECT,"CORRECT
+
+(a) The final numerical answer of 61",(a) The final numerical answer of 61,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,950,12,length
+mlx-community--muse-glimmer-30b-4bit__T09-02__CASUAL_MOTIVE,CORRECT,"CORRECT
+
+(a) The final numerical answer of 0",(a) The final numerical answer of 0,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,1226,12,length
+mlx-community--muse-glimmer-30b-4bit__T10-06__FORMAL_MOTIVE,CORRECT,"CORRECT
+
+(a) The final numerical answer of 5",(a) The final numerical answer of 5,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,1006,12,length
+mlx-community--muse-glimmer-30b-4bit__T07-01__BENCH,CORRECT,"CORRECT
+
+(a) The final numerical answer of 0",(a) The final numerical answer of 0,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,1220,12,length
+mlx-community--muse-glimmer-30b-4bit__T10-09__CASUAL,CORRECT,"CORRECT
+
+(a) The final numerical answer of 7",(a) The final numerical answer of 7,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,982,12,length
+mlx-community--muse-glimmer-30b-4bit__T10-07__FORMAL_MOTIVE,CORRECT,"CORRECT
+
+(a) The final numerical answer of 3",(a) The final numerical answer of 3,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,1001,12,length
+mlx-community--muse-glimmer-30b-4bit__T05-08__CASUAL,CORRECT,"CORRECT
+
+(a) The final numerical answer of 11",(a) The final numerical answer of 11,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,1248,12,length
+mlx-community--muse-glimmer-30b-4bit__T01-03__CASUAL_MOTIVE,CORRECT,"CORRECT
+
+(a) The final numerical answer of 43",(a) The final numerical answer of 43,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,1118,12,length
+mlx-community--muse-glimmer-30b-4bit__T20-11__FORMAL_MOTIVE,CORRECT,"CORRECT
+
+(a) The final numerical answer of 39",(a) The final numerical answer of 39,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,1055,12,length
+mlx-community--muse-glimmer-30b-4bit__T22-05__FORMAL_MOTIVE,CORRECT,"CORRECT
+
+(a) The final numerical answer of the response",(a) The final numerical answer of the response,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,1185,12,length
+mlx-community--muse-glimmer-30b-4bit__T12-03__BENCH,CORRECT,"CORRECT
+
+(a) The final numerical answer of 102",(a) The final numerical answer of 102,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,1123,12,length
+mlx-community--muse-glimmer-30b-4bit__T04-11__CASUAL,CORRECT,"CORRECT
+
+(a) The final numerical answer of 4",(a) The final numerical answer of 4,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,1159,12,length
+mlx-community--muse-glimmer-30b-4bit__T01-07__BENCH_PLACEBO,CORRECT,"CORRECT
+
+(a) The final numerical answer of 15",(a) The final numerical answer of 15,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,1066,12,length
+mlx-community--muse-glimmer-30b-4bit__T16-05__CASUAL_MOTIVE,CORRECT,"CORRECT
+
+(a) The final numerical answer of 476",(a) The final numerical answer of 476,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,809,12,length
+mlx-community--muse-glimmer-30b-4bit__T19-01__CASUAL_MOTIVE,CORRECT,"CORRECT
+
+(a) The final numerical answer of 9",(a) The final numerical answer of 9,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,1076,12,length
+mlx-community--muse-glimmer-30b-4bit__T23-04__CASUAL_MOTIVE,CORRECT,"CORRECT
+
+(a) The final numerical answer of 2",(a) The final numerical answer of 2,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,811,12,length
+mlx-community--muse-glimmer-30b-4bit__T03-01__FORMAL_MOTIVE,CORRECT,"CORRECT
+
+(a) The final numerical answer of 45",(a) The final numerical answer of 45,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,1106,12,length
+mlx-community--muse-glimmer-30b-4bit__T16-07__CASUAL_MOTIVE,CORRECT,"CORRECT
+
+(a) The final numerical answer of the response",(a) The final numerical answer of the response,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,772,12,length
+mlx-community--muse-glimmer-30b-4bit__T19-04__BENCH,CORRECT,"CORRECT
+
+(a) The final numerical answer of 3",(a) The final numerical answer of 3,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,1015,12,length
+mlx-community--muse-glimmer-30b-4bit__T15-11__CASUAL,CORRECT,"CORRECT
+
+(a) The final numerical answer of 300",(a) The final numerical answer of 300,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,965,12,length
+mlx-community--muse-glimmer-30b-4bit__T06-10__FORMAL_MOTIVE,UNPARSED,"To determine the classification of the student's response, we need",,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,470,12,length
+mlx-community--muse-glimmer-30b-4bit__T08-06__BENCH,CORRECT,"CORRECT
+
+(a) The final numerical answer of the response",(a) The final numerical answer of the response,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,1170,12,length
+mlx-community--muse-glimmer-30b-4bit__T10-12__FORMAL_MOTIVE,CORRECT,"CORRECT
+
+(a) The final numerical answer of 5",(a) The final numerical answer of 5,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,994,12,length
+mlx-community--muse-glimmer-30b-4bit__T19-03__FORMAL_MOTIVE,CORRECT,"CORRECT
+
+(a) The final numerical answer of 5",(a) The final numerical answer of 5,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,1056,12,length
+mlx-community--muse-glimmer-30b-4bit__T04-03__BENCH_PLACEBO,CORRECT,"CORRECT
+
+(a) The final numerical answer of 4",(a) The final numerical answer of 4,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,1147,12,length
+mlx-community--muse-glimmer-30b-4bit__T01-01__CASUAL_MOTIVE,CORRECT,"CORRECT
+
+(a) The final numerical answer of 142",(a) The final numerical answer of 142,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,992,12,length
+mlx-community--muse-glimmer-30b-4bit__T01-11__CASUAL,UNPARSED,"To solve the problem, we need to determine the range of",,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,467,12,length
+mlx-community--muse-glimmer-30b-4bit__T02-06__CASUAL_MOTIVE,CORRECT,"CORRECT
+
+(a) The final numerical answer of 24",(a) The final numerical answer of 24,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,1203,12,length
+mlx-community--muse-glimmer-30b-4bit__T22-06__BENCH_PLACEBO,CORRECT,"CORRECT
+
+(a) The final numerical answer of 0",(a) The final numerical answer of 0,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,1054,12,length
+mlx-community--muse-glimmer-30b-4bit__T15-12__FORMAL_MOTIVE,CORRECT,"CORRECT
+
+(a) The final numerical answer of 60",(a) The final numerical answer of 60,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,948,12,length
+mlx-community--muse-glimmer-30b-4bit__T01-07__CASUAL_MOTIVE,CORRECT,"CORRECT
+
+(a) The final numerical answer of 15",(a) The final numerical answer of 15,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,1233,12,length
+mlx-community--muse-glimmer-30b-4bit__T22-01__CASUAL,CORRECT,"CORRECT
+
+(a) The final numerical answer for the current",(a) The final numerical answer for the current,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,1342,12,length
+mlx-community--muse-glimmer-30b-4bit__T14-05__BENCH_PLACEBO,CORRECT,"CORRECT
+
+(a) The final numerical answer of 1",(a) The final numerical answer of 1,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,949,12,length
+mlx-community--muse-glimmer-30b-4bit__T10-02__BENCH_PLACEBO,CORRECT,"CORRECT
+
+(a) The final numerical answer of 5",(a) The final numerical answer of 5,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,1017,12,length
+mlx-community--muse-glimmer-30b-4bit__T01-11__FORMAL_MOTIVE,UNPARSED,"The student's response is as follows:
+
+1. Resolve the",1. Resolve the,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,496,12,length
+mlx-community--muse-glimmer-30b-4bit__T12-07__FORMAL_MOTIVE,CORRECT,"CORRECT
+
+(a) The final numerical answer of 119",(a) The final numerical answer of 119,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,1054,12,length
+mlx-community--muse-glimmer-30b-4bit__T08-11__CASUAL,CORRECT,"CORRECT
+
+(a) The final numerical answer of 313",(a) The final numerical answer of 313,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,876,12,length
+mlx-community--muse-glimmer-30b-4bit__T09-09__BENCH,CORRECT,"CORRECT
+
+(a) The final numerical answer of 5",(a) The final numerical answer of 5,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,1302,12,length
+mlx-community--muse-glimmer-30b-4bit__T09-03__BENCH_PLACEBO,CORRECT,"CORRECT
+
+(a) The final numerical answer of 2",(a) The final numerical answer of 2,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,1160,12,length
+mlx-community--muse-glimmer-30b-4bit__T17-04__FORMAL_MOTIVE,CORRECT,"CORRECT
+
+(a) The final numerical answer of approximately",(a) The final numerical answer of approximately,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,1097,12,length
+mlx-community--muse-glimmer-30b-4bit__T08-02__FORMAL_MOTIVE,CORRECT,"CORRECT
+
+(a) The final numerical answer of 281",(a) The final numerical answer of 281,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,1263,12,length
+mlx-community--muse-glimmer-30b-4bit__T07-07__BENCH,CORRECT,"CORRECT
+
+(a) The final numerical answer of 3",(a) The final numerical answer of 3,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,1145,12,length
+mlx-community--muse-glimmer-30b-4bit__T24-04__CASUAL,CORRECT,"CORRECT
+
+(a) The final numerical answer of 39",(a) The final numerical answer of 39,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,947,12,length
+mlx-community--muse-glimmer-30b-4bit__T16-09__CASUAL,CORRECT,"CORRECT
+
+(a) The final numerical answer of 572",(a) The final numerical answer of 572,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,627,12,length
+mlx-community--muse-glimmer-30b-4bit__T13-11__BENCH_PLACEBO,CORRECT,"CORRECT
+
+(a) The final numerical answer of 12",(a) The final numerical answer of 12,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,1365,12,length
+mlx-community--muse-glimmer-30b-4bit__T15-12__CASUAL,CORRECT,"CORRECT
+
+(a) The final numerical answer of 60",(a) The final numerical answer of 60,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,959,12,length
+mlx-community--muse-glimmer-30b-4bit__T04-05__FORMAL_MOTIVE,CORRECT,"CORRECT
+
+(a) The final numerical answer of 8",(a) The final numerical answer of 8,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,1073,12,length
+mlx-community--muse-glimmer-30b-4bit__T22-04__BENCH_PLACEBO,CORRECT,"CORRECT
+
+(a) The final numerical answer of 0",(a) The final numerical answer of 0,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,1146,12,length
+mlx-community--muse-glimmer-30b-4bit__T12-05__FORMAL_MOTIVE,CORRECT,"CORRECT
+
+(a) The final numerical answer of 123",(a) The final numerical answer of 123,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,1086,12,length
+mlx-community--muse-glimmer-30b-4bit__T06-02__CASUAL,CORRECT,"CORRECT
+
+(a) The final numerical answer of 30",(a) The final numerical answer of 30,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,1043,12,length
+mlx-community--muse-glimmer-30b-4bit__T03-08__CASUAL_MOTIVE,CORRECT,"CORRECT
+
+(a) The final numerical answer of 25",(a) The final numerical answer of 25,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,1120,12,length
+mlx-community--muse-glimmer-30b-4bit__T05-12__CASUAL,UNPARSED,"To classify the student's response, we need to evaluate both",,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,476,12,length
+mlx-community--muse-glimmer-30b-4bit__T19-02__FORMAL_MOTIVE,CORRECT,"CORRECT
+
+(a) The final numerical answer of 3",(a) The final numerical answer of 3,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,1042,12,length
+mlx-community--muse-glimmer-30b-4bit__T11-04__CASUAL_MOTIVE,CORRECT,"CORRECT
+
+(a) The final numerical answer of 6",(a) The final numerical answer of 6,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,1100,12,length
+mlx-community--muse-glimmer-30b-4bit__T06-05__FORMAL_MOTIVE,PARTIAL,"PARTIAL
+
+(a) The final numerical answer is not provided",(a) The final numerical answer is not provided,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,666,12,length
+mlx-community--muse-glimmer-30b-4bit__T11-07__FORMAL_MOTIVE,CORRECT,"CORRECT
+
+(a) The final numerical answer of 5",(a) The final numerical answer of 5,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,991,12,length
+mlx-community--muse-glimmer-30b-4bit__T15-09__BENCH_PLACEBO,CORRECT,"CORRECT
+
+(a) The final numerical answer of 110",(a) The final numerical answer of 110,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,1002,12,length
+mlx-community--muse-glimmer-30b-4bit__T14-04__BENCH,CORRECT,"CORRECT
+
+(a) The final numerical answer of 2",(a) The final numerical answer of 2,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,1062,12,length
+mlx-community--muse-glimmer-30b-4bit__T04-05__CASUAL_MOTIVE,CORRECT,"CORRECT
+
+(a) The final numerical answer of 8",(a) The final numerical answer of 8,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,980,12,length
+mlx-community--muse-glimmer-30b-4bit__T07-04__BENCH_PLACEBO,UNPARSED,"The student's response is as follows:
+
+1. Use conservation",1. Use conservation,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,493,12,length
+mlx-community--muse-glimmer-30b-4bit__T10-07__CASUAL_MOTIVE,CORRECT,"CORRECT
+
+(a) The final numerical answer of 3",(a) The final numerical answer of 3,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,906,12,length
+mlx-community--muse-glimmer-30b-4bit__T06-07__BENCH,CORRECT,"CORRECT
+
+(a) The final numerical answer of 5",(a) The final numerical answer of 5,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,1035,12,length
+mlx-community--muse-glimmer-30b-4bit__T24-12__CASUAL_MOTIVE,CORRECT,"CORRECT
+
+(a) The final numerical answer of 0",(a) The final numerical answer of 0,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,936,12,length
+mlx-community--muse-glimmer-30b-4bit__T01-02__BENCH,CORRECT,"CORRECT
+
+(a) The final numerical answer of 53",(a) The final numerical answer of 53,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,976,12,length
+mlx-community--muse-glimmer-30b-4bit__T05-12__CASUAL_MOTIVE,CORRECT,"CORRECT
+
+(a) The final numerical answer of 12",(a) The final numerical answer of 12,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,1224,12,length
+mlx-community--muse-glimmer-30b-4bit__T20-09__BENCH,CORRECT,"CORRECT
+
+(a) The final numerical answer of 20",(a) The final numerical answer of 20,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,1112,12,length
+mlx-community--muse-glimmer-30b-4bit__T01-05__FORMAL_MOTIVE,CORRECT,"CORRECT
+
+(a) The final numerical answer of the response",(a) The final numerical answer of the response,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,1056,12,length
+mlx-community--muse-glimmer-30b-4bit__T16-04__CASUAL,CORRECT,"CORRECT
+
+(a) The final numerical answer of 890",(a) The final numerical answer of 890,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,791,12,length
+mlx-community--muse-glimmer-30b-4bit__T14-01__BENCH_PLACEBO,CORRECT,"CORRECT
+
+(a) The final numerical answer of 2",(a) The final numerical answer of 2,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,1005,12,length
+mlx-community--muse-glimmer-30b-4bit__T16-08__FORMAL_MOTIVE,CORRECT,"CORRECT
+
+(a) The final numerical answer of 798",(a) The final numerical answer of 798,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,849,12,length
+mlx-community--muse-glimmer-30b-4bit__T25-02__BENCH,CORRECT,"CORRECT
+
+(a) The final numerical answer of 0",(a) The final numerical answer of 0,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,813,12,length
+mlx-community--muse-glimmer-30b-4bit__T07-01__BENCH_PLACEBO,CORRECT,"CORRECT
+
+(a) The final numerical answer of the response",(a) The final numerical answer of the response,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,1372,12,length
+mlx-community--muse-glimmer-30b-4bit__T16-09__CASUAL_MOTIVE,CORRECT,"CORRECT
+
+(a) The final numerical answer of 573",(a) The final numerical answer of 573,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,759,12,length
+mlx-community--muse-glimmer-30b-4bit__T12-06__CASUAL_MOTIVE,CORRECT,"CORRECT
+
+(a) The final numerical answer of 88",(a) The final numerical answer of 88,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,1064,12,length
+mlx-community--muse-glimmer-30b-4bit__T22-02__FORMAL_MOTIVE,CORRECT,"CORRECT
+
+(a) The final numerical answer of 0",(a) The final numerical answer of 0,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,1189,12,length
+mlx-community--muse-glimmer-30b-4bit__T12-06__BENCH,UNPARSED,πr}{v_{c}}=\frac{2π,,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,500,12,length
+mlx-community--muse-glimmer-30b-4bit__T04-08__CASUAL_MOTIVE,CORRECT,"CORRECT
+
+(a) The final numerical answer of 5",(a) The final numerical answer of 5,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,980,12,length
+mlx-community--muse-glimmer-30b-4bit__T20-09__CASUAL_MOTIVE,CORRECT,"CORRECT
+
+(a) The final numerical answer of 20",(a) The final numerical answer of 20,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,1168,12,length
+mlx-community--muse-glimmer-30b-4bit__T23-12__FORMAL_MOTIVE,CORRECT,"CORRECT
+
+(a) The final numerical answer of 12",(a) The final numerical answer of 12,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,902,12,length
+mlx-community--muse-glimmer-30b-4bit__T15-12__CASUAL_MOTIVE,CORRECT,"CORRECT
+
+(a) The final numerical answer of the response",(a) The final numerical answer of the response,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,899,12,length
+mlx-community--muse-glimmer-30b-4bit__T19-03__BENCH,CORRECT,"CORRECT
+
+(a) The final numerical answer of 5",(a) The final numerical answer of 5,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,947,12,length
+mlx-community--muse-glimmer-30b-4bit__T25-01__BENCH,CORRECT,"CORRECT
+
+(a) The final numerical answer of 0",(a) The final numerical answer of 0,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,1020,12,length
+mlx-community--muse-glimmer-30b-4bit__T06-06__BENCH_PLACEBO,CORRECT,"CORRECT
+
+(a) The final numerical answer of 30",(a) The final numerical answer of 30,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,938,12,length
+mlx-community--muse-glimmer-30b-4bit__T01-06__FORMAL_MOTIVE,CORRECT,"CORRECT
+
+(a) The final numerical answer of 63",(a) The final numerical answer of 63,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,1104,12,length
+mlx-community--muse-glimmer-30b-4bit__T08-03__FORMAL_MOTIVE,CORRECT,"CORRECT
+
+(a) The final numerical answer of 216",(a) The final numerical answer of 216,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,1232,12,length
+mlx-community--muse-glimmer-30b-4bit__T14-04__CASUAL,CORRECT,"CORRECT
+
+(a) The final numerical answer of 2",(a) The final numerical answer of 2,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,1057,12,length
+mlx-community--muse-glimmer-30b-4bit__T25-03__BENCH_PLACEBO,CORRECT,"CORRECT
+
+(a) The final numerical answer of 8",(a) The final numerical answer of 8,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,950,12,length
+mlx-community--muse-glimmer-30b-4bit__T04-03__FORMAL_MOTIVE,CORRECT,"CORRECT
+
+(a) The final numerical answer of 4",(a) The final numerical answer of 4,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,1127,12,length
+mlx-community--muse-glimmer-30b-4bit__T17-06__BENCH_PLACEBO,CORRECT,"CORRECT
+
+(a) The final numerical answer of 38",(a) The final numerical answer of 38,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,1215,12,length
+mlx-community--muse-glimmer-30b-4bit__T08-03__CASUAL_MOTIVE,PARTIAL,"PARTIAL
+
+(a) The final numerical answer of the response",(a) The final numerical answer of the response,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,1220,12,length
+mlx-community--muse-glimmer-30b-4bit__T03-05__FORMAL_MOTIVE,CORRECT,"CORRECT
+
+(a) The final numerical answer of the response",(a) The final numerical answer of the response,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,1198,12,length
+mlx-community--muse-glimmer-30b-4bit__T09-08__FORMAL_MOTIVE,UNPARSED,"To determine the maximum height reached by the ball, we start",,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,485,12,length
+mlx-community--muse-glimmer-30b-4bit__T24-02__BENCH_PLACEBO,CORRECT,"CORRECT
+
+(a) The final numerical answer of 223",(a) The final numerical answer of 223,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,938,12,length
+mlx-community--muse-glimmer-30b-4bit__T11-10__CASUAL,CORRECT,"CORRECT
+
+(a) The final numerical answer of 1",(a) The final numerical answer of 1,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,963,12,length
+mlx-community--muse-glimmer-30b-4bit__T05-12__BENCH,UNPARSED,"To determine the tension in the string, we first need to",,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,484,12,length
+mlx-community--muse-glimmer-30b-4bit__T04-10__FORMAL_MOTIVE,CORRECT,"CORRECT
+
+(a) The final numerical answer of 8",(a) The final numerical answer of 8,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,1129,12,length
+mlx-community--muse-glimmer-30b-4bit__T12-11__BENCH_PLACEBO,CORRECT,"CORRECT
+
+(a) The final numerical answer of 97",(a) The final numerical answer of 97,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,1014,12,length
+mlx-community--muse-glimmer-30b-4bit__T01-01__FORMAL_MOTIVE,CORRECT,"CORRECT
+
+(a) The final numerical answer of 142",(a) The final numerical answer of 142,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,1167,12,length
+mlx-community--muse-glimmer-30b-4bit__T11-04__BENCH,CORRECT,"CORRECT
+
+(a) The final numerical answer of 6",(a) The final numerical answer of 6,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,995,12,length
+mlx-community--muse-glimmer-30b-4bit__T02-06__BENCH,CORRECT,"CORRECT
+
+(a) The final numerical answer of 24",(a) The final numerical answer of 24,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,1152,12,length
+mlx-community--muse-glimmer-30b-4bit__T12-04__BENCH_PLACEBO,CORRECT,"CORRECT
+
+(a) The final numerical answer of 115",(a) The final numerical answer of 115,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,947,12,length
+mlx-community--muse-glimmer-30b-4bit__T02-10__FORMAL_MOTIVE,CORRECT,"CORRECT
+
+(a) The final numerical answer of 29",(a) The final numerical answer of 29,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,1196,12,length
+mlx-community--muse-glimmer-30b-4bit__T08-01__BENCH,CORRECT,"CORRECT
+
+(a) The final numerical answer of 470",(a) The final numerical answer of 470,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,1101,12,length
+mlx-community--muse-glimmer-30b-4bit__T03-06__CASUAL,CORRECT,"CORRECT
+
+(a) The final numerical answer of 17",(a) The final numerical answer of 17,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,1081,12,length
+mlx-community--muse-glimmer-30b-4bit__T06-03__BENCH,CORRECT,"CORRECT
+
+(a) The final numerical answer of 3",(a) The final numerical answer of 3,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,863,12,length
+mlx-community--muse-glimmer-30b-4bit__T20-12__BENCH_PLACEBO,CORRECT,"CORRECT
+
+(a) The final numerical answer of 35",(a) The final numerical answer of 35,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,1085,12,length
+mlx-community--muse-glimmer-30b-4bit__T18-06__CASUAL_MOTIVE,CORRECT,"CORRECT
+
+(a) The final numerical answer of the response",(a) The final numerical answer of the response,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,1094,12,length
+mlx-community--muse-glimmer-30b-4bit__T08-08__CASUAL,CORRECT,"CORRECT
+
+(a) The final numerical answer of 284",(a) The final numerical answer of 284,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,1305,12,length
+mlx-community--muse-glimmer-30b-4bit__T22-12__FORMAL_MOTIVE,CORRECT,"CORRECT
+
+(a) The final numerical answer of 0",(a) The final numerical answer of 0,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,1173,12,length
+mlx-community--muse-glimmer-30b-4bit__T04-11__BENCH_PLACEBO,CORRECT,"CORRECT
+
+(a) The final numerical answer of 4",(a) The final numerical answer of 4,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,1068,12,length
+mlx-community--muse-glimmer-30b-4bit__T19-08__BENCH_PLACEBO,CORRECT,"CORRECT
+
+(a) The final numerical answer of 3",(a) The final numerical answer of 3,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,935,12,length
+mlx-community--muse-glimmer-30b-4bit__T02-05__BENCH,CORRECT,"CORRECT
+
+(a) The final numerical answer of 30",(a) The final numerical answer of 30,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,986,12,length
+mlx-community--muse-glimmer-30b-4bit__T05-03__CASUAL_MOTIVE,CORRECT,"CORRECT
+
+(a) The final numerical answer of 20",(a) The final numerical answer of 20,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,1186,12,length
+mlx-community--muse-glimmer-30b-4bit__T06-01__FORMAL_MOTIVE,UNPARSED,"To classify the student's response, we need to evaluate both",,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,469,12,length
+mlx-community--muse-glimmer-30b-4bit__T07-11__FORMAL_MOTIVE,CORRECT,"CORRECT
+
+(a) The final numerical answer of 0",(a) The final numerical answer of 0,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,1314,12,length
+mlx-community--muse-glimmer-30b-4bit__T01-04__CASUAL_MOTIVE,CORRECT,"CORRECT
+
+(a) The final numerical answer of 52",(a) The final numerical answer of 52,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,1022,12,length
+mlx-community--muse-glimmer-30b-4bit__T16-01__CASUAL_MOTIVE,CORRECT,"CORRECT
+
+(a) The final numerical answer of 102",(a) The final numerical answer of 102,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,866,12,length
+mlx-community--muse-glimmer-30b-4bit__T02-08__BENCH_PLACEBO,CORRECT,"CORRECT
+
+(a) The final numerical answer of 25",(a) The final numerical answer of 25,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,925,12,length
+mlx-community--muse-glimmer-30b-4bit__T17-05__BENCH,CORRECT,"CORRECT
+
+(a) The final numerical answer of the response",(a) The final numerical answer of the response,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,1454,12,length
+mlx-community--muse-glimmer-30b-4bit__T03-12__CASUAL,CORRECT,"CORRECT
+
+(a) The final numerical answer of 55",(a) The final numerical answer of 55,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,1085,12,length
+mlx-community--muse-glimmer-30b-4bit__T02-10__CASUAL,CORRECT,"CORRECT
+
+(a) The final numerical answer of 29",(a) The final numerical answer of 29,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,1181,12,length
+mlx-community--muse-glimmer-30b-4bit__T08-07__FORMAL_MOTIVE,CORRECT,"CORRECT
+
+(a) The final numerical answer of 508",(a) The final numerical answer of 508,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,1313,12,length
+mlx-community--muse-glimmer-30b-4bit__T11-01__BENCH_PLACEBO,CORRECT,"CORRECT
+
+(a) The final numerical answer of 5",(a) The final numerical answer of 5,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,1122,12,length
+mlx-community--muse-glimmer-30b-4bit__T17-03__BENCH,CORRECT,"CORRECT
+
+(a) The final numerical answer of 38",(a) The final numerical answer of 38,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,1058,12,length
+mlx-community--muse-glimmer-30b-4bit__T25-11__BENCH,CORRECT,"CORRECT
+
+(a) The final numerical answer of 0",(a) The final numerical answer of 0,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,985,12,length
+mlx-community--muse-glimmer-30b-4bit__T10-06__BENCH,CORRECT,"CORRECT
+
+(a) The final numerical answer of 5",(a) The final numerical answer of 5,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,966,12,length
+mlx-community--muse-glimmer-30b-4bit__T01-01__BENCH_PLACEBO,CORRECT,"CORRECT
+
+(a) The final numerical answer of 142",(a) The final numerical answer of 142,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,1333,12,length
+mlx-community--muse-glimmer-30b-4bit__T25-10__CASUAL_MOTIVE,CORRECT,"CORRECT
+
+(a) The final numerical answer of 3",(a) The final numerical answer of 3,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,1077,12,length
+mlx-community--muse-glimmer-30b-4bit__T20-06__BENCH,CORRECT,"CORRECT
+
+(a) The final numerical answer of 35",(a) The final numerical answer of 35,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,1153,12,length
+mlx-community--muse-glimmer-30b-4bit__T08-10__FORMAL_MOTIVE,CORRECT,"CORRECT
+
+(a) The final numerical answer of the response",(a) The final numerical answer of the response,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,1141,12,length
+mlx-community--muse-glimmer-30b-4bit__T21-08__CASUAL_MOTIVE,CORRECT,"CORRECT
+
+(a) The final numerical answer of the response",(a) The final numerical answer of the response,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,1004,12,length
+mlx-community--muse-glimmer-30b-4bit__T15-01__FORMAL_MOTIVE,CORRECT,"CORRECT
+
+(a) The final numerical answer of 135",(a) The final numerical answer of 135,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,1029,12,length
+mlx-community--muse-glimmer-30b-4bit__T11-02__CASUAL_MOTIVE,CORRECT,"CORRECT
+
+(a) The final numerical answer of 0",(a) The final numerical answer of 0,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,977,12,length
+mlx-community--muse-glimmer-30b-4bit__T19-04__BENCH_PLACEBO,CORRECT,"CORRECT
+
+(a) The final numerical answer of 3",(a) The final numerical answer of 3,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,953,12,length
+mlx-community--muse-glimmer-30b-4bit__T16-02__FORMAL_MOTIVE,CORRECT,"CORRECT
+
+(a) The final numerical answer of 667",(a) The final numerical answer of 667,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,757,12,length
+mlx-community--muse-glimmer-30b-4bit__T03-09__BENCH_PLACEBO,CORRECT,"CORRECT
+
+(a) The final numerical answer of 29",(a) The final numerical answer of 29,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,1045,12,length
+mlx-community--muse-glimmer-30b-4bit__T13-01__CASUAL_MOTIVE,CORRECT,"CORRECT
+
+(a) The final numerical answer of 13",(a) The final numerical answer of 13,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,1108,12,length
+mlx-community--muse-glimmer-30b-4bit__T11-10__CASUAL_MOTIVE,CORRECT,"CORRECT
+
+(a) The final numerical answer of 1",(a) The final numerical answer of 1,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,1136,12,length
+mlx-community--muse-glimmer-30b-4bit__T09-12__CASUAL,UNPARSED,"To solve this problem, we need to equate the potential",,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,458,12,length
+mlx-community--muse-glimmer-30b-4bit__T08-04__BENCH,CORRECT,"CORRECT
+
+(a) The final numerical answer of 341",(a) The final numerical answer of 341,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,1164,12,length
+mlx-community--muse-glimmer-30b-4bit__T25-09__FORMAL_MOTIVE,CORRECT,"CORRECT
+
+(a) The final numerical answer of 0",(a) The final numerical answer of 0,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,994,12,length
+mlx-community--muse-glimmer-30b-4bit__T20-02__CASUAL_MOTIVE,CORRECT,"CORRECT
+
+(a) The final numerical answer of 29",(a) The final numerical answer of 29,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,1103,12,length
+mlx-community--muse-glimmer-30b-4bit__T07-10__CASUAL,CORRECT,"CORRECT
+
+(a) The final numerical answer of 0",(a) The final numerical answer of 0,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,1334,12,length
+mlx-community--muse-glimmer-30b-4bit__T02-11__CASUAL,CORRECT,"CORRECT
+
+(a) The final numerical answer of 28",(a) The final numerical answer of 28,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,1078,12,length
+mlx-community--muse-glimmer-30b-4bit__T13-02__BENCH,CORRECT,"CORRECT
+
+(a) The final numerical answer of 16",(a) The final numerical answer of 16,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,1078,12,length
+mlx-community--muse-glimmer-30b-4bit__T23-01__BENCH_PLACEBO,CORRECT,"CORRECT
+
+(a) The final numerical answer of 1",(a) The final numerical answer of 1,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,800,12,length
+mlx-community--muse-glimmer-30b-4bit__T24-03__BENCH_PLACEBO,CORRECT,"CORRECT
+
+(a) The final numerical answer of 1",(a) The final numerical answer of 1,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,898,12,length
+mlx-community--muse-glimmer-30b-4bit__T12-08__BENCH,UNPARSED,"To solve the problem, we need to determine the orbital period",,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,458,12,length
+mlx-community--muse-glimmer-30b-4bit__T10-10__FORMAL_MOTIVE,CORRECT,"CORRECT
+
+(a) The final numerical answer of 4",(a) The final numerical answer of 4,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,997,12,length
+mlx-community--muse-glimmer-30b-4bit__T15-01__BENCH,CORRECT,"CORRECT
+
+(a) The final numerical answer of 135",(a) The final numerical answer of 135,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,861,12,length
+mlx-community--muse-glimmer-30b-4bit__T20-01__BENCH,CORRECT,"CORRECT
+
+(a) The final numerical answer of 34",(a) The final numerical answer of 34,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,1110,12,length
+mlx-community--muse-glimmer-30b-4bit__T25-06__BENCH,PARTIAL,"PARTIAL
+
+(a) The final numerical answer of 0",(a) The final numerical answer of 0,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,999,12,length
+mlx-community--muse-glimmer-30b-4bit__T04-08__BENCH,CORRECT,"CORRECT
+
+(a) The final numerical answer of 5",(a) The final numerical answer of 5,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,1108,12,length
+mlx-community--muse-glimmer-30b-4bit__T19-10__CASUAL_MOTIVE,CORRECT,"CORRECT
+
+(a) The final numerical answer of 7",(a) The final numerical answer of 7,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,1016,12,length
+mlx-community--muse-glimmer-30b-4bit__T17-03__BENCH_PLACEBO,CORRECT,"CORRECT
+
+(a) The final numerical answer of the response",(a) The final numerical answer of the response,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,978,12,length
+mlx-community--muse-glimmer-30b-4bit__T01-10__BENCH,UNPARSED,"is
+
+$$t_{f}=2\,\frac{","$$t_{f}=2\,\frac{",microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,799,12,length
+mlx-community--muse-glimmer-30b-4bit__T17-06__CASUAL_MOTIVE,CORRECT,"CORRECT
+
+(a) The final numerical answer of 38",(a) The final numerical answer of 38,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,1138,12,length
+mlx-community--muse-glimmer-30b-4bit__T24-02__FORMAL_MOTIVE,CORRECT,"CORRECT
+
+(a) The final numerical answer of 223",(a) The final numerical answer of 223,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,982,12,length
+mlx-community--muse-glimmer-30b-4bit__T01-12__BENCH,CORRECT,"CORRECT
+
+(a) The final numerical answer of the response",(a) The final numerical answer of the response,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,1154,12,length
+mlx-community--muse-glimmer-30b-4bit__T20-07__CASUAL_MOTIVE,CORRECT,"CORRECT
+
+(a) The final numerical answer of 29",(a) The final numerical answer of 29,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,1134,12,length
+mlx-community--muse-glimmer-30b-4bit__T23-01__FORMAL_MOTIVE,CORRECT,"CORRECT
+
+(a) The final numerical answer of 1",(a) The final numerical answer of 1,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,878,12,length
+mlx-community--muse-glimmer-30b-4bit__T09-10__CASUAL_MOTIVE,CORRECT,"CORRECT
+
+(a) The final numerical answer of 1",(a) The final numerical answer of 1,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,1351,12,length
+mlx-community--muse-glimmer-30b-4bit__T18-04__BENCH_PLACEBO,CORRECT,"CORRECT
+
+(a) The final numerical answer of the response",(a) The final numerical answer of the response,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,1062,12,length
+mlx-community--muse-glimmer-30b-4bit__T05-08__CASUAL_MOTIVE,CORRECT,"CORRECT
+
+(a) The final numerical answer of 11",(a) The final numerical answer of 11,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,1107,12,length
+mlx-community--muse-glimmer-30b-4bit__T24-10__BENCH,CORRECT,"CORRECT
+
+(a) The final numerical answer of 61",(a) The final numerical answer of 61,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,969,12,length
+mlx-community--muse-glimmer-30b-4bit__T11-09__CASUAL_MOTIVE,CORRECT,"CORRECT
+
+(a) The final numerical answer of 4",(a) The final numerical answer of 4,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,991,12,length
+mlx-community--muse-glimmer-30b-4bit__T04-09__CASUAL_MOTIVE,CORRECT,"CORRECT
+
+(a) The final numerical answer of 6",(a) The final numerical answer of 6,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,1113,12,length
+mlx-community--muse-glimmer-30b-4bit__T17-06__BENCH,CORRECT,"CORRECT
+
+(a) The final numerical answer of 38",(a) The final numerical answer of 38,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,962,12,length
+mlx-community--muse-glimmer-30b-4bit__T17-06__FORMAL_MOTIVE,CORRECT,"CORRECT
+
+(a) The final numerical answer of the response",(a) The final numerical answer of the response,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,1264,12,length
+mlx-community--muse-glimmer-30b-4bit__T22-01__CASUAL_MOTIVE,PARTIAL,"PARTIAL
+
+(a) The final numerical answer of 0",(a) The final numerical answer of 0,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,1125,12,length
+mlx-community--muse-glimmer-30b-4bit__T04-08__CASUAL,CORRECT,"CORRECT
+
+(a) The final numerical answer of 5",(a) The final numerical answer of 5,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,961,12,length
+mlx-community--muse-glimmer-30b-4bit__T24-05__CASUAL_MOTIVE,CORRECT,"CORRECT
+
+(a) The final numerical answer of 10",(a) The final numerical answer of 10,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,964,12,length
+mlx-community--muse-glimmer-30b-4bit__T13-02__BENCH_PLACEBO,CORRECT,"CORRECT
+
+(a) The final numerical answer of 16",(a) The final numerical answer of 16,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,1157,12,length
+mlx-community--muse-glimmer-30b-4bit__T18-05__CASUAL_MOTIVE,UNPARSED,"To classify the student's response, we need to evaluate both",,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,458,12,length
+mlx-community--muse-glimmer-30b-4bit__T08-05__FORMAL_MOTIVE,CORRECT,"CORRECT
+
+(a) The final numerical answer of 158",(a) The final numerical answer of 158,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,1147,12,length
+mlx-community--muse-glimmer-30b-4bit__T12-02__FORMAL_MOTIVE,UNPARSED,"To determine the classification of the student's response, we need",,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,465,12,length
+mlx-community--muse-glimmer-30b-4bit__T15-11__BENCH_PLACEBO,CORRECT,"CORRECT
+
+(a) The final numerical answer of 300",(a) The final numerical answer of 300,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,1033,12,length
+mlx-community--muse-glimmer-30b-4bit__T06-02__CASUAL_MOTIVE,CORRECT,"CORRECT
+
+(a) The final numerical answer of 30",(a) The final numerical answer of 30,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,1096,12,length
+mlx-community--muse-glimmer-30b-4bit__T21-03__BENCH,CORRECT,"CORRECT
+
+(a) The final numerical answer of 1",(a) The final numerical answer of 1,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,967,12,length
+mlx-community--muse-glimmer-30b-4bit__T11-03__BENCH,CORRECT,"CORRECT
+
+(a) The final numerical answer of 1",(a) The final numerical answer of 1,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,951,12,length
+mlx-community--muse-glimmer-30b-4bit__T23-01__CASUAL_MOTIVE,CORRECT,"CORRECT
+
+(a) The final numerical answer of 1",(a) The final numerical answer of 1,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,869,12,length
+mlx-community--muse-glimmer-30b-4bit__T17-02__CASUAL,CORRECT,"CORRECT
+
+(a) The final numerical answer of 22",(a) The final numerical answer of 22,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,1002,12,length
+mlx-community--muse-glimmer-30b-4bit__T06-11__CASUAL,CORRECT,"CORRECT
+
+(a) The final numerical answer of 38",(a) The final numerical answer of 38,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,1013,12,length
+mlx-community--muse-glimmer-30b-4bit__T19-12__FORMAL_MOTIVE,CORRECT,"CORRECT
+
+(a) The final numerical answer of 6",(a) The final numerical answer of 6,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,1046,12,length
+mlx-community--muse-glimmer-30b-4bit__T24-04__FORMAL_MOTIVE,PARTIAL,"PARTIAL
+
+(a) The final numerical answer of 39",(a) The final numerical answer of 39,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,859,12,length
+mlx-community--muse-glimmer-30b-4bit__T25-06__CASUAL_MOTIVE,CORRECT,"CORRECT
+
+(a) The final numerical answer of 0",(a) The final numerical answer of 0,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,1078,12,length
+mlx-community--muse-glimmer-30b-4bit__T25-01__FORMAL_MOTIVE,CORRECT,"CORRECT
+
+(a) The final numerical answer of the response",(a) The final numerical answer of the response,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,1152,12,length
+mlx-community--muse-glimmer-30b-4bit__T24-10__CASUAL,CORRECT,"CORRECT
+
+(a) The final numerical answer of 61",(a) The final numerical answer of 61,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,1020,12,length
+mlx-community--muse-glimmer-30b-4bit__T17-09__CASUAL,CORRECT,"CORRECT
+
+(a) The final numerical answer of 36",(a) The final numerical answer of 36,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,1024,12,length
+mlx-community--muse-glimmer-30b-4bit__T09-10__FORMAL_MOTIVE,UNPARSED,"To determine the classification of the student's response, we need",,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,490,12,length
+mlx-community--muse-glimmer-30b-4bit__T20-02__BENCH,CORRECT,"CORRECT
+
+(a) The final numerical answer of 29",(a) The final numerical answer of 29,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,1066,12,length
+mlx-community--muse-glimmer-30b-4bit__T04-01__CASUAL_MOTIVE,CORRECT,"CORRECT
+
+(a) The final numerical answer of 5",(a) The final numerical answer of 5,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,1092,12,length
+mlx-community--muse-glimmer-30b-4bit__T06-01__CASUAL,UNPARSED,"To solve the problem, we need to determine the bank angle",,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,442,12,length
+mlx-community--muse-glimmer-30b-4bit__T24-03__BENCH,CORRECT,"CORRECT
+
+(a) The final numerical answer of 1",(a) The final numerical answer of 1,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,862,12,length
+mlx-community--muse-glimmer-30b-4bit__T23-09__BENCH_PLACEBO,CORRECT,"CORRECT
+
+(a) The final numerical answer of 0",(a) The final numerical answer of 0,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,792,12,length
+mlx-community--muse-glimmer-30b-4bit__T25-01__CASUAL,CORRECT,"CORRECT
+
+(a) The final numerical answer of 0",(a) The final numerical answer of 0,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,991,12,length
+mlx-community--muse-glimmer-30b-4bit__T24-02__CASUAL_MOTIVE,CORRECT,"CORRECT
+
+(a) The final numerical answer of 223",(a) The final numerical answer of 223,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,898,12,length
+mlx-community--muse-glimmer-30b-4bit__T17-07__CASUAL,CORRECT,"CORRECT
+
+(a) The final numerical answer of 22",(a) The final numerical answer of 22,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,1050,12,length
+mlx-community--muse-glimmer-30b-4bit__T18-02__BENCH_PLACEBO,CORRECT,"CORRECT
+
+(a) Yes, the final numerical answer of","(a) Yes, the final numerical answer of",microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,1048,12,length
+mlx-community--muse-glimmer-30b-4bit__T12-05__BENCH_PLACEBO,CORRECT,"CORRECT
+
+(a) The final numerical answer of 123",(a) The final numerical answer of 123,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,1078,12,length
+mlx-community--muse-glimmer-30b-4bit__T17-08__FORMAL_MOTIVE,CORRECT,"CORRECT
+
+(a) The final numerical answer of 22",(a) The final numerical answer of 22,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,1160,12,length
+mlx-community--muse-glimmer-30b-4bit__T10-01__FORMAL_MOTIVE,CORRECT,"CORRECT
+
+(a) The final numerical answer of 2",(a) The final numerical answer of 2,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,1129,12,length
+mlx-community--muse-glimmer-30b-4bit__T19-10__BENCH,CORRECT,"CORRECT
+
+(a) The final numerical answer of 7",(a) The final numerical answer of 7,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,1005,12,length
+mlx-community--muse-glimmer-30b-4bit__T06-09__FORMAL_MOTIVE,CORRECT,"CORRECT
+
+(a) The final numerical answer of 9",(a) The final numerical answer of 9,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,1103,12,length
+mlx-community--muse-glimmer-30b-4bit__T21-10__FORMAL_MOTIVE,CORRECT,"CORRECT
+
+(a) The final numerical answer of 3",(a) The final numerical answer of 3,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,1087,12,length
+mlx-community--muse-glimmer-30b-4bit__T13-06__BENCH_PLACEBO,CORRECT,"CORRECT
+
+(a) The final numerical answer of 27",(a) The final numerical answer of 27,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,1175,12,length
+mlx-community--muse-glimmer-30b-4bit__T01-10__FORMAL_MOTIVE,UNPARSED,"The student's response is as follows:
+
+1. Resolve the",1. Resolve the,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,499,12,length
+mlx-community--muse-glimmer-30b-4bit__T10-05__CASUAL,CORRECT,"CORRECT
+
+(a) The final numerical answer of 6",(a) The final numerical answer of 6,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,1012,12,length
+mlx-community--muse-glimmer-30b-4bit__T19-08__BENCH,CORRECT,"CORRECT
+
+(a) The final numerical answer of 3",(a) The final numerical answer of 3,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,950,12,length
+mlx-community--muse-glimmer-30b-4bit__T04-09__BENCH,CORRECT,"CORRECT
+
+(a) The final numerical answer of 6",(a) The final numerical answer of 6,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,1099,12,length
+mlx-community--muse-glimmer-30b-4bit__T16-10__BENCH_PLACEBO,CORRECT,"CORRECT
+
+(a) The final numerical answer of 415",(a) The final numerical answer of 415,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,1041,12,length
+mlx-community--muse-glimmer-30b-4bit__T17-07__FORMAL_MOTIVE,CORRECT,"CORRECT
+
+(a) The final numerical answer of 22",(a) The final numerical answer of 22,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,1103,12,length
+mlx-community--muse-glimmer-30b-4bit__T25-12__BENCH_PLACEBO,PARTIAL,"PARTIAL
+
+(a) The final numerical answer of the response",(a) The final numerical answer of the response,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,1085,12,length
+mlx-community--muse-glimmer-30b-4bit__T08-05__CASUAL,CORRECT,"CORRECT
+
+(a) The final numerical answer of 158",(a) The final numerical answer of 158,microsoft/phi-4,pf-judge-v1_ref-shown_view-framed_out-label,shown,framed,label,fd6498a9485d29d4275b87795f4edd917f583e9febe69991e918c80415e98ae3,1105,12,length

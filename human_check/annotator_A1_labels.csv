@@ -1,0 +1,121 @@
+﻿ID,Final,Label,Unc,Rationale
+P-T026,N,PARTIAL,0,Correct isothermal-work formula but response degenerates into repeated lines and never states a final value.
+P-T034,Y,CORRECT,0,Correct formula f=(1/2L)√(T/μ) with proper unit conversion gives 120.5 Hz.
+P-T030,Y,CORRECT,0,Correctly equates magnetic and centripetal force; r=mv/qB gives 61.4 mm.
+P-T071,Y,CORRECT,0,Correct Newton's-law analysis yielding T=2m₁m₂g/(m₁+m₂)≈11.9 N.
+P-T020,Y,CORRECT,0,Correct energy conservation from spring PE to gravitational PE gives h≈3.00 m.
+P-T011,Y,CORRECT,0,Correct Kelvin conversion and Carnot efficiency give W≈3.97 kJ.
+P-T115,N,PARTIAL,1,Correct Carnot method but final over-rounding to 2.8 kJ lands just outside ±1% of 2.77 kJ.
+P-T049,Y,CORRECT,0,Correct ballistic-pendulum formula v=(M+m)/m·√(2gh)≈313 m/s.
+P-T089,Y,CORRECT,0,Correct calorimetric weighted average gives Tf≈38.6 °C.
+P-T090,Y,CORRECT,0,Correct isothermal work formula; magnitude 11958 J within 1% of 11868 J.
+P-T018,Y,CORRECT,0,"Correct momentum-then-friction analysis gives d≈0.576 m, within 1% of 0.573 m."
+P-T013,Y,CORRECT,0,Correct frictionless-banking relation tanθ=v²/(rg) gives 30.6°.
+P-T108,N,PARTIAL,0,"Right energy method but arithmetic errors give 2.625 m/s, outside ±1% of 2.59 m/s."
+P-T112,Y,CORRECT,0,Correct formula; magnitude 14884 J within 0.2% of 14901 J despite minor rounding.
+P-T052,N,WRONG,0,Computes vertical fall speed then wrongly concludes impact speed equals the constant horizontal 15.7 m/s.
+P-T017,Y,CORRECT,0,"Correct kinematics combine to √(vx²+vy²)≈37.6 m/s, within 1%."
+P-T056,Y,CORRECT,0,Correct range formula gives 57.44 m despite confusing phantom-length preamble.
+P-T068,Y,CORRECT,0,Correct Carnot efficiency and W=ηQh give ≈7.27 kJ.
+P-T106,Y,CORRECT,0,Correct two-component kinematics give impact speed ≈37.7 m/s.
+P-T097,Y,CORRECT,0,Correct rolling energy conservation with I=2/5MR² gives v≈6.71 m/s.
+P-T092,Y,CORRECT,0,Correct string formula with g/m→kg/m conversion gives ≈42.0 Hz.
+P-T032,N,PARTIAL,0,Correct field-cancellation setup but quadratic arithmetic slips give 9.6 cm (ref 9.02) and the answer sentence is cut off.
+P-T047,Y,CORRECT,0,"Correct momentum-plus-friction analysis yields d≈0.174 m, within 1% of 0.175 m."
+P-T015,Y,CORRECT,0,Correct f=(1/2L)√(T/μ) gives ≈60.6 Hz.
+P-T101,Y,CORRECT,0,Correct coupled translation-rotation equations give a=mg/(m+M/2)≈6.35 m/s².
+P-T114,Y,CORRECT,0,Correct Carnot computation gives W≈6.34 kJ.
+P-T069,N,PARTIAL,0,Correct energy method but spring energy miscomputed (0.8414 vs 0.8604 J) and response stops before stating h.
+P-T061,Y,CORRECT,0,Correct ballistic-pendulum derivation gives v₀≈179 m/s.
+P-T073,N,WRONG,0,"Uses a nonsensical tanθ=√(R²−R₀²)/R relation, yielding 69° instead of ~19.8°."
+P-T109,Y,CORRECT,0,Correct cancellation condition gives x=L/(1+√(q₂/q₁))≈34.5 cm.
+P-T091,Y,CORRECT,0,Correct RC charging relation t=τln2 gives ≈1.66 s.
+P-T076,N,PARTIAL,0,"Correct circuit reduction and total current, but response is cut off before the current-division result."
+P-T004,Y,CORRECT,0,Correct energy conservation gives h≈3.00 m.
+P-T118,Y,CORRECT,0,Correct Atwood tension formula gives T≈12.1 N.
+P-T070,Y,CORRECT,0,Correct calorimetric average gives Tf≈36.0 °C.
+P-T081,N,PARTIAL,0,Correct capacitance (2.39 nF) but response is cut off before the energy value.
+P-T016,N,PARTIAL,0,"Correct Doppler formula but arithmetic slip (343/317) yields 420 Hz, outside ±1% of 415 Hz."
+P-T003,N,PARTIAL,0,Correct circuit analysis in progress but cut off before stating I₂.
+P-T036,Y,CORRECT,0,Correct escape-speed formula with Earth scaling gives ≈16.1 km/s.
+P-T048,Y,CORRECT,0,Correct a=g(sinθ−μcosθ) and v=√(2aL) give ≈5.08 m/s.
+P-T086,Y,CORRECT,0,"Correct energy method gives v≈0.84 m/s, within 1% of 0.848 m/s."
+P-T010,Y,CORRECT,0,Correct isothermal work formula gives ≈3.07×10⁴ J.
+P-T023,Y,CORRECT,0,Correct RC relation t=τln10 gives ≈9.75 s.
+P-T099,N,WRONG,0,"Swaps hot/cold reservoirs and presents incoherent arithmetic, concluding 4.9 kJ instead of ~3.1 kJ."
+P-T009,Y,CORRECT,0,Correct momentum plus work-energy friction analysis gives d≈0.184 m.
+P-T053,N,PARTIAL,0,Correct r=mv/qB (0.222 m) but botched m→mm conversion reports 22.1 mm instead of 222 mm.
+P-T075,N,PARTIAL,0,Correct formula but wrong ln value and inconsistent multiplication give 10448 J vs 8936 J.
+P-T077,Y,CORRECT,0,Correct reaction-plus-braking distance gives ≈55.2 m.
+P-T094,Y,CORRECT,0,Correct √(v₀²+2gh) gives ≈30.4 m/s.
+P-T059,Y,CORRECT,0,Correct heat-balance equation; final 17.85 °C within ±0.3 °C of 17.8 °C.
+P-T063,Y,CORRECT,0,Correct formula; magnitude 4423 J within 0.4% of 4405 J.
+P-T019,Y,CORRECT,0,Correct two-stage pendulum analysis; final 511 m/s within 1% of 508 m/s.
+P-T088,N,PARTIAL,0,Correct setup with exact fractions but cut off before finishing the current computation.
+P-T083,Y,CORRECT,0,Correct kinematics give impact speed ≈25.1 m/s.
+P-T006,N,PARTIAL,0,Correct reduction to I_R2 expression but cut off before evaluating it.
+P-T040,Y,CORRECT,0,"Correct collision-plus-friction analysis gives ≈0.34 m, within 1% of 0.343 m."
+P-T045,N,PARTIAL,0,Correct t=−τln(0.1) formula but decimal slips give 0.98 s instead of 9.75 s.
+P-T033,Y,CORRECT,0,Correct closed-form current divider gives I₂≈0.148 A.
+P-T044,Y,CORRECT,0,Correct moving-source Doppler formula gives ≈573 Hz (boxed 574 Hz within 1%).
+P-T042,Y,CORRECT,0,"Correct banking analysis gives θ≈32.4°, within ±0.3° of 32.3°."
+P-T074,Y,CORRECT,0,Correct rolling energy conservation gives v≈2.97 m/s.
+P-T084,Y,CORRECT,0,Correct Kepler period gives ≈115 min.
+P-T039,Y,CORRECT,0,Correct t=τln4 gives ≈0.649 s.
+P-T031,Y,CORRECT,0,Correct frictionless-banking formula gives θ≈5.39°.
+P-T038,N,PARTIAL,0,Correct formula explained but the response explicitly stops before computing any value.
+P-T078,Y,CORRECT,0,"Correct momentum-plus-friction analysis gives ≈0.31 m, within 1% of 0.311 m."
+P-T065,Y,CORRECT,0,Correct calorimetric solution gives Tf≈26.8 °C.
+P-T008,N,PARTIAL,0,Correct C≈322.7 pF but response cut off mid-number before giving U in μJ.
+P-T082,Y,CORRECT,0,"Correct rolling energy method gives v≈6.72 m/s (ref 6.71, within 1%)."
+P-T058,Y,CORRECT,0,Correct analysis; boxed 0.344 m within 1% of 0.343 m.
+P-T029,Y,CORRECT,0,Correct cyclotron radius formula gives ≈1.73 mm.
+P-T105,Y,CORRECT,0,Correct Carnot computation gives W≈2.26 kJ.
+P-T007,Y,CORRECT,0,"Correct field-cancellation condition gives x≈20.6 cm, within 1% of 20.5 cm."
+P-T095,Y,CORRECT,0,Correct escape-speed computation; 17.79 km/s within 1% of 17.7 km/s.
+P-T117,Y,CORRECT,0,"Correct centripetal/banking reasoning gives θ≈5.41°, within ±0.3°."
+P-T062,Y,CORRECT,0,Correct calorimetric weighted average gives Tf≈32.0 °C.
+P-T046,Y,CORRECT,0,Correct cancellation condition gives x=69/(1+4/3)≈29.6 cm.
+P-T060,Y,CORRECT,0,Correct cancellation condition gives x≈29.0 cm.
+P-T002,N,PARTIAL,0,Correct cylinder energy conservation but evaluates √(4gh/3) as 4.29 m/s instead of 3.41 m/s.
+P-T098,Y,CORRECT,0,Correct kinematics give impact speed ≈28.47 m/s.
+P-T012,Y,CORRECT,0,Correct Atwood analysis gives T≈25.6 N.
+P-T119,N,PARTIAL,0,Correct parallel-resistance reduction but cut off before computing the current.
+P-T113,Y,CORRECT,0,"Correct r=mv/qB gives ≈39.4 mm, within 1% of 39.5 mm."
+P-T057,N,PARTIAL,0,Correct circuit reduction through V_parallel but cut off before I_R2.
+P-T066,Y,CORRECT,0,Correct Faraday's law and Ohm's law give I≈0.299 A.
+P-T022,Y,CORRECT,0,Correct Atwood equations give T≈32.1 N.
+P-T116,Y,CORRECT,1,Messy algebra but correct method; final 37.03 N within 1% of 36.8 N.
+P-T120,Y,CORRECT,0,"Correct cancellation condition gives x≈25.1 cm, within 1% of 25.2 cm."
+P-T103,N,WRONG,0,Uses W=−PΔV (invalid for reversible isothermal work) and stops without any final answer.
+P-T055,N,PARTIAL,0,Correct flux change and EMF (9.13 V) but cut off before dividing by R.
+P-T028,N,PARTIAL,0,"Correct formula but inflated ln/product gives 28000 J, 1.5% outside 27582 J."
+P-T067,Y,CORRECT,0,Correct flux and EMF computation gives I≈0.00786 A.
+P-T021,N,PARTIAL,0,Correct circuit setup but cut off before evaluating the current.
+P-T037,Y,CORRECT,0,Correct collision-plus-friction analysis gives d≈3.95 m.
+P-T054,Y,CORRECT,0,Correct two-stage analysis gives v≈217 m/s.
+P-T087,Y,CORRECT,0,Correct escape-speed scaling gives ≈17.7 km/s.
+P-T001,N,PARTIAL,0,"Correct method but arithmetic slip gives 285.7 m/s, 1.6% outside 281 m/s."
+P-T100,Y,CORRECT,1,Sign confusion resolved correctly; T≈12.24 N within 1% but very close to the boundary.
+P-T025,Y,CORRECT,0,Correct Kepler period gives ≈97.9 min.
+P-T085,Y,CORRECT,0,Correct t=−τln(0.05) gives ≈12.5 s.
+P-T051,Y,CORRECT,0,Correct formula; 4918 J within 0.3% of 4904 J.
+P-T050,Y,CORRECT,0,Correct reaction-plus-braking analysis gives ≈29.2 m.
+P-T014,Y,CORRECT,0,Correct C and U computation; 0.0693 μJ within 1% of 0.0697 μJ.
+P-T035,N,WRONG,0,"Assumes string tension equals the hanging weight (ignoring acceleration), giving 10.4 m/s² instead of 4.87 m/s²."
+P-T080,Y,CORRECT,0,Correct ballistic-pendulum method; 199.75 m/s within 1% of 200 m/s.
+P-T079,Y,CORRECT,0,Correct escape-speed computation; 6.55 km/s within 1% of 6.53 km/s.
+P-T024,Y,CORRECT,0,Correct calorimetric average gives Tf≈22.6 °C.
+P-T111,Y,CORRECT,0,Correct range formula gives R≈63.0 m.
+P-T110,N,PARTIAL,0,"Correct formula but arithmetic/ln errors give 3320 J, 1.7% outside 3266 J."
+P-T093,Y,CORRECT,0,Correct Atwood free-body analysis gives T≈36.8 N.
+P-T041,Y,CORRECT,0,"Correct energy-plus-momentum analysis gives ≈190 m/s, within 1% of 189 m/s."
+P-T072,Y,CORRECT,0,Correct kinematics give impact speed ≈29.1 m/s.
+P-T027,Y,CORRECT,0,Correct heat balance; final 36.2 °C within ±0.3 °C of 36.0 °C despite arithmetic slips.
+P-T096,N,WRONG,0,"Omits the dielectric and misconverts area (196 cm²→0.196 m²), giving 2.88×10⁻⁴ J instead of 21.8 μJ."
+P-T102,Y,CORRECT,0,"Correct cylinder rolling energy gives v≈5.25 m/s, within 1% of 5.23 m/s."
+P-T107,Y,CORRECT,0,Correct t=τln2 gives ≈1.07 s (ref 1.06).
+P-T104,Y,CORRECT,0,Correct moving-source Doppler gives ≈798 Hz.
+P-T064,Y,CORRECT,0,Correct kinematics give impact speed ≈35.8 m/s.
+P-T005,Y,CORRECT,0,Correct two-stage method; 199 m/s within 1% of 200 m/s.
+P-T043,N,PARTIAL,0,Correct concept and formula but response stops before solving for Tf.

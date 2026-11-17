@@ -1,0 +1,405 @@
+response_id,final_correct,final_status,extracted,extracted_raw,extract_method,unit_status,rel_err,trap_match,sign_flip,pow10_off,any_match,scorer_version
+mlx-community--muse-glimmer-30b-4bit__T08-11__BENCH_PLACEBO,0,TRAP,1.68,"1.68 m/s and a
+ris",tail_unit,match,0.994631692317948,speed of block after impact,0,0,1,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T01-02__CASUAL_MOTIVE,0,WRONG,9.8,9.8 m s^-2 approx,tail_unit,match,0.8162263130037036,,0,0,1,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T25-12__CASUAL_MOTIVE,0,WRONG,0.3,"0.3 A for the
+ave",tail_unit,match,0.021845651286239283,,0,0,0,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T01-11__CASUAL_MOTIVE,1,CORRECT,51.6,51.6 m on the ofte,tail_unit,match,0.0035635901862131484,,0,0,1,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T24-07__BENCH_PLACEBO,1,CORRECT,4.94,4.94 mm with the n,tail_unit,match,0.0016269727678787525,,0,0,1,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T20-04__FORMAL_MOTIVE,1,CORRECT,27.5,27.5 cm from q_{1},tail_unit,match,0.0010028459974242103,,0,0,1,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T13-04__FORMAL_MOTIVE,0,WRONG,1.58,1.58 times terrest,last_number,other,0.9107280349368435,,0,0,1,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T03-12__BENCH,0,TRAP,38.0,38 m under braki,tail_unit,match,0.3113930412677203,ignored reaction distance,0,0,1,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T05-05__BENCH,1,CORRECT,39.6,39.6 N on the g=9.,tail_unit,match,0.0004904681245765068,,0,0,1,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T24-08__FORMAL_MOTIVE,0,WRONG,130.0,13 cm cyclotron,tail_unit,scaled,0.015014943215779819,,0,0,1,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T23-11__BENCH,1,CORRECT,3.8,"3.8 s 
+ ≈ 0.92 \t",tail_unit,match,0.001728342551137204,,0,0,1,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T21-12__BENCH_PLACEBO,1,CORRECT,0.07,0.07 u J of electr,tail_unit,match,0.004192089711114762,,0,0,1,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T23-06__BENCH_PLACEBO,1,CORRECT,1.66,1.66 s after the s,tail_unit,match,0.001201407974782332,,0,0,1,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T04-02__FORMAL_MOTIVE,0,WRONG,7.0,7 m/s down the,tail_unit,match,0.010385841878759476,,0,0,1,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T13-01__BENCH,0,WRONG,13.0,13 km/s often qu,tail_unit,match,0.013273965630756038,,0,0,1,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T12-03__CASUAL_MOTIVE,0,WRONG,2.0,"2 min
+differenc",tail_unit,match,0.9804186713452631,,0,0,1,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T22-10__CASUAL,0,WRONG,0.11,"0.11 A .
+
+*Remark:",tail_unit,match,0.03492610837438426,,0,0,1,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T24-09__BENCH_PLACEBO,1,CORRECT,2520.0,2.52 m for the quo,tail_unit,scaled,0.0006384278316292778,,0,0,1,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T07-01__CASUAL_MOTIVE,0,WRONG,0.18,"0.18 m 
+is the dis",tail_unit,match,0.022338071144353024,,0,0,0,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T17-09__BENCH,1,CORRECT,36.0,3.6×10^1 degC ≈ 36.0^\c,tail_unit,match,0.0002927522897410592,,0,0,1,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T04-01__FORMAL_MOTIVE,0,WRONG,5.0,5 m/s down the,tail_unit,match,0.0471699203312758,,0,0,1,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T11-10__BENCH_PLACEBO,1,CORRECT,2.0,2.0 m/s^2 downwar,tail_unit,match,0.005904641009366583,,0,0,1,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T02-05__FORMAL_MOTIVE,0,TRAP,8.6,8.6 m/s horizonta,tail_unit,match,0.7173052469236313,horizontal speed only,0,0,1,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T08-04__BENCH_PLACEBO,1,CORRECT,341.0,341 m/s with the,tail_unit,match,0.00028466696134403036,,0,0,1,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T19-09__BENCH,1,CORRECT,2.25,2.25 kJ per cycle.,tail_unit,match,0.0028808593749999846,,0,0,1,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T14-10__CASUAL,0,WRONG,1.25,1.25 m/s maximum r,tail_unit,match,0.04494462175283782,,0,0,1,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T19-12__BENCH_PLACEBO,1,CORRECT,6.3,6.3 kJ of mechani,tail_unit,match,0.006533613445378093,,0,0,1,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T09-12__BENCH,0,WRONG,0.0017,"1.7×10^-3 m , 
+
+the ener",tail_unit,match,0.9994327551020408,,0,0,0,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T16-04__BENCH,1,CORRECT,890.0,890 Hz on the 343,tail_unit,match,0.00041387696499989106,,0,0,1,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T21-12__CASUAL_MOTIVE,1,CORRECT,0.07,"0.07 u J of
+electr",tail_unit,match,0.004192089711114762,,0,0,1,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T24-06__BENCH_PLACEBO,1,CORRECT,30.0,3 cm radius.,tail_unit,scaled,2.748061635108284e-05,,0,0,1,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T06-04__BENCH,1,CORRECT,5.557690612768986,0.097 rad ≈0.097×\f,tail_unit,scaled,0.002302886595669443,,0,0,1,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T19-12__BENCH,1,CORRECT,6.3,6.3 kJ in round n,tail_unit,match,0.006533613445378093,,0,0,1,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T16-02__BENCH_PLACEBO,1,CORRECT,667.5,"667.5 Hz 
+value is",tail_unit,match,5.180348408547427e-05,,0,0,1,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T19-06__BENCH,0,WRONG,1.6,"1.6 kJ 
+per cycle",tail_unit,match,0.014036630036629945,,0,0,1,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T23-12__CASUAL_MOTIVE,1,CORRECT,12.48,12.48 s after the s,tail_unit,match,0.0002224116873398771,,0,0,1,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T08-12__CASUAL_MOTIVE,0,TRAP,1.57,1.57 m/s is the po,tail_unit,match,0.9912118523347433,speed of block after impact,0,0,1,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T10-09__BENCH,0,TRAP,9.18,9.18 m/s because p,tail_unit,match,0.2269219175447528,ignored rotational energy,0,0,1,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T08-09__BENCH_PLACEBO,1,CORRECT,189.0,189 m/s obtained,tail_unit,match,0.0007064306067475248,,0,0,1,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T06-04__FORMAL_MOTIVE,1,CORRECT,5.546231456866368,0.0968 rad ≈0.0968×\,tail_unit,scaled,0.00023628270578130204,,0,0,1,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T21-03__BENCH_PLACEBO,1,CORRECT,1.99,1.99 u J on the 8.,tail_unit,match,0.0011828170425006266,,0,0,1,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T23-11__CASUAL_MOTIVE,1,CORRECT,3.79,3.79 s of RC charg,tail_unit,match,0.0009077846661025747,,0,0,1,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T25-11__CASUAL,1,CORRECT,0.057,0.057 A with the nu,tail_unit,match,0.0006053268765135573,,0,0,1,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T12-02__BENCH,1,CORRECT,116.4,"116.4 min , essenti",tail_unit,match,0.002092589249385079,,0,0,1,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T05-06__CASUAL,1,CORRECT,25.5,25.5 N and a≈3.58,tail_unit,match,0.003304541164223645,,0,0,1,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T09-08__BENCH_PLACEBO,0,WRONG,0.078,"0.078 m 
+
+ 
+U_{e,i}",tail_unit,match,0.9188585607940447,,0,0,0,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T19-01__CASUAL,1,CORRECT,9.8,"9.8 kJ per cycle,",tail_unit,match,0.003018112156043217,,0,0,1,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T12-10__CASUAL,1,CORRECT,100.0,100 min LEO perio,tail_unit,match,0.003717600724199837,,0,0,1,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T15-05__BENCH_PLACEBO,1,CORRECT,77.0,"77 Hz ,
+the n -t",tail_unit,match,0.005888065343256668,,0,0,1,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T21-05__CASUAL,0,WRONG,0.6,0.60 u J with the,tail_unit,match,0.01894072496355469,,0,0,1,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T14-03__CASUAL,0,WRONG,0.41,0.41 m/s away from,tail_unit,match,0.011600731000644621,,0,0,0,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T20-08__BENCH,0,TRAP,19.0,19 cm from q_{2},tail_unit,match,0.9277471842169543,distance measured from q2,0,0,1,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T10-09__BENCH_PLACEBO,1,CORRECT,7.47,"7.47 m/s ,
+essenti",tail_unit,match,0.001622361213583519,,0,0,1,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T23-04__FORMAL_MOTIVE,0,WRONG,3.74,3.74 s is essentia,cue,match,0.6690410034766708,,0,0,1,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T09-12__BENCH_PLACEBO,0,WRONG,2.9,2.90 m of free fli,tail_unit,match,0.032346938775510266,,0,0,1,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T22-11__CASUAL,0,TRAP,0.171,0.171 A going throu,tail_unit,match,0.0886479791395045,divider with wrong resistor,0,0,1,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T12-11__CASUAL,0,WRONG,92.6,92.6 min ISS value,tail_unit,match,0.05365940592310487,,0,0,1,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T09-06__BENCH_PLACEBO,0,WRONG,0.06,6.0×10^-2 m be the initi,tail_unit,match,0.8837029288702929,,0,0,0,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T25-12__FORMAL_MOTIVE,1,CORRECT,0.293,0.293 A .,tail_unit,match,0.001997413910439655,,0,0,1,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T19-05__BENCH_PLACEBO,1,CORRECT,2.8,"2.8 kJ per cycle,",tail_unit,match,0.009739785992217639,,0,0,1,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T08-09__CASUAL_MOTIVE,1,CORRECT,190.0,"1.9×10^2 m/s 
+bullet sp",tail_unit,match,0.0045808369561797365,,0,0,1,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T02-02__BENCH_PLACEBO,1,CORRECT,38.0,"38 m s^-1 
+in ma",last_eq,other,0.005177046099425565,,0,0,1,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T18-08__BENCH,1,CORRECT,11900.0,11.9 kJ is the wor,tail_unit,scaled,0.0026918968377489566,,0,0,1,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T04-09__CASUAL,1,CORRECT,6.81,"6.81 m/s , essenti",tail_unit,match,0.00022760297585880133,,0,0,1,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T16-05__BENCH,1,CORRECT,476.1,476.1 Hz on the 343,tail_unit,match,5.8880695135150815e-05,,0,0,1,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T16-06__FORMAL_MOTIVE,1,CORRECT,777.0,777 Hz in the usu,tail_unit,match,0.00043187399441111296,,0,0,1,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T09-07__CASUAL,0,NO_ANSWER,,,none,missing,,,0,0,0,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T21-08__FORMAL_MOTIVE,0,WRONG,0.7,0.7 u J on the 26,tail_unit,match,0.01734849014270141,,0,0,1,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T08-08__BENCH_PLACEBO,1,CORRECT,285.0,285 m/s before im,tail_unit,match,0.0037112258572368786,,0,0,1,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T19-06__CASUAL,0,WRONG,2.5,2.5 kJ heat intak,tail_unit,match,0.5405677655677656,,0,0,1,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T01-04__CASUAL,1,CORRECT,52.1,52.1 m .,tail_unit,match,0.001864693934703476,,0,0,1,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T08-06__BENCH_PLACEBO,1,CORRECT,190.0,190 m/s normally,tail_unit,match,0.0066161064439225654,,0,0,1,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T14-03__CASUAL_MOTIVE,0,TRAP,0.51,"0.51 m/s .
+
+The ki",tail_unit,match,0.25833261661055806,maximum speed instead,0,0,0,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T18-09__BENCH_PLACEBO,0,WRONG,-4400.0,"4.4 kJ in the
+IUP",tail_unit,scaled,1.9989093279419612,,1,0,1,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T03-05__BENCH_PLACEBO,0,WRONG,29.0,29 m in round fi,tail_unit,match,0.01582602187201128,,0,0,1,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T10-04__CASUAL,0,WRONG,2.0,2a s with s\sin,cue,other,0.6039875697667567,,0,0,1,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T16-03__FORMAL_MOTIVE,1,CORRECT,898.0,"898 Hz, the famil",tail_unit,match,0.0006510579691999128,,0,0,1,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T04-07__BENCH_PLACEBO,1,CORRECT,6.69,6.69 m/s for the q,tail_unit,match,0.0006981079437416302,,0,0,1,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T03-07__FORMAL_MOTIVE,1,CORRECT,83.2,83.2 m with the nu,cue,match,0.0001473839351510505,,0,0,1,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T23-08__BENCH,0,TRAP,4.23,"4.23 s ,
+etc.",tail_unit,match,0.5660133100754181,one time constant,0,0,1,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T25-04__FORMAL_MOTIVE,0,WRONG,0.9,0.9 A .,tail_unit,match,0.011929247223364754,,0,0,1,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T07-11__CASUAL_MOTIVE,0,WRONG,0.34,0.34 m of slide af,tail_unit,match,0.010008171911502887,,0,0,0,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T09-01__CASUAL,0,NO_ANSWER,,,none,missing,,,0,0,0,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T08-12__FORMAL_MOTIVE,0,TRAP,1.57,1.57 m/s and a ris,tail_unit,match,0.9912118523347433,speed of block after impact,0,0,1,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T15-01__CASUAL_MOTIVE,1,CORRECT,135.0,"135 Hz for the
+fu",tail_unit,match,0.0022699023152169973,,0,0,1,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T05-03__CASUAL,0,WRONG,20.0,20 N of string p,tail_unit,match,0.02423454268984473,,0,0,1,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T24-10__CASUAL_MOTIVE,1,CORRECT,61.0,61 mm quoted in,tail_unit,match,0.007008965929468131,,0,0,1,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T09-02__CASUAL_MOTIVE,1,CORRECT,0.698,"0.698 m , essential",tail_unit,match,0.001956040111940339,,0,0,1,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T10-06__FORMAL_MOTIVE,1,CORRECT,5.71,5.71 m/s down the,tail_unit,match,0.0007534349041638592,,0,0,1,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T07-01__BENCH,1,CORRECT,0.184,"0.184 m 
+
+from the",tail_unit,match,0.0006122505031164053,,0,0,1,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T10-09__CASUAL,1,CORRECT,7.5,7.5 m/s centre-of,tail_unit,match,0.0023871875365627654,,0,0,1,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T10-07__FORMAL_MOTIVE,1,CORRECT,3.4,3.4 m/s translati,tail_unit,match,0.0034937159865604957,,0,0,1,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T05-08__CASUAL,1,CORRECT,11.9,11.9 N .,tail_unit,match,0.0020053814953868675,,0,0,1,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T01-03__CASUAL_MOTIVE,0,WRONG,70.0,70 m for this sp,tail_unit,match,0.6248844631329762,,0,0,1,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T20-11__FORMAL_MOTIVE,1,CORRECT,39.0,"39 cm 
+from q_{1",tail_unit,match,0.00936241220268579,,0,0,1,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T22-05__FORMAL_MOTIVE,1,CORRECT,0.089,89 mA is the R_{,tail_unit,scaled,0.0038372093023256435,,0,0,1,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T12-03__BENCH,1,CORRECT,102.0,1.70 h .,tail_unit,scaled,0.001352238608413993,,0,0,1,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T04-11__CASUAL,1,CORRECT,4.8,4.8 m/s down the,tail_unit,match,0.0013689856412573518,,0,0,1,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T01-07__BENCH_PLACEBO,1,CORRECT,15.5,15.5 m for g=9.81,tail_unit,match,0.0005877289857573043,,0,0,1,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T16-05__CASUAL_MOTIVE,0,TRAP,443.5,443.5 Hz for the sa,tail_unit,match,0.0684181609151598,receding-source sign,0,0,1,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T19-01__CASUAL_MOTIVE,0,WRONG,10.0,10 kJ quoted abo,tail_unit,match,0.0173284569836293,,0,0,1,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T23-04__CASUAL_MOTIVE,0,WRONG,2.2,2.2 s of charging,tail_unit,match,0.018211174425487715,,0,0,1,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T03-01__FORMAL_MOTIVE,0,TRAP,31.3,31.3 m under braki,tail_unit,match,0.308275497501833,ignored reaction distance,0,0,1,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T16-07__CASUAL_MOTIVE,1,CORRECT,1022.1,1022.1 Hz on the 343,tail_unit,match,2.8792725540455472e-05,,0,0,1,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T19-04__BENCH,1,CORRECT,4.0,"4.0 kJ 
+per cycle",tail_unit,match,0.008942144326209508,,0,0,1,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T15-11__CASUAL,1,CORRECT,300.0,"300 Hz .
+This is",tail_unit,match,0.0008003202562562358,,0,0,1,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T06-10__FORMAL_MOTIVE,0,NO_ANSWER,,,none,missing,,,0,0,0,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T08-06__BENCH,0,TRAP,1.46,1.46 m/s . This is,tail_unit,match,0.9922649499189046,speed of block after impact,0,0,1,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T10-12__FORMAL_MOTIVE,1,CORRECT,5.23,5.23 m/s down the,tail_unit,match,0.0004580879212421574,,0,0,1,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T19-03__FORMAL_MOTIVE,0,WRONG,9.1,9.1 kJ taken in.,tail_unit,match,0.6475775193798449,,0,0,1,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T04-03__BENCH_PLACEBO,0,WRONG,4.0,4 m/s down the,tail_unit,match,0.030188235716209717,,0,0,1,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T01-01__CASUAL_MOTIVE,1,CORRECT,143.0,"143 m ,
+ R≈ v_{0}",tail_unit,match,0.005341143702324287,,0,0,1,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T01-11__CASUAL,0,NO_ANSWER,,,none,missing,,,0,0,0,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T02-06__CASUAL_MOTIVE,1,CORRECT,25.0,"25 m/s 
+impact s",tail_unit,match,0.004541146783381833,,0,0,1,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T22-06__BENCH_PLACEBO,0,TRAP,0.243,0.243 A .,tail_unit,match,1.151453972257251,total current,0,0,1,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T15-12__FORMAL_MOTIVE,0,WRONG,60.0,60 Hz mains freq,tail_unit,match,0.01039362664059794,,0,0,1,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T01-07__CASUAL_MOTIVE,1,CORRECT,15.5,15.5 m is v_{0x}t_,tail_unit,match,0.0005877289857573043,,0,0,1,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T22-01__CASUAL,0,WRONG,0.46,"0.46 A 
+in the R_{",tail_unit,match,2.115238095238095,,0,0,1,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T14-05__BENCH_PLACEBO,1,CORRECT,1.96,1.96 m/s in magnit,tail_unit,match,0.0021030269441960946,,0,0,1,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T10-02__BENCH_PLACEBO,1,CORRECT,5.2,5.2 m/s translati,tail_unit,match,0.0027202630691078164,,0,0,1,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T01-11__FORMAL_MOTIVE,0,NO_ANSWER,,,none,missing,,,0,0,0,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T12-07__FORMAL_MOTIVE,1,CORRECT,120.0,"120 min 
+LEO peri",tail_unit,match,0.0014898111929406946,,0,0,1,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T08-11__CASUAL,1,CORRECT,311.0,"3.11×10^2 m/s , essentia",tail_unit,match,0.00622399457251497,,0,0,1,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T09-09__BENCH,1,CORRECT,5.8,5.8 m of free fli,tail_unit,match,0.004741598521113584,,0,0,1,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T09-03__BENCH_PLACEBO,0,WRONG,2.0,2.0 m of free fli,tail_unit,match,0.051605028781354555,,0,0,1,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T17-04__FORMAL_MOTIVE,1,CORRECT,34.0,34^\circ C in th,last_eq,missing,0.0018294417524552368,,0,0,1,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T08-02__FORMAL_MOTIVE,1,CORRECT,280.0,280 m/s ballistic,tail_unit,match,0.004160053418198966,,0,0,1,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T07-07__BENCH,1,CORRECT,3.7,3.7 m before the,cue,match,0.0048890715404429855,,0,0,1,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T24-04__CASUAL,0,WRONG,40.0,40 mm cyclotron,tail_unit,match,0.011577543795117,,0,0,1,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T16-09__CASUAL,1,CORRECT,573.0,573 Hz heard on a,tail_unit,match,0.0007413577675968151,,0,0,1,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T13-11__BENCH_PLACEBO,0,WRONG,3.19,3.19/2.47} v_{e\op,last_eq,other,0.7490543786913239,,0,0,1,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T15-12__CASUAL,1,CORRECT,60.6,"60.6 Hz .
+
+*Remark",tail_unit,match,0.0004975629070038964,,0,0,1,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T04-05__FORMAL_MOTIVE,1,CORRECT,8.49,"8.49 m/s , i.e. ≈",tail_unit,match,1.7714422743409313e-05,,0,0,1,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T22-04__BENCH_PLACEBO,0,TRAP,0.33,"0.33 A , as requir",tail_unit,match,1.3016279069767438,total current,0,0,1,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T12-05__FORMAL_MOTIVE,0,WRONG,120.0,2 h low-Earth o,tail_unit,scaled,0.024612162653812525,,0,0,1,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T06-02__CASUAL,0,WRONG,30.0,"30^\circ ,
+the t",last_eq,missing,0.014246495395975242,,0,0,1,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T03-08__CASUAL_MOTIVE,0,TRAP,12.9,12.9 m after the b,tail_unit,match,0.5011616804583068,ignored reaction distance,0,0,1,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T05-12__CASUAL,0,NO_ANSWER,,,none,missing,,,0,0,0,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T19-02__FORMAL_MOTIVE,0,WRONG,3.97,"3.97 kJ ,
+ 
+
+and i",tail_unit,match,0.26868553231151615,,0,0,1,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T11-04__CASUAL_MOTIVE,1,CORRECT,6.9,6.90 m/s^2 essenti,cue,match,0.0007498235709244658,,0,0,1,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T06-05__FORMAL_MOTIVE,0,WRONG,137.0,137× 9.81,last_eq,missing,3.2372047066264753,,0,0,0,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T11-07__FORMAL_MOTIVE,1,CORRECT,5.37,"5.37 m/s^2 down, e",tail_unit,match,0.0017364815209920052,,0,0,1,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T15-09__BENCH_PLACEBO,1,CORRECT,110.0,110 Hz .,tail_unit,match,0.001533103278181893,,0,0,1,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T14-04__BENCH,1,CORRECT,2.59,2.59 m/s with the,tail_unit,match,0.0009031166823630551,,0,0,1,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T04-05__CASUAL_MOTIVE,1,CORRECT,8.49,8.49 m/s with the,tail_unit,match,1.7714422743409313e-05,,0,0,1,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T07-04__BENCH_PLACEBO,0,NO_ANSWER,,,none,missing,,,0,0,0,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T10-07__CASUAL_MOTIVE,0,TRAP,4.18,4.18 m/s .,tail_unit,match,0.2251165491694638,ignored rotational energy,0,0,1,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T06-07__BENCH,1,CORRECT,5.391532852181046,"0.0941 rad 
+ 
+
+ 
+\th",tail_unit,scaled,0.00040435379471395196,,0,0,1,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T24-12__CASUAL_MOTIVE,1,CORRECT,0.036,0.036 mm in magnitu,tail_unit,match,0.0013823511620039695,,0,0,1,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T01-02__BENCH,0,WRONG,9.8,9.8 m s^-2 .,tail_unit,match,0.8162263130037036,,0,0,1,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T05-12__CASUAL_MOTIVE,0,TRAP,7.95,7.95 N respectivel,tail_unit,match,0.3445060231239007,weight of lighter mass,0,0,1,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T20-09__BENCH,0,TRAP,9.5,9.5 cm from q_{2},tail_unit,match,0.536745150869346,distance measured from q2,0,0,1,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T01-05__FORMAL_MOTIVE,1,CORRECT,57.6,57.6 m .,tail_unit,match,0.0019391302111231603,,0,0,1,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T16-04__CASUAL,0,WRONG,93.6,"93.6 Hz 
+
+upwards",tail_unit,match,0.8947879338382876,,0,0,1,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T14-01__BENCH_PLACEBO,1,CORRECT,2.54,2.54 m/s with the,tail_unit,match,0.00042270154460825773,,0,0,1,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T16-08__FORMAL_MOTIVE,0,WRONG,51.0,51 Hz up-shift f,tail_unit,match,0.936125844485815,,0,0,1,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T25-02__BENCH,1,CORRECT,0.3,0.3 A flowing so,tail_unit,match,0.0032616717853488305,,0,0,1,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T07-01__BENCH_PLACEBO,0,WRONG,0.18,0.18 m of post-col,tail_unit,match,0.022338071144353024,,0,0,1,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T16-09__CASUAL_MOTIVE,1,CORRECT,569.0,"569 Hz , consiste",tail_unit,match,0.006244620297098451,,0,0,1,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T12-06__CASUAL_MOTIVE,0,WRONG,92.0,92 min period at,tail_unit,match,0.03633951658252937,,0,0,1,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T22-02__FORMAL_MOTIVE,1,CORRECT,0.0335,3.35×10^-2 A in the ideal,tail_unit,match,0.0012401960784311971,,0,0,1,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T12-06__BENCH,0,WRONG,2.0,2,last_eq,missing,0.9774708800742928,,0,0,0,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T04-08__CASUAL_MOTIVE,1,CORRECT,5.08,5.08 m/s with the,tail_unit,match,0.0006590123397927249,,0,0,1,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T20-09__CASUAL_MOTIVE,0,TRAP,9.5,"9.5 cm 
+ 
+
+from q",tail_unit,match,0.536745150869346,distance measured from q2,0,0,0,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T23-12__FORMAL_MOTIVE,1,CORRECT,12.48,12.48 s with the ex,tail_unit,match,0.0002224116873398771,,0,0,1,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T15-12__CASUAL_MOTIVE,0,WRONG,60.0,60 Hz mains freq,tail_unit,match,0.01039362664059794,,0,0,1,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T19-03__BENCH,1,CORRECT,5.5,"5.5 kJ per
+cycle,",tail_unit,match,0.004211389385807981,,0,0,1,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T25-01__BENCH,1,CORRECT,0.51,0.51 A .,tail_unit,match,0.00044792164357369097,,0,0,1,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T06-06__BENCH_PLACEBO,0,WRONG,9.81,9.81 m s^-2 this i,last_eq,other,0.6792938684088525,,0,0,1,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T01-06__FORMAL_MOTIVE,1,CORRECT,63.0,6.3×10^1 m on the g=9.8,tail_unit,match,0.0002738383084063901,,0,0,1,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T08-03__FORMAL_MOTIVE,0,WRONG,200.0,2×10^2 m/s normally q,tail_unit,match,0.07686522788053386,,0,0,1,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T14-04__CASUAL,1,CORRECT,2.6,2.6 m/s on its wa,tail_unit,match,0.004767607480364546,,0,0,1,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T25-03__BENCH_PLACEBO,1,CORRECT,8.6,8.6 A with the nu,tail_unit,match,0.001472910391316478,,0,0,1,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T04-03__FORMAL_MOTIVE,1,CORRECT,4.12,4.12 m/s with the,tail_unit,match,0.0010938827876959816,,0,0,1,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T17-06__BENCH_PLACEBO,1,CORRECT,38.0,"38^\circ C ,
+ess",last_eq,missing,0.002177691491061965,,0,0,1,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T08-03__CASUAL_MOTIVE,1,CORRECT,216.0,216 m/s with the,tail_unit,match,0.003014446110976574,,0,0,1,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T03-05__FORMAL_MOTIVE,1,CORRECT,28.5,28.5 m on the exac,tail_unit,match,0.0016882198844027098,,0,0,1,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T09-08__FORMAL_MOTIVE,0,NO_ANSWER,,,none,missing,,,0,0,0,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T24-02__BENCH_PLACEBO,0,WRONG,220.0,"0.22 m
+circular or",tail_unit,scaled,0.011171426131720045,,0,0,1,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T11-10__CASUAL,1,CORRECT,1.99,"1.99 m/s^2 
+ 
+
+dow",tail_unit,match,0.0008751178043197463,,0,0,1,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T05-12__BENCH,0,NO_ANSWER,,,none,missing,,,0,0,0,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T04-10__FORMAL_MOTIVE,1,CORRECT,8.4,8.4 m/s after 8.2,tail_unit,match,0.004774145854803761,,0,0,1,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T12-11__BENCH_PLACEBO,1,CORRECT,98.0,98 min LEO perio,tail_unit,match,0.0015267626299754668,,0,0,1,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T01-01__FORMAL_MOTIVE,0,WRONG,145.0,145 m range quote,tail_unit,match,0.01940185899886029,,0,0,1,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T11-04__BENCH,1,CORRECT,6.9,6.9 m/s^2 downwar,tail_unit,match,0.0007498235709244658,,0,0,1,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T02-06__BENCH,1,CORRECT,25.0,25 m/s just befo,tail_unit,match,0.004541146783381833,,0,0,1,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T12-04__BENCH_PLACEBO,0,WRONG,55.0,55 min LEO perio,tail_unit,match,0.5203115964296438,,0,0,1,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T02-10__FORMAL_MOTIVE,0,WRONG,28.4,28.4 m/s .,tail_unit,match,0.022907380927671184,,0,0,1,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T08-01__BENCH,1,CORRECT,469.0,469 m/s .,tail_unit,match,0.0017984262233508301,,0,0,1,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T03-06__CASUAL,0,TRAP,11.0,11.0 m is the conv,tail_unit,match,0.3858802678219771,ignored reaction distance,0,0,1,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T06-03__BENCH,1,CORRECT,3.6898482006425017,"0.0644 rad 
+ 
+
+ 
+\th",tail_unit,scaled,7.526279399951494e-05,,0,0,1,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T20-12__BENCH_PLACEBO,1,CORRECT,35.3,35.3 cm with the n,tail_unit,match,0.001617199813841688,,0,0,1,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T18-06__CASUAL_MOTIVE,1,CORRECT,27600.0,"27.6 kJ in
+magnitu",tail_unit,scaled,0.0006667654555045094,,0,0,1,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T08-08__CASUAL,0,WRONG,300.0,"300 m/s , the fam",tail_unit,match,0.056538132481301975,,0,0,1,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T22-12__FORMAL_MOTIVE,0,WRONG,0.25,0.25 A in round nu,tail_unit,match,0.010606060606060768,,0,0,1,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T04-11__BENCH_PLACEBO,1,CORRECT,4.8,4.8 m/s after 2.1,tail_unit,match,0.0013689856412573518,,0,0,1,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T19-08__BENCH_PLACEBO,1,CORRECT,3.1,3.1 kJ of mechani,tail_unit,match,0.0014549463853339032,,0,0,1,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T02-05__BENCH,0,WRONG,29.2,"29.2 m/s .
+
+*Remar",tail_unit,match,0.04015269885698067,,0,0,1,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T05-03__CASUAL_MOTIVE,1,CORRECT,20.5,"20.5 N ,
+ a≈3.00 m",tail_unit,match,0.0001595937429091502,,0,0,1,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T06-01__FORMAL_MOTIVE,0,NO_ANSWER,,,none,missing,,,0,0,0,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T07-11__FORMAL_MOTIVE,0,WRONG,0.4,0.4 m of travel.,tail_unit,match,0.16469626833940834,,0,0,1,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T01-04__CASUAL_MOTIVE,1,CORRECT,52.1,52.1 m .,tail_unit,match,0.001864693934703476,,0,0,1,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T16-01__CASUAL_MOTIVE,0,WRONG,62.0,"62 Hz .
+
+*Remark",tail_unit,match,0.9397348657294208,,0,0,1,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T02-08__BENCH_PLACEBO,1,CORRECT,25.0,25 m/s on impact,tail_unit,match,0.003591755844655566,,0,0,1,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T17-05__BENCH,0,WRONG,33.0,33.0 K to essentia,last_eq,other,0.03255224160984843,,0,0,1,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T03-12__CASUAL,0,TRAP,38.2,38.2 m with the nu,tail_unit,match,0.30776879411649777,ignored reaction distance,0,0,1,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T02-10__CASUAL,1,CORRECT,29.0,"29 m/s 
+downward",tail_unit,match,0.0022645791162839075,,0,0,1,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T08-07__FORMAL_MOTIVE,1,CORRECT,507.0,507 m/s normally,tail_unit,match,0.0015901101947980504,,0,0,1,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T11-01__BENCH_PLACEBO,1,CORRECT,5.81,"5.81 m/s^2 
+ 
+
+dow",tail_unit,match,0.0008453295542128233,,0,0,1,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T17-03__BENCH,0,WRONG,39.0,39^\circ C in th,last_eq,missing,0.011038399732313062,,0,0,1,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T25-11__BENCH,1,CORRECT,0.057,"5.7×10^-2 A .
+
+This is t",tail_unit,match,0.0006053268765135573,,0,0,1,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T10-06__BENCH,1,CORRECT,5.71,"5.71 m/s on the
+us",tail_unit,match,0.0007534349041638592,,0,0,1,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T01-01__BENCH_PLACEBO,0,WRONG,47.3,47.3 m.,tail_unit,match,0.6674640832369235,,0,0,1,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T25-10__CASUAL_MOTIVE,1,CORRECT,3.57,"3.57 A 
+
+for the a",tail_unit,match,0.00011718592349092088,,0,0,1,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T20-06__BENCH,1,CORRECT,35.0,35 cm quoted val,tail_unit,match,0.005047191079374263,,0,0,1,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T08-10__FORMAL_MOTIVE,1,CORRECT,199.0,"1.99×10^2 m/s , the diff",tail_unit,match,0.0059152926783631885,,0,0,1,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T21-08__CASUAL_MOTIVE,0,WRONG,0.7,0.7 u J on the qu,tail_unit,match,0.01734849014270141,,0,0,1,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T15-01__FORMAL_MOTIVE,1,CORRECT,136.0,"136 Hz , essentia",tail_unit,match,0.00512069100096658,,0,0,1,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T11-02__CASUAL_MOTIVE,1,CORRECT,0.94,0.94 m/s^2 .,tail_unit,match,0.005861365953109089,,0,0,1,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T19-04__BENCH_PLACEBO,0,WRONG,6.6,6.6 kJ being reje,tail_unit,match,0.6647545381382456,,0,0,1,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T16-02__FORMAL_MOTIVE,1,CORRECT,667.5,667.5 Hz with the n,tail_unit,match,5.180348408547427e-05,,0,0,1,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T03-09__BENCH_PLACEBO,1,CORRECT,29.0,29 m of stopping,tail_unit,match,0.005502239283429249,,0,0,1,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T13-01__CASUAL_MOTIVE,0,WRONG,11.186,"11.186 km/s 
+gives v",tail_unit,match,0.15096019842658748,,0,0,1,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T11-10__CASUAL_MOTIVE,1,CORRECT,2.0,"2.0 m/s^2 down, i",tail_unit,match,0.005904641009366583,,0,0,1,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T09-12__CASUAL,0,NO_ANSWER,,,none,missing,,,0,0,0,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T08-04__BENCH,1,CORRECT,341.0,"3.41×10^2 m/s , essentia",tail_unit,match,0.00028466696134403036,,0,0,1,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T25-09__FORMAL_MOTIVE,0,WRONG,0.3,0.3 A induced in,tail_unit,match,0.04198365736827272,,0,0,0,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T20-02__CASUAL_MOTIVE,0,TRAP,46.0,46 cm from the 7,tail_unit,match,0.5864367544552784,distance measured from q2,0,0,1,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T07-10__CASUAL,0,WRONG,0.3,30 cm of post-im,tail_unit,scaled,0.03490927021696212,,0,0,1,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T02-11__CASUAL,1,CORRECT,28.4,"28.4 m/s ,
+essenti",tail_unit,match,0.002468020221276007,,0,0,1,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T13-02__BENCH,1,CORRECT,16.0,1.6×10^1 km/s from the,tail_unit,match,0.0071869642341987556,,0,0,1,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T23-01__BENCH_PLACEBO,1,CORRECT,1.06,"1.06 s , essential",tail_unit,match,0.004390141053189292,,0,0,1,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T24-03__BENCH_PLACEBO,1,CORRECT,1.73,1.73 mm on the usu,tail_unit,match,0.0014785089387597576,,0,0,1,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T12-08__BENCH,0,NO_ANSWER,,,none,missing,,,0,0,0,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T10-10__FORMAL_MOTIVE,1,CORRECT,4.2,4.2 m/s translati,tail_unit,match,0.004191189944291695,,0,0,1,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T15-01__BENCH,1,CORRECT,135.0,"135 Hz , the n -t",tail_unit,match,0.0022699023152169973,,0,0,1,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T20-01__BENCH,0,TRAP,43.5,43.5 cm from q_{2},tail_unit,match,0.2597880873886156,distance measured from q2,0,0,1,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T25-06__BENCH,1,CORRECT,0.222,0.222 A with the nu,tail_unit,match,0.0006009615384614723,,0,0,1,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T04-08__BENCH,0,WRONG,5.0,5 m/s down the,tail_unit,match,0.01639666568877238,,0,0,1,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T19-10__CASUAL_MOTIVE,0,WRONG,5.6,"5.6 kJ 
+
+is rejec",tail_unit,match,0.22981831932484237,,0,0,1,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T17-03__BENCH_PLACEBO,0,WRONG,900.0,900 J kg^-1K^-1 t,last_eq,other,22.331655378437993,,0,0,1,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T01-10__BENCH,0,WRONG,38.9,"38.9 m s^-1 ,
+* \t",tail_unit,match,0.6076696467480555,,0,0,0,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T17-06__CASUAL_MOTIVE,0,WRONG,89000.0,"8.9×10^4 J ,
+in the ide",last_eq,other,2336.0048804551443,,0,0,1,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T24-02__FORMAL_MOTIVE,0,WRONG,220.0,0.22 m cyclotron r,tail_unit,scaled,0.011171426131720045,,0,0,1,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T01-12__BENCH,1,CORRECT,70.0,70 m horizontall,tail_unit,match,0.0021868483954635416,,0,0,1,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T20-07__CASUAL_MOTIVE,0,TRAP,39.4,39.4 cm from q_{1},tail_unit,match,0.33236714975845383,distance measured from q2,0,0,1,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T23-01__FORMAL_MOTIVE,0,WRONG,1.64,"1.64 s for
+ 63.2%",tail_unit,match,0.5403775176158202,,0,0,1,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T09-10__CASUAL_MOTIVE,1,CORRECT,1.17,1.17 m is the one,tail_unit,match,0.0015958264542904712,,0,0,1,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T18-04__BENCH_PLACEBO,1,CORRECT,23400.0,23.4 kJ often quot,tail_unit,scaled,0.0012127759368769856,,0,0,1,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T05-08__CASUAL_MOTIVE,0,WRONG,12.0,"12 N ,
+essential",tail_unit,match,0.010425594785264038,,0,0,1,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T24-10__BENCH,1,CORRECT,61.3,61.3 mm.,tail_unit,match,0.0021254034668262167,,0,0,1,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T11-09__CASUAL_MOTIVE,1,CORRECT,4.56,4.56 m/s^2 down.,tail_unit,match,0.0025484199796127556,,0,0,1,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T04-09__CASUAL_MOTIVE,0,WRONG,7.0,"7 m/s 
+in round",tail_unit,match,0.02766619371057104,,0,0,1,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T17-06__BENCH,1,CORRECT,38.0,"38^\circ C ,
+ess",last_eq,missing,0.002177691491061965,,0,0,1,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T17-06__FORMAL_MOTIVE,0,WRONG,39.0,3.9×10^1 degC ≈ 38 - 39,tail_unit,match,0.024080790311804826,,0,0,1,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T22-01__CASUAL_MOTIVE,0,TRAP,0.21,0.21 A on the 46 o,tail_unit,match,0.42217391304347807,divider with wrong resistor,0,0,1,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T04-08__CASUAL,1,CORRECT,5.08,"5.08 m/s , essenti",tail_unit,match,0.0006590123397927249,,0,0,1,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T24-05__CASUAL_MOTIVE,1,CORRECT,10.8,"10.8 mm , i.e. rou",tail_unit,match,0.007649087314359326,,0,0,1,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T13-02__BENCH_PLACEBO,0,WRONG,17.0,"1.7×10^4 m/s 
+ 
+
+about",tail_unit,scaled,0.054863850501163824,,0,0,1,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T18-05__CASUAL_MOTIVE,0,NO_ANSWER,,,none,missing,,,0,0,0,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T08-05__FORMAL_MOTIVE,0,TRAP,1.89,"1.89 m/s 
+swing sp",tail_unit,match,0.9880218393591061,speed of block after impact,0,0,1,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T12-02__FORMAL_MOTIVE,0,NO_ANSWER,,,none,missing,,,0,0,0,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T15-11__BENCH_PLACEBO,1,CORRECT,300.0,"300 Hz ,
+essentia",tail_unit,match,0.0008003202562562358,,0,0,1,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T06-02__CASUAL_MOTIVE,0,WRONG,29.9,"29.9^\circ , essen",last_eq,missing,0.017532340411322036,,0,0,1,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T21-03__BENCH,1,CORRECT,1.99,1.99 u J ≈\frac12\,tail_unit,match,0.0011828170425006266,,0,0,1,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T11-03__BENCH,1,CORRECT,1.8,"1.8 m/s^2 down, t",tail_unit,match,0.009174311926605375,,0,0,1,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T23-01__CASUAL_MOTIVE,0,TRAP,1.54,1.54 s .,tail_unit,match,0.44645205922461173,one time constant,0,0,1,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T17-02__CASUAL,0,WRONG,3.6,3.6^\circ C from,last_eq,missing,0.8408608307091023,,0,0,1,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T06-11__CASUAL,1,CORRECT,39.0,"39^\circ ,
+essen",last_number,missing,0.0028855636014075508,,0,0,1,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T19-12__FORMAL_MOTIVE,0,WRONG,4.2,"4.2 kJ 
+
+per cycl",tail_unit,match,0.337689075630252,,0,0,1,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T24-04__FORMAL_MOTIVE,1,CORRECT,39.6,39.6 mm with the n,tail_unit,match,0.0014617683571658648,,0,0,1,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T25-06__CASUAL_MOTIVE,1,CORRECT,0.22,0.22 A average ove,tail_unit,match,0.008413461538461613,,0,0,1,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T25-01__FORMAL_MOTIVE,0,WRONG,0.52,"0.52 A , |{\cal E}",tail_unit,match,0.019151138716356254,,0,0,1,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T24-10__CASUAL,0,WRONG,60.0,60 mm quoted in,tail_unit,match,0.023287507471607998,,0,0,1,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T17-09__CASUAL,0,WRONG,16000.0,1.6×10^4 J exchanged.,last_eq,other,443.31433231567064,,0,0,1,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T09-10__FORMAL_MOTIVE,0,NO_ANSWER,,,none,missing,,,0,0,0,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T20-02__BENCH,1,CORRECT,28.999999999999996,0.29 m between the,tail_unit,scaled,0.00014491041745804878,,0,0,1,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T04-01__CASUAL_MOTIVE,1,CORRECT,5.24,"5.24 m/s , essenti",tail_unit,match,0.0014340765071770018,,0,0,1,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T06-01__CASUAL,0,NO_ANSWER,,,none,missing,,,0,0,0,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T24-03__BENCH,0,WRONG,1.7,"1.7 mm of
+circula",tail_unit,match,0.015888170406999098,,0,0,1,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T23-09__BENCH_PLACEBO,0,TRAP,0.468,0.468 s .,tail_unit,match,0.27865247955551825,one time constant,0,0,1,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T25-01__CASUAL,1,CORRECT,0.51,"0.51 A in the
+sens",tail_unit,match,0.00044792164357369097,,0,0,1,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T24-02__CASUAL_MOTIVE,1,CORRECT,223.0,223 mm with the n,tail_unit,match,0.002312599875574682,,0,0,1,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T17-07__CASUAL,0,WRONG,91000.0,"9.1×10^4 J , as require",last_eq,other,3991.2383636069158,,0,0,1,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T18-02__BENCH_PLACEBO,0,WRONG,-11600.0,"11.6 kJ is the
+con",tail_unit,scaled,2.003446356648712,,1,0,1,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T12-05__BENCH_PLACEBO,1,CORRECT,123.0,123 min in round,tail_unit,match,0.00022746672015783694,,0,0,1,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T17-08__FORMAL_MOTIVE,1,CORRECT,22.200000000000003,"2.22×10^1 degC 
+ 
+
+i.e.",tail_unit,match,0.0003114364697413876,,0,0,1,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T10-01__FORMAL_MOTIVE,1,CORRECT,3.0,3.0 m/s for the 0,tail_unit,match,0.009637554692304349,,0,0,1,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T19-10__BENCH,1,CORRECT,7.3,"7.3 kJ per cycle,",tail_unit,match,0.003986833737259095,,0,0,1,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T06-09__FORMAL_MOTIVE,1,CORRECT,9.556936022782132,"0.1668 rad 
+ 
+
+i.e.",tail_unit,scaled,3.459113641562728e-05,,0,0,1,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T21-10__FORMAL_MOTIVE,1,CORRECT,3.3999999999999995,3.4×10^-6 J that a simul,tail_unit,scaled,0.007061692570243692,,0,0,1,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T13-06__BENCH_PLACEBO,0,WRONG,2.44,2.44 enhancement o,last_eq,other,0.9105016557938023,,0,0,1,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T01-10__FORMAL_MOTIVE,0,NO_ANSWER,,,none,missing,,,0,0,0,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T10-05__CASUAL,1,CORRECT,6.34,6.34 m/s .,tail_unit,match,0.0003158053176318199,,0,0,1,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T19-08__BENCH,1,CORRECT,3.1,3.1 kJ of work pe,tail_unit,match,0.0014549463853339032,,0,0,1,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T04-09__BENCH,1,CORRECT,6.8,6.8 m/s down the,tail_unit,match,0.001695697538302443,,0,0,1,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T16-10__BENCH_PLACEBO,1,CORRECT,416.0,416 Hz above. The,tail_unit,match,0.0012147716229349492,,0,0,1,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T17-07__FORMAL_MOTIVE,0,WRONG,12.6,"12.6^\circ C .
+
+*N",last_eq,missing,0.4472285342698117,,0,0,1,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T25-12__BENCH_PLACEBO,0,WRONG,0.29,"0.29 A 
+
+directed",tail_unit,match,0.012215870423302057,,0,0,0,pf-final-v1
+mlx-community--muse-glimmer-30b-4bit__T08-05__CASUAL,1,CORRECT,158.0,158 m/s is the pr,tail_unit,match,0.0013488789742059396,,0,0,1,pf-final-v1
