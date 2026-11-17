@@ -8,7 +8,7 @@ Anonymous release accompanying the submission "When Validating the Judge Changes
 | `generations/` | 10,500 responses from seven models at 1,024 tokens; 300 Muse Glimmer 30B responses at 4,096 tokens |
 | `scores/` | code-reference scores (strict and lenient, extracted value, relative error, trap match) |
 | `judge/` | phi-4 labels: main run, framing-hidden run (Gemma-2-9B, Qwen3-Omni-30B), Muse Glimmer |
-| `human_check/` | item key for the 120 audited responses, annotator A1 labels (120), annotator A2 (37), codebook as used |
+| `human_check/` | item key for the 120 audited responses, annotator A1 labels (120), annotator A2 (37), annotator A3 (70: the 40 G1 items plus 30 judge-pass/code-fail responses, keyed by `second_pass_item_key.csv`), codebook as used |
 | `code/` | generation (03), scorer (04), judge (05), audit sheets (06, 08), analysis (07) |
 | `analysis/` | `extra_checks.py` and `framing.py` with their outputs; `responses.csv` is the per-response table they read |
 | `paper_figures/` | `make_figures.py` and the figure PDFs |

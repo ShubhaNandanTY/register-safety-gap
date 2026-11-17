@@ -1,0 +1,71 @@
+audit_item_id,final_number_found,final_answer_correct,label,uncertain,rationale,minutes
+Q-001,574,Y,CORRECT,0,Correct Doppler formula f′=fv/(v−vs) for an approaching source; 574 Hz is within ±1% of 573 Hz.,1
+Q-002,13.03,N,PARTIAL,0,"Right escape-speed formula v=√(2GM/R), but arithmetic slips (M=1.918×10²⁵ kg, numerator 26.67×10¹⁴) give 13.03 km/s, outside ±1% of 12.7 km/s.",1.5
+Q-003,36.2,Y,CORRECT,1,"Correct heat-balance equation and Tf=36.2 °C is within ±0.3 °C; intermediate products are mistyped (0.42×385=161.7, not 167.7) but the errors nearly cancel.",2
+Q-004,,N,PARTIAL,0,"Correct heat-lost=heat-gained setup solved for Tf, but the response is cut off before any final temperature is computed.",1.2
+Q-005,-10800,N,PARTIAL,0,"Correct isothermal formula W=nRT ln(V2/V1) is stated, but the evaluation is wildly wrong (−10,800 J vs +23,372 J) and the sign rationale is muddled.",1.5
+Q-006,511,Y,CORRECT,0,"Correct two-stage method (energy for the swing, momentum for the collision); 511 m/s is within ±1% of 508 m/s despite small multiplication slips.",1.5
+Q-007,17.79,Y,CORRECT,0,Correct escape-speed formula; slips in M (4.224×10²⁵ kg) and r still leave 17.79 km/s within ±1% of 17.7 km/s.,1.2
+Q-008,285.71,N,PARTIAL,0,"Correct method, but 2gh is miscomputed (4.357 vs 4.297) and 3.798×2.087 miscomputed as 8.000, giving 285.7 m/s, outside ±1% of 281 m/s.",1.5
+Q-009,-14884,N,PARTIAL,1,"Correct formula and magnitude within 1% (14,884 vs 14,901 J), but the sign is wrong: work done by an expanding gas must be positive (+14,901 J).",1.8
+Q-010,30700,Y,CORRECT,0,"Correct W=nRT ln(V2/V1); boxed 30,700 J (3.07×10⁴ J) is within ±1% of 30,769 J; cut off only in a redundant restatement after the answer.",1.5
+Q-011,20.64,Y,CORRECT,0,Correct field-cancellation condition q1/x²=q2/(d−x)²; 20.64 cm is within ±1% of 20.5 cm despite a division slip.,1.2
+Q-012,0.00782,Y,CORRECT,0,Correct Faraday + Ohm computation (ε=0.1014 V); 0.00782 A is within ±1% of 0.00786 A.,1
+Q-013,-4423,N,PARTIAL,1,"Correct W=nRT ln(V2/V1) with magnitude within 1% (4,423 vs 4,405 J), but the final answer is stated negative — a sign error for work done by the gas.",1.5
+Q-014,0.184,Y,CORRECT,0,Correct momentum conservation then friction kinematics d=vf²/(2μg); 0.184 m matches the reference (answer boxed before a trailing cut-off).,1.2
+Q-015,2.625,N,PARTIAL,0,"Correct energy method v=ω√(A²−x²), but both potential energies are miscomputed (5.676 vs 5.576 J; 3.264 vs 3.232 J), giving 2.625 m/s, outside ±1% of 2.59 m/s.",1.5
+Q-016,0.576,Y,CORRECT,0,Correct momentum conservation plus work–energy against friction; 0.576 m is within ±1% of 0.573 m.,1.2
+Q-017,3.97,Y,CORRECT,0,Correct Kelvin conversion and Carnot efficiency η=1−Tc/Th; W=3.97 kJ is within ±1% of 3.96 kJ.,1
+Q-018,,N,PARTIAL,0,"Correct parallel-equivalent and total-current setup (I_total=0.398 A), but cut off before computing the current through R2.",1.5
+Q-019,32.4,Y,CORRECT,0,Correct frictionless-banking derivation tanθ=v²/(rg) with km/h→m/s conversion; 32.4° is within ±0.3° of 32.3°.,1.2
+Q-020,,N,PARTIAL,0,"Correct capacitance with dielectric C=4.42×10⁻¹⁰ F, but cut off before computing U=½CV².",1.2
+Q-021,,N,PARTIAL,0,"Correct capacitance C=7.13×10⁻¹⁰ F, but cut off mid-way through computing U=½CV².",1.2
+Q-022,,N,PARTIAL,0,"Correct flux change (0.00312 Wb) and EMF (9.13 V), but cut off before I=ε/R.",1.2
+Q-023,,N,PARTIAL,0,"Correct energy method ½kx²=mgh, but ½kx² is miscomputed (0.841 vs 0.860 J) and the response is cut off before h is found.",1.5
+Q-024,,N,PARTIAL,0,"Correct R23=10.49 Ω and I_total=0.1177 A, but cut off before the current-divider step.",1.5
+Q-025,-11958.15,N,PARTIAL,1,"Correct formula and magnitude within 1% (11,958 vs 11,868 J), but the answer is stated negative — a sign error for work done by the expanding gas.",1.5
+Q-026,5.7,N,PARTIAL,0,"Correct energy conservation h=kx²/(2mg), but rounding ½kx² to 3.9 J (from 3.964 J) gives 5.7 m, just outside ±1% of 5.77 m.",1.5
+Q-027,,N,PARTIAL,0,"Correct capacitance C=2.26×10⁻⁹ F, but cut off before computing U=½CV².",1.2
+Q-028,4917.54,Y,CORRECT,0,"Correct W=nRT ln(V2/V1) with the sign correctly resolved to positive; 4,918 J is within ±1% of 4,904 J.",1.5
+Q-029,,N,PARTIAL,0,"Correct rolling-energy derivation v=√(10gh/7) with I=⅔mr², but cut off before the numerical speed.",1.5
+Q-030,-3320,N,PARTIAL,0,"Correct formula, but the ratio/ln is miscomputed (1.444 vs 1.431) and products are wrong, giving −3,320 J vs +3,266 J (magnitude outside ±1%, sign wrong).",1.5
+Q-031,5.25,Y,CORRECT,0,Correct cylinder rolling energy v=√(4gh/3); 5.25 m/s is within ±1% of 5.23 m/s despite a product slip (82.72 vs 82.01).,1.2
+Q-032,,N,PARTIAL,0,"Correct R23=26.9 Ω and I_total=0.356 A, but cut off before computing I_R2.",1.5
+Q-033,39.6,Y,CORRECT,0,Correct Atwood analysis a=(m1−m2)g/(m1+m2) and T=m(g±a); 39.6 N matches the reference.,1.5
+Q-034,199.75,Y,CORRECT,1,"Correct energy-then-momentum method; 199.75 m/s is within ±1% of 200 m/s even though intermediate products are inconsistent (1.35×2.235=3.017, not 2.996).",1.8
+Q-035,,N,PARTIAL,0,"Correct reaction-distance plus braking-distance setup (6.89 m + ≈11.0 m), but cut off before the total.",1.5
+Q-036,6.55,Y,CORRECT,0,Correct escape-speed formula; slips in M (5.529×10²⁴ kg) and r (1.7355×10⁷ m) still leave 6.55 km/s within ±1% of 6.53 km/s.,1.2
+Q-037,,N,PARTIAL,0,"Correct a=g(sinθ−μcosθ) and v=√(2aL) setup, but the response stops without evaluating the speed.",1.2
+Q-038,10447.5,N,PARTIAL,0,"Correct derivation W=−nRT ln(V2/V1), but ln(2.218)=0.797 is miscomputed as 0.814 and the final multiplication is wrong, giving 10,448 J vs 8,936 J.",1.5
+Q-039,6.72,Y,CORRECT,0,Correct sphere rolling energy v=√(10gh/7); 6.72 m/s is within ±1% of 6.71 m/s.,1
+Q-040,2.8,N,PARTIAL,1,"Correct Carnot computation (η=0.433, W=2.77 kJ), but the committed final answer is rounded to 2.8 kJ, just outside ±1% of 2.77 kJ.",2
+Q-041,25.8,N,PARTIAL,0,"Correct field-cancellation quadratic, but expansion coefficient slips (1.55328 vs 1.55648; wrong discriminant) give 25.8 cm, outside ±1% of 25.2 cm.",2
+Q-042,,N,PARTIAL,0,"Correct R23=24.3 Ω and I_total=0.330 A, but cut off before I_R2.",1.2
+Q-043,0.06925,Y,CORRECT,0,Correct C=κε₀A/d and U=½CV²; 0.0693 μJ is within ±1% of 0.0697 μJ despite a product slip (1.385×10⁻⁷ vs 1.394×10⁻⁷).,1.2
+Q-044,,N,PARTIAL,0,"Correct force resolution and kinematics setup, but a is miscomputed (4.66 vs 4.61 m/s² component) and the response is cut off before v=√(2as).",1.5
+Q-045,420,N,PARTIAL,0,"Correct Doppler formula with vo=0, but 384×1.0815 is miscomputed as 419.99 → 420 Hz, outside ±1% of 415 Hz.",1.2
+Q-046,0.15,N,PARTIAL,1,"Correct Faraday + Ohm method (ε=0.356 V, I=0.1482 A), but rounding the final to 0.15 A lands just outside ±1% of 0.148 A.",1.5
+Q-047,54.4,N,PARTIAL,0,"Correct range method R=vx·t, but cos61° is misread as 0.515 (12.7 vs 11.9 m/s) and the flight time is miscomputed (4.31 vs 4.39 s), giving 54.4 m, outside ±1% of 52.3 m.",1.8
+Q-048,313,Y,CORRECT,0,Correct swing-energy then momentum method; 313 m/s matches the reference.,1
+Q-049,,N,PARTIAL,0,"Correct R23=22.0 Ω, I_total=0.3217 A and V_parallel=7.06 V, but cut off before I_R2=V/R2.",1.5
+Q-050,,N,PARTIAL,0,"Correct R23=21.9 Ω and I_total=0.4677 A, but cut off before the current-division step.",1.5
+Q-051,,N,PARTIAL,0,"Correct W=−nRT ln(V2/V1) with ln ratio 0.797, but cut off before the final value.",1.2
+Q-052,,N,PARTIAL,0,"Correct through V23≈8.03 V and the I_R2 expression 26488/(3299×56), but cut off before the value.",1.5
+Q-053,,N,PARTIAL,0,"Correct capacitance C=2.39×10⁻⁹ F, but cut off before U=½CV².",1.2
+Q-054,,N,PARTIAL,0,"Correct through V_parallel=4.63 V and I_R2=6006/33748, but cut off before the decimal value is stated.",1.5
+Q-055,-28000.47,N,PARTIAL,0,"Correct formula, but ln and multiplication slips give −28,000 J; the magnitude is outside ±1% of 27,582 J and the sign is wrong.",1.5
+Q-056,5.41,Y,CORRECT,0,Correct banking derivation tanθ=v²/(rg); 5.41° is within ±0.3° of 5.39°.,1.2
+Q-057,,N,PARTIAL,0,"Correct capacitance C=2.03×10⁻⁹ F, but cut off before U=½CV².",1.2
+Q-058,,N,PARTIAL,0,"Correct planet mass and radius and 2GM=7.41×10¹⁴, but cut off before the square root.",1.2
+Q-059,0.03654,N,PARTIAL,0,"Correct r=mv/(|q|B), but multiplication slips (9.109×9.8=89.27, not 91.09) and an exponent/unit inconsistency give 0.0365 mm, outside ±1% of 0.0360 mm.",1.8
+Q-060,,N,PARTIAL,0,"Correct through V_parallel=10.05 V, but cut off before I_R2=V/R2.",1.5
+Q-061,221,N,PARTIAL,0,"Correct method, but √(2gh) is miscomputed as 1.66 (1.6455) and m+M is misadded as 2.005 kg (1.975 kg), giving 221 m/s, outside ±1% of 217 m/s.",1.5
+Q-062,,N,PARTIAL,0,"Correct field equation reduced to quadratic 3.1x²+8.268x−3.22452=0, but cut off before solving.",1.5
+Q-063,128,Y,CORRECT,0,Correct Kepler period T=2π√(r³/GM); 128 min is within ±1% of 127 min despite the 7680 s slip (true 7603 s).,1.5
+Q-064,,N,PARTIAL,0,"Correct mass and escape formula, but the planet radius is miscomputed (1.1008×10⁷ vs 1.0958×10⁷ m) and the response is cut off at v=√(6.15×10⁸).",1.5
+Q-065,9.6,N,PARTIAL,0,"Correct field equation, but expansion errors (1.982 vs 2.002; wrong discriminant 0.622 vs 0.781) give 9.6 cm, outside ±1% of 9.02 cm; also cut off while choosing the root.",2
+Q-066,29.57,Y,CORRECT,1,"Correct quadratic solution; the valid root 0.2957 m (29.6 cm) is computed and within ±1%, though the response is cut off before the concluding sentence.",1.8
+Q-067,8.5,Y,CORRECT,1,"Correct quadratic solution; the root 0.0850 m (8.5 cm) is within ±1% of 8.53 cm, though the response is cut off right after computing it.",1.8
+Q-068,1.07,Y,CORRECT,0,Correct RC charging formula t=−RC ln(1−p)=τln2; 1.07 s is within ±1% of 1.06 s.,1
+Q-069,37.03,Y,CORRECT,0,Correct Atwood equations; 37.03 N is within ±1% of 36.8 N despite the m1g product typo (46.23 vs 46.01).,1.5
+Q-070,-10880,N,PARTIAL,0,"Correct formula W=nRT ln(V2/V1) is stated, but the evaluation is wildly wrong (−10,880 J vs +27,582 J).",1.5
